@@ -36,8 +36,6 @@
   }
 
   /* Container */
-
-  /* Container */
   .container-body {
     @apply max-w-[2000px] mx-auto px-6 md:px-24;
   }
