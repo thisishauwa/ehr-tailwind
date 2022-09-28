@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Product Sans", "sans-serif"],
+        bold: ["Product Sans Medium", "sans-serif"],
       },
       colors: {
         black: "#000000",

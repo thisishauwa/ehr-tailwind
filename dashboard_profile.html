@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full z-10 px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- profile -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <!-- Mobile icon -->
+            <img
+              src="/images/dashboard-icons/vuesax/linear/profile.svg"
+              alt="profile icon"
+              class="w-[25px] lg:hidden"
+            />
+
+            <!-- web icon -->
+            <img
+              src="/images/dashboard-icons/profile-icon-white.svg"
+              alt="profile icon"
+              class="hidden w-[25px] lg:block"
+            />
+            <p
+              class="text-bluestrong lg:text-white font-bold text-xs md:text-base"
+            >
+              Profile
+            </p>
+          </div>
+          <!-- sms -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/sms.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Messages
+            </p>
+          </div>
+          <!-- jobs -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+          </div>
+          <!-- courses -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 md:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/book.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Courses
+            </p>
+          </div>
+          <!-- contacts -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/people.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Contacts
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
+            <p
+              class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
+            >
+              Here's what's going on with your account today
+            </p>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-3">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="relative">
+              <a href="#" class="absolute top-3 left-3.5 text-inactive">HS</a>
+              <button class="h-12 w-12 bg-inactive/30 rounded-full"></button>
+            </div>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+              alt=""
+              class="w-5"
+            />
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt-12 lg:mt-16">
+          <!-- nav items -->
+          <div class="flex flex-row justify-between md:justify-start md:gap-14">
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Overview</a>
+              </p>
+            </div>
+            <div>
+              <p class="text-sm md:text-base underline underline-offset-8">
+                <a href="#">Profile</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Resume</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Preferences</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Culture</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- content container-->
+          <section class="mt-10 md:w-5/6">
+            <!-- Blue box -->
+            <div class="px-5 py-5 bg-bluemedium rounded-md text-white">
+              <!-- Content inside box -->
+              <div class="flex flex-col md:flex-row md:justify-between">
+                <!-- Text and icon -->
+                <div class="flex flex-row gap-4 items-start">
+                  <img
+                    src="/images/vuesax/linear/video-vertical.svg"
+                    alt="video icon"
+                  />
+                  <div class="md:max-w-xl">
+                    <h3>Record video</h3>
+                    <p class="text-white/70">
+                      We need you to record a 10 minute video, answering a few
+                      questions. This is to ensure that you are matched with the
+                      best possible option. Please note that your profile will
+                      not be visible without it.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="primary-button h-16 md:h-20 bg-white text-black hover:bg-white/80 hover:text-black mt-6"
+                >
+                  Record video
+                </button>
+              </div>
+            </div>
+            <!-- White content box -->
+            <div
+              class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-10 mb-32 lg:mb-20 lg:px-10 lg:py-10"
+            >
+              <!-- About left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-sm lg:w-1/4">
+                  <h1>About</h1>
+                  <p class="text-black/50 text-sm">
+                    Tell us about yourself so startups know who you are
+                  </p>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Header -->
+                  <div class="mt-7 lg:mt-0">
+                    <h1 class="text-xl">Hauwa Suleiman</h1>
+                    <!-- Avatar and button container -->
+                    <div class="mt-5 flex flex-row items-center gap-5">
+                      <!-- Avatar -->
+                      <div
+                        class="bg-inactive/30 h-14 w-14 md:h-20 md:w-20 rounded-full relative"
+                      >
+                        <p
+                          class="text-inactive absolute top-3 left-4 md:top-6 md:left-7 text-xl"
+                        >
+                          HS
+                        </p>
+                      </div>
+                      <!-- Button -->
+                      <div
+                        class="px-3 py-3 h-fit border border-black rounded-md hover:bg-black/10 md:px-4 md:py-5"
+                      >
+                        <a
+                          href="#"
+                          class="flex flex-row gap-3 items-center justify-center"
+                        >
+                          <img
+                            src="/images/vuesax/linear/export.svg"
+                            alt=""
+                            class="w-5 h-5"
+                          />
+                          <div>
+                            <p class="text-sm md:text-base">Upload new photo</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Form body -->
+                  <div class="mt-10">
+                    <!-- Input field -->
+                    <div>
+                      <h3 class="text-black">Full name</h3>
+                      <input
+                        type="text"
+                        placeholder="Hauwa Suleiman"
+                        class="bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3 text-black"
+                      />
+                    </div>
+                    <!-- Dropdown field -->
+                    <div class="mt-5">
+                      <h3 class="text-black">Discipline</h3>
+                      <div
+                        class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+                      >
+                        <p class="text-inactive/70">None</p>
+                        <img
+                          src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- Dropdown field -->
+                    <div class="mt-5">
+                      <h3 class="text-black">Specialty</h3>
+                      <div
+                        class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+                      >
+                        <p class="text-inactive/70">None</p>
+                        <img
+                          src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- Input field -->
+                    <div class="mt-5">
+                      <h3 class="text-black">Phone number</h3>
+                      <input
+                        type="number"
+                        placeholder="0800 000 0000"
+                        class="bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3 text-black"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Work experience left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12 mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-sm lg:w-1/4">
+                  <h1>Work experience</h1>
+                  <p class="text-black/50 text-sm">
+                    Here, you should highlight your most relevant work
+                  </p>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Light blue box -->
+                  <div
+                    class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md mt-6 lg:mt-0"
+                  >
+                    <div>
+                      <h3 class="text-black">Nurse</h3>
+                      <p class="text-bluemedium mt-2">
+                        Federal Ministry of Health
+                      </p>
+                      <p class="text-inactive/70 mt-1 text-sm">
+                        Jun 2022 to Present
+                      </p>
+                    </div>
+                    <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                      >Edit</a
+                    >
+                  </div>
+                  <div class="mt-7">
+                    <a href="#" class="flex flex-row gap-1">
+                      <img src="/images/vuesax/linear/add.svg" alt="" />
+                      <p class="text-bluemedium">Add work experience</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12 mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-sm lg:w-1/4">
+                  <h1>Education</h1>
+                  <p class="text-black/50 text-sm">
+                    Got certificates? Flaunt them here
+                  </p>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Light blue box -->
+                  <div
+                    class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md mt-6 lg:mt-0"
+                  >
+                    <div>
+                      <h3 class="text-black">Ahmadu Bello University</h3>
+                      <p class="text-black text-sm mt-2">
+                        Computer Engineering
+                      </p>
+                      <p class="text-inactive/70 mt-1 text-sm">Jun 2029</p>
+                    </div>
+                    <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                      >Edit</a
+                    >
+                  </div>
+                  <div class="mt-7">
+                    <a href="#" class="flex flex-row gap-1">
+                      <img src="/images/vuesax/linear/add.svg" alt="" />
+                      <p class="text-bluemedium">Add education</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Licenses left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] pb-8 mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-sm lg:w-1/4">
+                  <h1>Licenses</h1>
+                  <p class="text-black/50 text-sm">
+                    Got certificates? Flaunt them here
+                  </p>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Light blue box -->
+                  <div
+                    class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md mt-6 lg:mt-0"
+                  >
+                    <div>
+                      <h3 class="text-black">Medical License</h3>
+                      <p class="text-inactive/70 mt-2 text-sm">
+                        Exp. June 2029
+                      </p>
+                    </div>
+                    <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                      >Edit</a
+                    >
+                  </div>
+                  <div class="mt-7">
+                    <a href="#" class="flex flex-row gap-1">
+                      <img src="/images/vuesax/linear/add.svg" alt="" />
+                      <p class="text-bluemedium">Add license</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
