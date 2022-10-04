@@ -117,7 +117,7 @@
             </p>
           </div>
           <!-- Right header content -->
-          <div class="flex flex-row justify-center items-center gap-3">
+          <div class="flex flex-row justify-center items-center gap-8">
             <div class="hidden md:block">
               <div class="relative md:w-[200px] lg:w-80">
                 <img
@@ -132,15 +132,18 @@
                 />
               </div>
             </div>
-            <div class="relative">
-              <a href="#" class="absolute top-3 left-3.5 text-inactive">HS</a>
-              <button class="h-12 w-12 bg-inactive/30 rounded-full"></button>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
             </div>
-            <img
-              src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
-              alt=""
-              class="w-5"
-            />
           </div>
         </div>
 
@@ -206,12 +209,13 @@
                   </div>
                 </div>
                 <button
-                  class="primary-button h-16 md:h-20 bg-white text-black hover:bg-white/80 hover:text-black mt-6"
+                  class="primary-button h-16 md:h-20 bg-white text-black hover:bg-white/90 hover:text-black mt-6"
                 >
                   Record video
                 </button>
               </div>
             </div>
+
             <!-- White content box -->
             <div
               class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-10 mb-32 lg:mb-20 lg:px-10 lg:py-10"
@@ -238,32 +242,21 @@
                     <div class="mt-5 flex flex-row items-center gap-5">
                       <!-- Avatar -->
                       <div
-                        class="bg-inactive/30 h-14 w-14 md:h-20 md:w-20 rounded-full relative"
+                        class="flex items-center justify-center bg-inactive/30 text-inactive h-14 w-14 md:h-20 md:w-20 md:text-xl rounded-full relative"
                       >
-                        <p
-                          class="text-inactive absolute top-3 left-4 md:top-6 md:left-7 text-xl"
-                        >
-                          HS
-                        </p>
+                        HS
                       </div>
                       <!-- Button -->
-                      <div
-                        class="px-3 py-3 h-fit border border-black rounded-md hover:bg-black/10 md:px-4 md:py-5"
+                      <button
+                        class="flex flex-row gap-2 px-3 py-3 h-fit border border-black rounded-md hover:bg-black/5 md:px-4 md:py-5 text-sm md:text-base"
                       >
-                        <a
-                          href="#"
-                          class="flex flex-row gap-3 items-center justify-center"
-                        >
-                          <img
-                            src="/images/vuesax/linear/export.svg"
-                            alt=""
-                            class="w-5 h-5"
-                          />
-                          <div>
-                            <p class="text-sm md:text-base">Upload new photo</p>
-                          </div>
-                        </a>
-                      </div>
+                        <img
+                          src="/images/vuesax/linear/export.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p>Upload new photo</p>
+                      </button>
                     </div>
                   </div>
                   <!-- Form body -->

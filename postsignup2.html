@@ -13,7 +13,73 @@
     <title>Dashboard overview</title>
   </head>
   <body>
-    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+    <!-- Blurred background -->
+    <div class="w-screen h-screen absolute top-0 left-0 z-10 flex flex-col justify-center items-center backdrop-blur-md bg-black/10 px-6">
+
+
+        <!-- White form -->
+        <div class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[550px]">
+            <!-- Header items -->
+            <div class="flex flex-row items-center justify-center">
+                <div class="flex justify-center items-center text-white w-10 h-10 lg:w-14 lg:h-14 bg-bluemedium rounded-full lg:text-xl"><img src="/images/Tick.svg" alt=""></div>
+                <!-- Line -->
+                <div class="h-[1px] w-8 bg-bluemedium"></div>
+                <div class="flex justify-center items-center text-white w-10 h-10 bg-bluemedium rounded-full lg:text-xl lg:w-14 lg:h-14">2</div>
+            </div>
+
+
+            <!-- Form components -->
+            <div class="mt-5 md:mt-7">
+                <div class="flex justify-center"><h2 class="text-lg md:text-xl lg:text-3xl">You're almost there</h2></div>
+                <div class="flex flex-col gap-5 mt-8">
+                    <div>
+                        <p>Discipline</p>
+                        <div
+                        class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+                      >
+                        <p class="text-inactive/70">Choose a discipline</p>
+                        <img
+                          src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div>
+                        <p>Specialty</p>
+                        <div
+                        class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+                      >
+                        <p class="text-inactive/70">Choose a specialty</p>
+                        <img
+                          src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div>
+                        <p>Years of experience</p>
+                        <div
+                        class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+                      >
+                        <p class="text-inactive/70">Select years of experience</p>
+                        <img
+                          src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="flex flex-row gap-4 mt-5">
+                        <button class="secondary-button w-1/3">Back</button>
+                        <button class="primary-button w-2/3">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Background -->
+    <div class="flex flex-row relative max-w-[2000px] mx-auto px-6 lg:px-0">
       <!-- Navigation bar -->
       <nav
         class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
@@ -108,7 +174,7 @@
             </p>
           </div>
           <!-- Right header content -->
-            <div class="flex flex-row justify-center items-center gap-8">
+          <div class="flex flex-row justify-center items-center gap-3">
             <div class="hidden md:block">
               <div class="relative md:w-[200px] lg:w-80">
                 <img
@@ -123,18 +189,15 @@
                 />
               </div>
             </div>
-            <div class="flex flex-row gap-3">
-              <button
-                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
-              >
-                HS
-              </button>
-              <img
-                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
-                alt=""
-                class="w-5"
-              />
+            <div class="relative">
+                <a href="#" class="absolute top-3 left-3.5 text-inactive">HS</a>
+                <button class="h-12 w-12 bg-inactive/30 rounded-full"></button>
             </div>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+              alt=""
+              class="w-5"
+            />
           </div>
         </div>
 
