@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
@@ -16,7 +16,7 @@
     <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
       <!-- Navigation bar -->
       <nav
-        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA] z-10"
       >
         <!-- nav elements -->
         <img
@@ -106,7 +106,9 @@
         <!-- Left header content -->
         <div class="flex flex-row justify-between items-center mt-5">
           <div class="flex flex-col">
-            <h2 class="text-2xl lg:text-4xl">Hello there, Hauwa</h2>
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
             <p
               class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
             >
@@ -153,7 +155,9 @@
               </p>
             </div>
             <div>
-              <p class="text-sm md:text-base underline underline-offset-8">
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
                 <a href="#">Profile</a>
               </p>
             </div>
@@ -165,9 +169,7 @@
               </p>
             </div>
             <div>
-              <p
-                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
-              >
+              <p class="text-sm md:text-base underline underline-offset-8">
                 <a href="#">Preferences</a>
               </p>
             </div>
@@ -181,7 +183,127 @@
           </div>
 
           <!-- content container-->
-          <section></section>
+          <section class="mt-10 md:w-5/6">
+            <!-- White content box -->
+            <div
+              class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-10 mb-32 lg:mb-20 lg:px-10 lg:py-10"
+            >
+              <!-- Employment left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-14 border-[#ECECEC] border-b pb-10 lg:pb-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-md lg:w-1/4">
+                  <h1>What type of employment are you looking for?</h1>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Form body -->
+                  <div class="mt-4 lg:mt-0">
+                    <!-- Dropdown field -->
+                    <div
+                      class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3 lg:mt-0"
+                    >
+                      <p class="text-inactive/70">Select employment type</p>
+                      <img
+                        src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Work left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-14 border-[#ECECEC] border-b pb-10 lg:pb-14 mt-7 lg:mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-md lg:w-1/4">
+                  <h1>Where are you looking to work?</h1>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Form body -->
+                  <div class="mt-4 lg:mt-0">
+                    <!-- Dropdown field -->
+                    <div class="relative w-full">
+                      <img
+                        src="images/searchblack.svg"
+                        alt=""
+                        class="absolute w-6 h-6 top-4 left-4"
+                      />
+                      <input
+                        type="text"
+                        class="py-4 text-black pl-14 pr-4 bg-[#F3F3F3] w-full rounded-md md:mr-5 truncate"
+                        placeholder="Search locations"
+                      />
+                    </div>
+
+                    <!-- blue options -->
+                    <div class="flex flex-wrap gap-3 md:flex-row mt-5">
+                      <!-- first -->
+                      <div
+                        class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-4 py-3 rounded-md"
+                      >
+                        <p>Sokoto</p>
+                        <img src="/images/Cancel.svg" alt="" />
+                      </div>
+
+                      <!-- second -->
+                      <div
+                        class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-4 py-3 rounded-md"
+                      >
+                        <p>Abuja</p>
+                        <img src="/images/Cancel.svg" alt="" />
+                      </div>
+
+                      <!-- third -->
+                      <div
+                        class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-4 py-3 rounded-md"
+                      >
+                        <p>Zamfara</p>
+                        <img src="/images/Cancel.svg" alt="" />
+                      </div>
+
+                      <!-- third -->
+                      <div
+                        class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-4 py-3 rounded-md"
+                      >
+                        <p>Sabon-gari</p>
+                        <img src="/images/Cancel.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pay left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-14 border-[#ECECEC] mt-7 lg:mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-md lg:w-1/4">
+                  <h1>What is your desired pay?</h1>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Form body -->
+                  <div class="mt-4 lg:mt-0">
+                    <!-- Dropdown field -->
+                    <div class="relative w-full z-0">
+                      <p class="absolute w-6 h-6 top-4 left-4">NGN</p>
+                      <input
+                        type="text"
+                        class="py-4 text-black pl-16 pr-4 bg-[#F3F3F3] w-full rounded-md md:mr-5 truncate"
+                        placeholder="Enter desired pay"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>

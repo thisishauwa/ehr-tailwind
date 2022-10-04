@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
@@ -106,7 +106,9 @@
         <!-- Left header content -->
         <div class="flex flex-row justify-between items-center mt-5">
           <div class="flex flex-col">
-            <h2 class="text-2xl lg:text-4xl">Hello there, Hauwa</h2>
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
             <p
               class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
             >
@@ -153,14 +155,14 @@
               </p>
             </div>
             <div>
-              <p class="text-sm md:text-base underline underline-offset-8">
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
                 <a href="#">Profile</a>
               </p>
             </div>
             <div>
-              <p
-                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
-              >
+              <p class="text-sm md:text-base underline underline-offset-8">
                 <a href="#">Resume</a>
               </p>
             </div>
@@ -182,6 +184,65 @@
 
           <!-- content container-->
           <section></section>
+        </div>
+
+        <!-- Content -->
+        <div
+          class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-10 mb-32 lg:mb-20 lg:px-10 lg:py-10"
+        >
+          <!-- Resume left and right form -->
+          <div
+            class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC"
+          >
+            <!-- Left form -->
+            <div class="max-w-sm lg:w-1/4">
+              <h1>Upload your resume or CV</h1>
+            </div>
+            <!-- Right form -->
+            <div class="lg:w-3/4">
+              <!-- Form body -->
+              <div class="mt-5 lg:mt-0">
+                <!-- Upload resume field -->
+                <div>
+                  <!-- Header text -->
+                  <div>
+                    <div class="flex flex-row justify-between">
+                      <a href="#" class="text-bluemedium">View resume</a>
+
+                      <button
+                        class="small text-inactive/70 hover:text-inactive"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Upload Box -->
+                  <div
+                    class="w-full border border-black border-dashed rounded-md bg-inactive/5 p-10 mt-5"
+                  >
+                    <div
+                      class="flex flex-row gap-2 items-center justify-center"
+                    >
+                      <img
+                        src="/images/vuesax/linear/exports.svg"
+                        alt="export icon"
+                      />
+                      <p>Suleiman Hauwa Q4 2022.pdf</p>
+                    </div>
+                  </div>
+
+                  <!-- Button with plus sign -->
+                  <div class="mt-7">
+                    <a href="#" class="flex flex-row gap-1">
+                      <img src="/images/vuesax/linear/add.svg" alt="" />
+                      <p class="text-bluemedium">Add a cover letter</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

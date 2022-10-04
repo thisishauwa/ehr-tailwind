@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
@@ -155,7 +155,9 @@
               </p>
             </div>
             <div>
-              <p class="text-sm md:text-base underline underline-offset-8">
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
                 <a href="#">Profile</a>
               </p>
             </div>
@@ -174,16 +176,151 @@
               </p>
             </div>
             <div>
-              <p
-                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
-              >
+              <p class="text-sm md:text-base underline underline-offset-8">
                 <a href="#">Culture</a>
               </p>
             </div>
           </div>
 
           <!-- content container-->
-          <section></section>
+          <section class="mt-10 md:w-5/6">
+            <!-- White content box -->
+            <div
+              class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-10 mb-32 lg:mb-20 lg:px-10 lg:py-10"
+            >
+              <!-- Field one left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-14 border-[#ECECEC] border-b pb-10 lg:pb-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-md lg:w-1/4">
+                  <h1>What do you love most about your profession?</h1>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Form body -->
+                  <div class="mt-4 lg:mt-0">
+                    <!-- textarea field -->
+                    <textarea
+                      type="text"
+                      placeholder="Tip: be as detailed as possible"
+                      class="flex flex-row text-black items-start justify-start bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3 lg:mt-0 h-32 resize-none"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Field two and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-14 border-[#ECECEC] border-b pb-10 lg:pb-14 mt-7 lg:mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-md lg:w-1/4">
+                  <h1>What kind of work enviromnent do you thrive in?</h1>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Form body -->
+                  <div class="mt-4 lg:mt-0">
+                    <!-- Dropdown field -->
+                    <div
+                      class="flex flex-row justify-between bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3 lg:mt-0"
+                    >
+                      <p class="text-inactive/70">I thrive best in...</p>
+                      <img
+                        src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- third field left and right form -->
+              <div
+                class="flex flex-col lg:flex-row lg:items-start lg:gap-14 border-[#ECECEC] mt-7 lg:mt-12"
+              >
+                <!-- Left form -->
+                <div class="max-w-md lg:w-1/4">
+                  <h1>What are you looking for in your next job?</h1>
+                </div>
+                <!-- Right form -->
+                <div class="lg:w-3/4">
+                  <!-- Form body -->
+                  <div class="mt-4 lg:mt-0">
+                    <!-- checkboxes field -->
+                    <div class="flex flex-col gap-y-5 mt-8 lg:mt-0">
+                      <div class="flex flex-row items-center gap-3">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="flexCheckDefault"
+                          class="form-check-input h-4 w-4"
+                        />
+                        <label
+                          class="form-check-input text-inactive checked:text-black"
+                          for="flexCheckDefault"
+                          >Mentorship opportunities</label
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-3">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="flexCheckDefault"
+                          class="form-check-input h-4 w-4"
+                        />
+                        <label
+                          class="form-check-input text-inactive checked:text-black"
+                          for="flexCheckDefault"
+                          >Growth and progress opportunities</label
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-3">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="flexCheckDefault"
+                          class="form-check-input h-4 w-4"
+                        />
+                        <label
+                          class="form-check-input text-inactive checked:text-black"
+                          for="flexCheckDefault"
+                          >Leadership opportunities</label
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-3">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="flexCheckDefault"
+                          class="form-check-input h-4 w-4"
+                        />
+                        <label
+                          class="form-check-input text-inactive checked:text-black"
+                          for="flexCheckDefault"
+                          >Autonomy and flexibility</label
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-3">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="flexCheckDefault"
+                          class="form-check-input h-4 w-4"
+                        />
+                        <label
+                          class="form-check-input text-inactive checked:text-black"
+                          for="flexCheckDefault"
+                          >Supportive team members</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>
