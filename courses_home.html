@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA] z-10"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1 ml-6"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- profile -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <!--Icon -->
+            <img
+              src="/images/dashboard-icons/profile-icon-white.svg"
+              alt="profile icon"
+              class="w-[25px] lg:block"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Profile
+            </p>
+          </div>
+          <!-- sms -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/sms.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Messages
+            </p>
+          </div>
+          <!-- jobs -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+          </div>
+          <!-- courses -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <img
+              src="/images/vuesax/linear/bookwhite.svg"
+              alt="profile icon"
+              class="hidden lg:block w-[25px]"
+            />
+            <img
+              src="images/vuesax/linear/bookblue.svg"
+              alt="profile icon"
+              class="w-[25px] lg:hidden"
+            />
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              Courses
+            </p>
+          </div>
+          <!-- contacts -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/people.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Contacts
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14 mb-28">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
+            <p
+              class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
+            >
+              Today is a good day to learn something new
+            </p>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt-12 lg:mt-16">
+          <!-- second nav items -->
+          <div class="flex flex-row justify-between md:justify-start md:gap-14">
+            <div>
+              <p class="text-sm md:text-base underline underline-offset-8">
+                <a href="#">All</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">In progress</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Saved</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">History</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- content container-->
+          <section class="mt-8">
+            <div>
+              <h1 class="text-lg">Recommended for Hauwa</h1>
+
+              <!-- Courses cards -->
+              <div class="flex flex-row gap-4 md:gap-5 overflow-scroll mt-5">
+                <!-- Card 1 -->
+                <div
+                  class="flex flex-row border border-[#f1f1f1] rounded-md min-w-[350px] md:min-w-[450px]"
+                >
+                  <div
+                    class="relative bg-[url('/images/image1.svg')] bg-no-repeat h-auto min-w-[96px] lg:min-w-[110px] rounded-tl-md rounded-bl-md bg-right-top"
+                  >
+                    <div
+                      class="p-2 rounded-tl-3xl bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                    >
+                      15h 8m
+                    </div>
+                  </div>
+
+                  <!-- Top -->
+                  <div class="px-4 py-4">
+                    <div class="flex flex-col items-start gap-1">
+                      <h3 class="text-sm font-medium md:text-base">
+                        How to Become a Certified Nursing Assistant (CNA)
+                      </h3>
+                      <p class="text-sm text-inactive/70">
+                        Prof. Hauwa Suleiman
+                      </p>
+                    </div>
+
+                    <!-- Bottom -->
+
+                    <!-- Second section -->
+                    <p class="text-sm font-bold text-black mt-4">N8,950</p>
+
+                    <!-- stars -->
+                    <div class="flex flex-row gap-0.5 mt-2">
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star_gray.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="flex flex-row border border-[#f1f1f1] rounded-md min-w-[350px] md:min-w-[450px]"
+                >
+                  <div
+                    class="relative bg-[url('/images/image2.svg')] bg-no-repeat h-auto min-w-[96px] lg:min-w-[110px] rounded-tl-md rounded-bl-md bg-right-top"
+                  >
+                    <div
+                      class="p-2 rounded-tl-3xl bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                    >
+                      15h 8m
+                    </div>
+                  </div>
+
+                  <!-- Top -->
+                  <div class="px-4 py-4">
+                    <div class="flex flex-col items-start gap-1">
+                      <h3 class="text-sm font-medium md:text-base">
+                        The Key to Achieving Zen
+                      </h3>
+                      <p class="text-sm text-inactive/70">Dr. Hauwa Suleiman</p>
+                    </div>
+
+                    <!-- Bottom -->
+
+                    <!-- Second section -->
+                    <p class="text-sm font-bold text-black mt-4">N14,250</p>
+
+                    <!-- stars -->
+                    <div class="flex flex-row gap-0.5 mt-2">
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star_gray.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="flex flex-row border border-[#f1f1f1] rounded-md min-w-[350px] md:min-w-[450px]"
+                >
+                  <div
+                    class="relative bg-[url('/images/image3.svg')] bg-no-repeat h-auto min-w-[96px] lg:min-w-[110px] rounded-tl-md rounded-bl-md bg-right-top"
+                  >
+                    <div
+                      class="p-2 rounded-tl-3xl bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                    >
+                      15h 8m
+                    </div>
+                  </div>
+
+                  <!-- Top -->
+                  <div class="px-4 py-4">
+                    <div class="flex flex-col items-start gap-1">
+                      <h3 class="text-sm font-medium md:text-base">
+                        How to Become a Certified Nursing Assistant (CNA)
+                      </h3>
+                      <p class="text-sm text-inactive/70">
+                        Prof. Hauwa Suleiman
+                      </p>
+                    </div>
+
+                    <!-- Bottom -->
+
+                    <!-- Second section -->
+                    <p class="text-sm font-bold text-black mt-4">N8,950</p>
+
+                    <!-- stars -->
+                    <div class="flex flex-row gap-0.5 mt-2">
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star.svg" alt="star" />
+                      <img src="/images/Star_gray.svg" alt="star" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Course categories -->
+              <div class="border border-[##f1f1f1] rounded-md mt-10 md:mt-16">
+                <!-- Blue box -->
+                <div
+                  class="flex flex-row bg-[#F0F4FF] p-5 md:p-8 justify-between items-center rounded-tl-md rounded tr-md"
+                >
+                  <p class="max-w-[200px] md:text-xl md:max-w-full">
+                    We have many skills to help you advance your career
+                  </p>
+                  <button class="text-sm text-bluemedium">View more</button>
+                </div>
+
+                <!-- Buttons container -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 px-5 pb-5 pt-10"
+                >
+                  <!-- Button 1 -->
+                  <button
+                    class="flex flex-row border border-black rounded-md p-3 md:p-5 justify-between hover:bg-inactive/10"
+                  >
+                    <p class="text-sm md:text-base">Medicine and surgery</p>
+                    <img src="/images/pointingarrow.svg" alt="" />
+                  </button>
+                  <!-- Button 2 -->
+                  <button
+                    class="flex flex-row border border-black rounded-md p-3 md:p-5 justify-between hover:bg-inactive/10"
+                  >
+                    <p class="text-sm md:text-base">Nursing</p>
+                    <img src="/images/pointingarrow.svg" alt="" />
+                  </button>
+                  <!-- Button 3 -->
+                  <button
+                    class="flex flex-row border border-black rounded-md p-3 md:p-5 justify-between hover:bg-inactive/10"
+                  >
+                    <p class="text-sm md:text-base">Pharmacy</p>
+                    <img src="/images/pointingarrow.svg" alt="" />
+                  </button>
+                  <!-- Button 4 -->
+                  <button
+                    class="flex flex-row border border-black rounded-md p-3 md:p-5 justify-between hover:bg-inactive/10"
+                  >
+                    <p class="text-sm md:text-base">Laboratory informatics</p>
+                    <img src="/images/pointingarrow.svg" alt="" />
+                  </button>
+                  <!-- Button 5 -->
+                  <button
+                    class="flex flex-row border border-black rounded-md p-3 md:p-5 justify-between hover:bg-inactive/10"
+                  >
+                    <p class="text-sm md:text-base">Dentistry</p>
+                    <img src="/images/pointingarrow.svg" alt="" />
+                  </button>
+                  <!-- Button 6 -->
+                  <button
+                    class="flex flex-row border border-black rounded-md p-3 md:p-5 justify-between hover:bg-inactive/10"
+                  >
+                    <p class="text-sm md:text-base">Therapy</p>
+                    <img src="/images/pointingarrow.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <!-- All courses -->
+              <div class="mt-16">
+                <h2>All courses</h2>
+              </div>
+
+              <!-- All courses box -->
+              <div class="border border-[##f1f1f1] rounded-md p-3 md:p-5 mt-5">
+                <!-- First section -->
+                <div
+                  class="flex flex-row gap-3 md:gap-5 pb-6 md:pb-10 border-b border-b-[##f1f1f1]"
+                >
+                  <!-- Image section -->
+                  <div
+                    class="relative bg-[url('/images/image1.svg')] w-24 h-30 md:w-40 md:h-40 bg-right-top rounded-sm z-0"
+                  >
+                    <div
+                      class="absolute p-2 rounded-tl-xl rounded-br-sm bg-bluemedium/80 bottom-0 right-0 text-white text-sm md:text-base"
+                    >
+                      15h 8m
+                    </div>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="w-full flex flex-col justify-between">
+                    <!-- Top part -->
+                    <div>
+                      <!-- Tag -->
+                      <p
+                        class="text-xs md:text-sm text-inactive/70 tracking-wide"
+                      >
+                        NURSING
+                      </p>
+                      <!-- Title -->
+                      <div class="flex flex-row justify-between items-start">
+                        <p
+                          class="font-bold text-sm max-w-[150px] mt-1 md:text-lg md:max-w-sm"
+                        >
+                          The Life and Times of Valentino Rossi
+                        </p>
+                        <p class="font-bold text-xs mt-1 md:text-base">FREE</p>
+                      </div>
+                      <p
+                        class="hidden md:block md:text-sm text-inactive md:max-w-md lg:max-w-xl md:mt-1"
+                      >
+                        This is where we give users insight as to what the
+                        course itself is about. It may not be the most detailed
+                        thing but a blurb
+                      </p>
+                    </div>
+                    <!-- Lower part -->
+                    <div>
+                      <!-- Teacher -->
+                      <div
+                        class="flex flex-row items-center gap-2 mt-3 max-w-full"
+                      >
+                        <p class="text-sm text-inactive/70">
+                          Prof. Hauwa Suleiman
+                        </p>
+                        <div class="hidden md:block text-inactive/70">
+                          &#x2022;
+                        </div>
+                        <p class="hidden md:block text-sm text-inactive/70">
+                          Jan 2020
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div
+                        class="flex flex-col md:flex-row md:items-center md:gap-2"
+                      >
+                        <div class="flex flex-row mt-2 md:mt-0">
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star_gray.svg" alt="star" />
+                        </div>
+                        <div class="hidden md:block text-inactive/70">
+                          &#x2022;
+                        </div>
+                        <p class="hidden md:block text-sm text-inactive/70">
+                          78,000 enrolled
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second section -->
+                <div
+                  class="flex flex-row gap-3 md:gap-5 py-6 md:py-10 border-b border-b-[##f1f1f1]"
+                >
+                  <!-- Image section -->
+                  <div
+                    class="relative bg-[url('/images/image2.svg')] w-24 h-30 md:w-40 md:h-40 bg-center rounded-sm z-0"
+                  >
+                    <div
+                      class="absolute p-2 rounded-tl-xl rounded-br-sm bg-bluemedium/80 bottom-0 right-0 text-white text-sm md:text-base"
+                    >
+                      8h 18m
+                    </div>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="w-full flex flex-col justify-between">
+                    <!-- Top part -->
+                    <div>
+                      <!-- Tag -->
+                      <p
+                        class="text-xs md:text-sm text-inactive/70 tracking-wide"
+                      >
+                        LIFESTYLE
+                      </p>
+                      <!-- Title -->
+                      <div class="flex flex-row justify-between items-start">
+                        <p
+                          class="font-medium text-sm max-w-[150px] mt-1 md:text-lg md:max-w-sm"
+                        >
+                          Exploring a Conscious Bias
+                        </p>
+                        <p class="font-bold text-xs mt-1 md:text-base">
+                          N40,000
+                        </p>
+                      </div>
+                      <p
+                        class="hidden md:block md:text-sm text-inactive md:max-w-md lg:max-w-xl md:mt-1"
+                      >
+                        This is where we give users insight as to what the
+                        course itself is about. It may not be the most detailed
+                        thing but a blurb
+                      </p>
+                    </div>
+                    <!-- Lower part -->
+                    <div>
+                      <!-- Teacher -->
+                      <div
+                        class="flex flex-row items-center gap-2 mt-3 max-w-full"
+                      >
+                        <p class="text-sm text-inactive/70">
+                          Dr. Hauwa Suleiman
+                        </p>
+                        <div class="hidden md:block text-inactive/70">
+                          &#x2022;
+                        </div>
+                        <p class="hidden md:block text-sm text-inactive/70">
+                          Jan 2020
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div
+                        class="flex flex-col md:flex-row md:items-center md:gap-2"
+                      >
+                        <div class="flex flex-row mt-2 md:mt-0">
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star_gray.svg" alt="star" />
+                        </div>
+                        <div class="hidden md:block text-inactive/70">
+                          &#x2022;
+                        </div>
+                        <p class="hidden md:block text-sm text-inactive/70">
+                          900 enrolled
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Third section -->
+                <div
+                  class="flex flex-row gap-3 md:gap-5 py-6 md:py-10 border-b border-b-[##f1f1f1]"
+                >
+                  <!-- Image section -->
+                  <div
+                    class="relative bg-[url('/images/image2.svg')] w-24 h-30 md:w-40 md:h-40 bg-center rounded-sm z-0"
+                  >
+                    <div
+                      class="absolute p-2 rounded-tl-xl rounded-br-sm bg-bluemedium/80 bottom-0 right-0 text-white text-sm md:text-base"
+                    >
+                      8h 18m
+                    </div>
+                  </div>
+
+                  <!-- Text -->
+                  <div class="w-full flex flex-col justify-between">
+                    <!-- Top part -->
+                    <div>
+                      <!-- Tag -->
+                      <p
+                        class="text-xs md:text-sm text-inactive/70 tracking-wide"
+                      >
+                        NURSING
+                      </p>
+                      <!-- Title -->
+                      <div class="flex flex-row justify-between items-start">
+                        <p
+                          class="font-medium text-sm max-w-[150px] mt-1 md:text-lg md:max-w-sm"
+                        >
+                          How To Become a Certified Nursing Assistant (CNA)
+                        </p>
+                        <p class="font-bold text-xs mt-1 md:text-base">
+                          N40,000
+                        </p>
+                      </div>
+                      <p
+                        class="hidden md:block md:text-sm text-inactive md:max-w-md lg:max-w-xl md:mt-1"
+                      >
+                        This is where we give users insight as to what the
+                        course itself is about. It may not be the most detailed
+                        thing but a blurb
+                      </p>
+                    </div>
+                    <!-- Lower part -->
+                    <div>
+                      <!-- Teacher -->
+                      <div
+                        class="flex flex-row items-center gap-2 mt-3 max-w-full"
+                      >
+                        <p class="text-sm text-inactive/70">
+                          Dr. Hauwa Suleiman
+                        </p>
+                        <div class="hidden md:block text-inactive/70">
+                          &#x2022;
+                        </div>
+                        <p class="hidden md:block text-sm text-inactive/70">
+                          Jan 2020
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div
+                        class="flex flex-col md:flex-row md:items-center md:gap-2"
+                      >
+                        <div class="flex flex-row mt-2 md:mt-0">
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star.svg" alt="star" />
+                          <img src="/images/Star_gray.svg" alt="star" />
+                        </div>
+                        <div class="hidden md:block text-inactive/70">
+                          &#x2022;
+                        </div>
+                        <p class="hidden md:block text-sm text-inactive/70">
+                          900 enrolled
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
