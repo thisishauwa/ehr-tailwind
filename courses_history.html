@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA] z-10"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1 ml-6"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- profile -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <!--Icon -->
+            <img
+              src="/images/dashboard-icons/profile-icon-white.svg"
+              alt="profile icon"
+              class="w-[25px] lg:block"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Profile
+            </p>
+          </div>
+          <!-- sms -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/sms.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Messages
+            </p>
+          </div>
+          <!-- jobs -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+          </div>
+          <!-- courses -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <img
+              src="/images/vuesax/linear/bookwhite.svg"
+              alt="profile icon"
+              class="hidden lg:block w-[25px]"
+            />
+            <img
+              src="images/vuesax/linear/bookblue.svg"
+              alt="profile icon"
+              class="w-[25px] lg:hidden"
+            />
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              Courses
+            </p>
+          </div>
+          <!-- contacts -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/people.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Contacts
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14 mb-32 md:mb-36 lg:mb-12">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
+            <p
+              class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
+            >
+              Today is a good day to learn something new
+            </p>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt-12 lg:mt-16">
+          <!-- second nav items -->
+          <div class="flex flex-row justify-between md:justify-start md:gap-14">
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">All</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">In progress</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Saved</a>
+              </p>
+            </div>
+            <div>
+              <p class="text-sm md:text-base underline underline-offset-8">
+                <a href="#">History</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- content container-->
+          <section class="mt-10 md:mt-12">
+            <div class="p-3 md:p-5 border border-[#f1f1f1] rounded-md">
+              <!-- course card -->
+              <div class="flex flex-row gap-3 md:gap-5">
+                <!-- Image section -->
+                <div
+                  class="relative bg-[url('/images/image1.svg')] w-24 h-30 md:w-40 md:h-40 bg-right-top rounded-sm z-0"
+                >
+                  <div
+                    class="absolute p-2 rounded-tl-xl rounded-br-sm bg-bluemedium/80 bottom-0 right-0 text-white text-xs md:text-base"
+                  >
+                    15h 8m
+                  </div>
+                </div>
+
+                <!-- Text -->
+                <div class="w-full flex flex-col justify-between">
+                  <!-- Top part -->
+                  <div>
+                    <!-- Tag -->
+                    <p
+                      class="text-xs md:text-sm text-inactive/70 tracking-wide"
+                    >
+                      NURSING
+                    </p>
+                    <!-- Title -->
+                    <div>
+                      <a
+                        href="#"
+                        class="font-bold text-sm mt-1 md:text-lg md:max-w-sm hover:underline"
+                      >
+                        The Life and Times of Valentino Rossi
+                      </a>
+                    </div>
+                    <!-- Teacher -->
+                    <div
+                      class="flex flex-row items-center gap-2 mt-3 max-w-full"
+                    >
+                      <p class="text-sm text-inactive/70">
+                        Prof. Hauwa Suleiman
+                      </p>
+                      <div class="text-inactive/70">&#x2022;</div>
+                      <p class="text-sm text-inactive/70">Jan 2020</p>
+                    </div>
+                  </div>
+                  <!-- Lower part -->
+                  <div>
+                    <!-- progress bar -->
+                    <div
+                      class="flex flex-row items-center justify-between mt-5"
+                    >
+                      <div class="flex flex-row gap-2">
+                        <p class="text-bluemedium text-sm md:text-base">
+                          Completed
+                        </p>
+                        <img src="/images/bluetick.svg" alt="blue tick" />
+                      </div>
+                      <button class="text-bluemedium text-sm md:text-base">
+                        View certificate
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
