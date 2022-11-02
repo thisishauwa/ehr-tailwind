@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full z-10 px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- profile -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <!-- Mobile icon -->
+            <img
+              src="/images/dashboard-icons/vuesax/linear/profile.svg"
+              alt="profile icon"
+              class="w-[25px] lg:hidden"
+            />
+
+            <!-- web icon -->
+            <img
+              src="/images/dashboard-icons/profile-icon-white.svg"
+              alt="profile icon"
+              class="hidden w-[25px] lg:block"
+            />
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              Profile
+            </p>
+          </div>
+          <!-- sms -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/sms.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Messages
+            </p>
+          </div>
+          <!-- jobs -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+          </div>
+          <!-- courses -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 md:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/book.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Courses
+            </p>
+          </div>
+          <!-- contacts -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <img
+              src="/images/dashboard-icons/vuesax/linear/people.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Contacts
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
+            <p
+              class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
+            >
+              Here's what's going on with your account today
+            </p>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt-12 lg:mt-16">
+          <!-- nav items -->
+          <div class="flex flex-row justify-between md:justify-start md:gap-14">
+            <div>
+              <p class="text-sm md:text-base underline underline-offset-8">
+                <a href="#">Overview</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Profile</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Resume</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Preferences</a>
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+              >
+                <a href="#">Culture</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- content container-->
+          <section class="mt-10 md:w-5/6">
+            <!-- Blue box -->
+            <div class="px-5 py-5 bg-bluemedium rounded-md text-white">
+              <!-- Content inside box -->
+              <div class="flex flex-col md:flex-row md:justify-between">
+                <!-- Text and icon -->
+                <div class="flex flex-row gap-4 items-start">
+                  <img
+                    src="/images/vuesax/linear/video-vertical.svg"
+                    alt="video icon"
+                  />
+                  <div class="md:max-w-xl">
+                    <h3>Recorded video</h3>
+                    <p class="text-white/80 font-light">
+                      Your recorded video is live, and employers can see it. You
+                      can always view, or re-record the video.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="primary-button h-16 md:h-20 bg-white text-black hover:bg-white/90 hover:text-black mt-6"
+                >
+                  View video
+                </button>
+              </div>
+            </div>
+
+            <!-- White content box -->
+            <div
+              class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-10 mb-32 lg:mb-20 lg:px-10 lg:py-10"
+            >
+              <!-- Header -->
+              <div
+                class="flex flex-col gap-10 lg:flex-row lg:justify-between lg:items-center"
+              >
+                <!-- Right side of header -->
+                <div
+                  class="flex flex-col gap-4 md:items-center md:flex-row md:gap-5"
+                >
+                  <div
+                    class="flex items-center justify-center w-14 h-14 bg-[#E8E8E8] rounded-full md:w-20 md:h-20"
+                  >
+                    <p class="text-md text-[#A0A0A0] lg:text-xl">HS</p>
+                  </div>
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-black md:text-xl lg:text-3xl"
+                    >
+                      Hauwa Suleiman
+                    </h3>
+                    <div
+                      class="flex flex-row gap-2 text-sm lg:text-base mt-1 md:mt-2"
+                    >
+                      <p class="text-inactive/80">Medical Doctor</p>
+                      <div class="text-inactive/80">&#x2022;</div>
+                      <p class="text-inactive/80">Neurology</p>
+                      <div class="text-inactive/80">&#x2022;</div>
+                      <p class="text-inactive/80">0818 280 2454</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Left header -->
+                <div class="flex flex-row gap-7">
+                  <button class="text-bluemedium hover:text-bluemedium/70">
+                    View resume
+                  </button>
+                  <button class="text-bluemedium hover:text-bluemedium/70">
+                    View cover letter
+                  </button>
+                </div>
+              </div>
+
+              <!-- About me text -->
+              <p class="mt-10 md:mt-16 md:w-3/4 lg:w-4/5">
+                “Join the first community that cares about connecting healthcare
+                professionals to suitable jobs and opportunities. Join the first
+                community that cares about connecting healthcare professionals
+                to suitable jobs and opportunities. Join the first community
+                that cares”
+              </p>
+
+              <!-- Experience -->
+              <div>
+                <p class="text-bluemedium mt-10 md:mt-16">Experience</p>
+
+                <!-- Tab 1-->
+                <div class="flex flex-row gap-5 items-center mt-5">
+                  <img
+                    src="/images/workplaceholder.png"
+                    alt=""
+                    class="w-16 h-16"
+                  />
+                  <div>
+                    <p>Product Designer</p>
+                    <p class="text-inactive/80 text-sm mt-1">EHA Clinics</p>
+
+                    <!-- Bottom -->
+                    <div class="flex flex-row gap-2 items-center mt-1">
+                      <p class="text-inactive/80 text-sm">
+                        May 2021 to present
+                      </p>
+                      <div class="text-inactive/80 text-sm hidden md:block">
+                        &#x2022;
+                      </div>
+                      <p class="text-inactive/80 text-sm hidden md:block">
+                        2 years 5 months
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tab 2-->
+                <div class="flex flex-row gap-5 items-center mt-8">
+                  <img
+                    src="/images/workplaceholder.png"
+                    alt=""
+                    class="w-16 h-16"
+                  />
+                  <div>
+                    <p>UI/UX Designer</p>
+                    <p class="text-inactive/80 text-sm mt-1">Metaverse Tech</p>
+
+                    <!-- Bottom -->
+                    <div class="flex flex-row gap-2 items-center mt-1">
+                      <p class="text-inactive/80 text-sm">
+                        Mar 2020 to May 2021
+                      </p>
+                      <div class="hidden md:block text-inactive/80 text-sm">
+                        &#x2022;
+                      </div>
+                      <p class="hidden md:block text-inactive/80 text-sm">
+                        1 years 8 months
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div>
+                <p class="text-bluemedium mt-10 md:mt-16">Education</p>
+
+                <div class="flex flex-col gap-5 lg:flex-row lg:gap-14 mt-5">
+                  <!-- Tab 1 -->
+                  <div>
+                    <p>MSc. Computer Engineering</p>
+
+                    <!-- Bottom -->
+                    <div class="flex flex-row gap-2 items-center mt-1">
+                      <p class="text-inactive/80 text-sm">
+                        Nile University of Nigeria
+                      </p>
+                      <div class="text-inactive/80 text-sm">&#x2022;</div>
+                      <p class="text-inactive/80 text-sm">2023</p>
+                    </div>
+                  </div>
+
+                  <!-- Tab 2 -->
+                  <div>
+                    <p>BSc. Computer Engineering</p>
+
+                    <!-- Bottom -->
+                    <div class="flex flex-row gap-2 items-center mt-1">
+                      <p class="text-inactive/80 text-sm">
+                        Ahmadu Bello University
+                      </p>
+                      <div class="text-inactive/80 text-sm">&#x2022;</div>
+                      <p class="text-inactive/80 text-sm">2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Licenses -->
+              <div>
+                <p class="text-bluemedium mt-10 md:mt-16">Licenses</p>
+                <button
+                  class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md"
+                >
+                  Medical License
+                </button>
+              </div>
+
+              <!-- Next opportunities -->
+              <h3
+                class="mt-10 text-black text-md font-bold md:mt-16 md:text-lg"
+              >
+                Next Opportunities
+              </h3>
+
+              <!-- Desired work -->
+              <div>
+                <p class="text-inactive mt-8 md:mt-10">Desired work</p>
+                <p
+                  class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md max-w-max"
+                >
+                  Full time employment
+                </p>
+              </div>
+
+              <!-- Desired salary -->
+              <div>
+                <p class="text-inactive mt-8 md:mt-10">Desired salary</p>
+                <p
+                  class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md max-w-max"
+                >
+                  NGN 345, 000
+                </p>
+              </div>
+
+              <!-- Desired work environment -->
+              <div>
+                <p class="text-inactive mt-8 md:mt-10">
+                  Desired work environment
+                </p>
+                <p
+                  class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md text-start max-w-max"
+                >
+                  Environments with clear roles and responsibilities
+                </p>
+              </div>
+
+              <!-- I want -->
+              <div>
+                <p class="text-inactive mt-8 md:mt-10">I want</p>
+                <div class="flex flex-col md:flex-row md:gap-5">
+                  <p
+                    class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md text-start max-w-max"
+                  >
+                    Mentorship opportunities
+                  </p>
+                  <p
+                    class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md text-start max-w-max"
+                  >
+                    Leadership opportunities
+                  </p>
+                  <p
+                    class="px-5 py-3 mt-3 bg-[#E0EBFF] text-bluestrong rounded-md text-start max-w-max"
+                  >
+                    Autonomy and flexibility
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
