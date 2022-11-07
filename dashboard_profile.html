@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
 
     <link
@@ -17,7 +21,7 @@
     <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
       <!-- Navigation bar -->
       <nav
-        class="fixed bottom-0 w-full z-10 px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
       >
         <!-- nav elements -->
         <img
@@ -31,18 +35,11 @@
             class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
           >
             <!-- Mobile icon -->
-            <img
-              src="/images/dashboard-icons/vuesax/linear/profile.svg"
-              alt="profile icon"
-              class="w-[25px] lg:hidden"
-            />
+            <i class="fi fi-rr-user text-lg text-bluemedium lg:hidden"></i>
 
             <!-- web icon -->
-            <img
-              src="/images/dashboard-icons/profile-icon-white.svg"
-              alt="profile icon"
-              class="hidden w-[25px] lg:block"
-            />
+
+            <i class="fi fi-rr-user text-xl text-white hidden lg:block"></i>
             <p
               class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
             >
@@ -53,11 +50,9 @@
           <div
             class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
           >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/sms.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
+            <i
+              class="fi fi-rr-comment-alt-middle text-lg lg:text-xl text-inactive"
+            ></i>
             <p class="text-inactive font-normal text-xs md:text-base">
               Messages
             </p>
@@ -66,22 +61,14 @@
           <div
             class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
           >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
+            <i class="fi fi-rr-briefcase text-lg lg:text-xl text-inactive"></i>
             <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
           </div>
           <!-- courses -->
           <div
             class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 md:px-4 rounded-md"
           >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/book.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
+            <i class="fi fi-rr-books text-lg lg:text-xl text-inactive"></i>
             <p class="text-inactive font-normal text-xs md:text-base">
               Courses
             </p>
@@ -90,11 +77,7 @@
           <div
             class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
           >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/people.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
+            <i class="fi fi-rr-users-alt text-lg lg:text-xl text-inactive"></i>
             <p class="text-inactive font-normal text-xs md:text-base">
               Contacts
             </p>

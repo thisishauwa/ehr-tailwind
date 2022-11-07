@@ -1116,6 +1116,10 @@ p {
   width: 9rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .min-w-\[350px\] {
   min-width: 350px;
 }
@@ -2777,6 +2781,18 @@ textarea {
 
   .lg\:gap-32 {
     gap: 8rem;
+  }
+
+  .lg\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:gap-x-20 {
