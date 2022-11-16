@@ -13,9 +13,7 @@ select {
 }
 
 [multiple],
-[type="date"],
 [type="datetime-local"],
-[type="email"],
 [type="month"],
 [type="tel"],
 [type="time"],

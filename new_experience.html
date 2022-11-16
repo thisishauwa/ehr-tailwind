@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
     <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -17,7 +13,90 @@
     <title>Dashboard overview</title>
   </head>
   <body>
-    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+    <!-- Blurred background -->
+    <div
+      class="w-screen h-screen absolute top-0 left-0 z-10 flex flex-col justify-center items-center backdrop-blur-md bg-black/10 px-6"
+    >
+      <!-- White form -->
+      <div
+        class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[550px] lg:max-w-[600px]"
+      >
+        <!-- Form components -->
+        <div class="mt-5 md:mt-7">
+          <div class="flex flex-col gap-5 mt-8">
+            <div>
+              <p>Company</p>
+              <input
+                type="text"
+                placeholder="Ex. Grace Hospiteal"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <div>
+              <p>Job title</p>
+              <input
+                type="text"
+                placeholder="Ex: “RN, Pediatric Oncology” , “CT Technologist”"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <div>
+              <p>Unit</p>
+              <input
+                type="text"
+                placeholder="Ex: PICU, Neonatal, Oncology, etc."
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <div>
+              <p>Start date</p>
+              <input
+                type="date"
+                placeholder="Ex: PICU, Neonatal, Oncology, etc."
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <div>
+              <p>End date</p>
+              <input
+                type="date"
+                placeholder="Ex: PICU, Neonatal, Oncology, etc."
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <div class="flex flex-row items-center gap-3 mt-2">
+              <input
+                type="checkbox"
+                name=""
+                id="flexCheckDefault"
+                class="form-check-input h-4 w-4"
+              />
+              <label
+                class="form-check-input text-inactive checked:text-black"
+                for="flexCheckDefault"
+                >I currently work here</label
+              >
+            </div>
+            <div class="mt-5">
+              <p>Description of duties</p>
+              <input
+                type="text"
+                placeholder="Ex: “RN, Pediatric Oncology” , “CT Technologist”"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <!-- Buttons -->
+            <div class="flex flex-row gap-4 mt-5">
+              <button class="secondary-button w-1/3">Back</button>
+              <button class="primary-button w-2/3">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background -->
+    <div class="flex flex-row relative max-w-[2000px] mx-auto px-6 lg:px-0">
       <!-- Navigation bar -->
       <nav
         class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
@@ -31,52 +110,73 @@
         <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
           <!-- profile -->
           <div
-            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-3 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
           >
             <!-- Mobile icon -->
-            <i class="fi fi-rr-user text-lg text-bluemedium lg:hidden"></i>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/profile.svg"
+              alt="profile icon"
+              class="w-[25px] lg:hidden"
+            />
 
             <!-- web icon -->
-
-            <i class="fi fi-rr-user text-xl text-white hidden lg:block"></i>
+            <img
+              src="/images/dashboard-icons/profile-icon-white.svg"
+              alt="profile icon"
+              class="hidden w-[25px] lg:block"
+            />
             <p
-              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+              class="text-bluestrong lg:text-white font-medium text-xs md:text-base"
             >
               Profile
             </p>
           </div>
           <!-- sms -->
           <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
           >
-            <i
-              class="fi fi-rr-comment-alt-middle text-lg lg:text-xl text-inactive"
-            ></i>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/sms.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
             <p class="text-inactive font-normal text-xs md:text-base">
               Messages
             </p>
           </div>
           <!-- jobs -->
           <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
           >
-            <i class="fi fi-rr-briefcase text-lg lg:text-xl text-inactive"></i>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
             <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
           </div>
           <!-- courses -->
           <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 md:px-4 rounded-md"
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 md:px-4 rounded-md"
           >
-            <i class="fi fi-rr-books text-lg lg:text-xl text-inactive"></i>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/book.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
             <p class="text-inactive font-normal text-xs md:text-base">
               Courses
             </p>
           </div>
           <!-- contacts -->
           <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
           >
-            <i class="fi fi-rr-users-alt text-lg lg:text-xl text-inactive"></i>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/people.svg"
+              alt="profile icon"
+              class="w-[25px]"
+            />
             <p class="text-inactive font-normal text-xs md:text-base">
               Contacts
             </p>
@@ -99,7 +199,7 @@
             </p>
           </div>
           <!-- Right header content -->
-          <div class="flex flex-row justify-center items-center gap-8">
+          <div class="flex flex-row justify-center items-center gap-3">
             <div class="hidden md:block">
               <div class="relative md:w-[200px] lg:w-80">
                 <img
@@ -114,18 +214,15 @@
                 />
               </div>
             </div>
-            <div class="flex flex-row gap-3">
-              <button
-                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
-              >
-                HS
-              </button>
-              <img
-                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
-                alt=""
-                class="w-5"
-              />
+            <div class="relative">
+              <a href="#" class="absolute top-3 left-3.5 text-inactive">HS</a>
+              <button class="h-12 w-12 bg-inactive/30 rounded-full"></button>
             </div>
+            <img
+              src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+              alt=""
+              class="w-5"
+            />
           </div>
         </div>
 
