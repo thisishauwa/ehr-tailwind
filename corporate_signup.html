@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <!-- Blue block & Form -->
+    <div
+      class="flex flex-row max-w-[2000px] gap-x-10 lg:gap-x-20 mx-auto px-7 lg:pr-20"
+    >
+      <!-- Blue block -->
+      <section
+        class="hidden md:flex-row bg-[#F0F4FF] items-center justify-center lg:w-3/5 lg:-ml-7 lg:sticky lg:top-0 lg:left-0 lg:flex lg:h-screen"
+      >
+        <!-- div in block -->
+        <div class="flex flex-col rounded-md w-[550px] bg-white">
+          <div
+            class="flex flex-row items-center gap-2 bg-bluemedium rounded-tr-md rounded-tl-md px-5 py-3 w-full"
+          >
+            <img
+              src="/images/vuesax/linear/eye.png"
+              alt=""
+              class="h-5 w-auto"
+            />
+            <p class="text-white">Preview your page</p>
+          </div>
+
+          <!-- Image -->
+          <div>
+            <img src="/images/manflying.png" alt="" />
+          </div>
+
+          <!-- Profile icon -->
+          <div>
+            <div
+              class="flex items-center justify-center w-20 h-20 bg-white rounded-md mx-8 -mt-10"
+            >
+              <img
+                src="/images/workplaceholder.png"
+                alt=""
+                class="w-16 h-auto"
+              />
+            </div>
+          </div>
+
+          <!-- Company -->
+          <div class="mt-4 px-8">
+            <h2 class="text-2xl">Company name</h2>
+            <p class="text-sm text-inactive/80 mt-2">Industry</p>
+
+            <!-- Website and email -->
+            <div class="flex flex-row gap-6 mt-10">
+              <div class="flex flex-col">
+                <p class="text-inactive/80 text-sm">WEBSITE</p>
+                <p
+                  class="underline underline-offset-3 mt-1 hover:text-bluestrong"
+                >
+                  <a href="#">www.yourwebsite.com</a>
+                </p>
+              </div>
+
+              <div class="flex flex-col">
+                <p class="text-inactive/80 text-sm">EMAIL</p>
+                <p
+                  class="underline underline-offset-3 mt-1 hover:text-bluestrong"
+                >
+                  <a href="#">hello@yourcompany.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- text -->
+            <div class="mt-7">
+              <p>
+                Briefly describe what your organization does. This can always be
+                changed later Briefly describe what your organization does. This
+                can always be changed later Briefly describe what your
+                organization does. This can always be changed later
+              </p>
+            </div>
+
+            <!-- Location -->
+            <div class="flex flex-row items-center gap-1 mt-7 mb-10">
+              <img
+                src="/images/vuesax/linear/location.png"
+                alt=""
+                class="h-4"
+              />
+              <p class="text-sm text-inactive/80">
+                Number 12, Asba and Dantata Street, Jabi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section class="w-full lg:w-2/5">
+        <button class="flex flex-row gap-1 items-center pt-12">
+          <img src="/images/vuesax/linear/arrow-left.svg" alt="" />
+          <p>Back</p>
+        </button>
+
+        <h1 class="mt-7 font-bold text-2xl lg:text-3xl">
+          You're almost there!
+        </h1>
+
+        <p class="text-sm text-inactive/80 mt-3">* indicates required fields</p>
+
+        <!-- Form components -->
+        <div class="mt-12">
+          <div class="flex flex-col mt-5">
+            <h3>Company name <span class="text-red-600">*</span></h3>
+            <input
+              type="text"
+              class="pl-4 py-5 bg-[#F3F3F3] rounded-md mt-2"
+              placeholder="Please enter your company's name"
+            />
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>Ehr account URL <span class="text-red-600">*</span></h3>
+            <input
+              type="text"
+              class="pl-4 py-5 bg-[#F3F3F3] rounded-md mt-2"
+              placeholder="ehr.com/company/"
+            />
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>Company website</h3>
+            <input
+              type="text"
+              class="pl-4 py-5 bg-[#F3F3F3] rounded-md mt-2"
+              placeholder="www.yourcompany.com"
+            />
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>About company <span class="text-red-600">*</span></h3>
+            <textarea
+              type="text"
+              placeholder="Max. 50 characters"
+              class="flex flex-row text-black items-start border-none justify-start bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-2 h-28 resize-none"
+            ></textarea>
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>Industry <span class="text-red-600">*</span></h3>
+            <input
+              type="text"
+              class="pl-4 py-5 bg-[#F3F3F3] rounded-md mt-2"
+              placeholder="Ex. Healthcare"
+            />
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>Company size <span class="text-red-600">*</span></h3>
+            <select
+              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+            >
+              <option value="0">Select company size</option>
+              <option value="1">1 - 10 employees</option>
+              <option value="2">11 - 20 employees</option>
+              <option value="3">21 - 50 employees</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>Company type <span class="text-red-600">*</span></h3>
+            <select
+              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-2"
+            >
+              <option value="0">Select company type</option>
+              <option value="1">NGO</option>
+              <option value="2">Government</option>
+              <option value="3">Privately owned</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col mt-5">
+            <h3>Logo</h3>
+            <!-- Upload Box -->
+            <div
+              class="w-full border border-black border-dashed rounded-md bg-inactive/3 px-10 py-10 mt-2"
+            >
+              <div class="flex flex-row gap-2 items-center justify-center">
+                <img
+                  src="/images/vuesax/linear/exports.svg"
+                  alt="export icon"
+                />
+                <p>Upload logo</p>
+              </div>
+            </div>
+            <p class="mt-2 text-inactive/80 text-sm">
+              Specify supported file types
+            </p>
+          </div>
+
+          <div class="flex flex-row items-center gap-3 mt-10">
+            <input
+              type="checkbox"
+              name=""
+              id="flexCheckDefault"
+              class="form-check-input h-4 w-4"
+            />
+            <label
+              class="form-check-input text-inactive checked:text-black text-[12px] md:text-[14px]"
+              for="flexCheckDefault"
+              >I verify that I am an authorized representative of this company
+              and have the right to act on its behalf in the creation and
+              management of this account. The company and I agree to the
+              <span
+                class="inline-block text-black underline underline-offset-2 hover:text-bluestrong"
+                ><a href="#"> additional terms</a></span
+              >
+              for EHR.</label
+            >
+          </div>
+
+          <div class="flex flex-col mt-10 items-center space-y-4 mb-9">
+            <button class="primary-button w-full">Complete sign up</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
