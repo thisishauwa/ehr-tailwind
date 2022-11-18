@@ -236,23 +236,29 @@
                       >
                         HS
                       </div>
+
                       <!-- Button -->
-                      <div>
-                        <label for="inputTag">
-                          Upload an image
-                          <input id="inputTag" type="file" class="" />
-                        </label>
+                      <div class="group">
+                        <div
+                          class="text-black group-hover:text-bluemedium flex flex-row gap-2"
+                        >
+                          <i class="fi fi-rr-upload"></i>
+                          <div class="text-sm text-gray-600">
+                            <label
+                              for="file-upload"
+                              class="relative cursor-pointer rounded-md bg-white text-black focus-within:outline-none focus-within:ring-2 focus-within:ring-bluemedium focus-within:ring-offset-2 group-hover:text-bluemedium"
+                            >
+                              <span>Upload a photo</span>
+                              <input
+                                id="file-upload"
+                                name="file-upload"
+                                type="file"
+                                class="sr-only"
+                              />
+                            </label>
+                          </div>
+                        </div>
                       </div>
-                      <!-- <button
-                        class="flex flex-row gap-2 px-3 py-3 h-fit border border-black rounded-md hover:bg-black/5 md:px-4 md:py-5 text-sm md:text-base"
-                      >
-                        <img
-                          src="/images/vuesax/linear/export.svg"
-                          alt=""
-                          class="w-5 h-5"
-                        />
-                        <p>Upload new photo</p>
-                      </button> -->
                     </div>
                   </div>
                   <!-- Form body -->
