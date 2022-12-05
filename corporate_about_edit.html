@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Corporate about</title>
+  </head>
+  <body>
+    <!-- Blurred background -->
+    <div
+      class="w-screen h-screen fixed top-0 left-0 z-20 flex flex-col justify-center items-center backdrop-blur-md bg-black/10 px-6"
+    >
+      <!-- White form -->
+      <div
+        class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[550px]"
+      >
+        <!-- Form components -->
+        <div>
+          <div class="flex flex-col gap-5">
+            <div>
+              <p>Company bio</p>
+              <textarea
+                id="about"
+                name="about"
+                rows="3"
+                class="mt-2 px-4 py-4 border-none bg-[#F3F3F3] rounded-md w-full shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                placeholder="Max. 50 characters"
+              ></textarea>
+            </div>
+            <div>
+              <p>Website</p>
+              <input
+                type="text"
+                placeholder="www.yourwebsite.com"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <div>
+              <p>Company size</p>
+              <select
+                class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+              >
+                <option value="0">Select company size</option>
+                <option value="1">1 - 10 employees</option>
+                <option value="2">11 - 20 employees</option>
+                <option value="3">21 - 50 employees</option>
+              </select>
+            </div>
+
+            <div>
+              <p>Company type</p>
+              <select
+                class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+              >
+                <option value="0">Select company size</option>
+                <option value="1">1 - 10 employees</option>
+                <option value="2">11 - 20 employees</option>
+                <option value="3">21 - 50 employees</option>
+              </select>
+            </div>
+
+            <div>
+              <p>Company location</p>
+              <select
+                class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+              >
+                <option value="0">Select company size</option>
+                <option value="1">1 - 10 employees</option>
+                <option value="2">11 - 20 employees</option>
+                <option value="3">21 - 50 employees</option>
+              </select>
+            </div>
+            <div class="flex flex-row gap-4 mt-5">
+              <button class="secondary-button w-1/3">Back</button>
+              <button class="primary-button w-2/3">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+    <section class="max-w-[2000px] mx-auto">
+      <!-- IMage -->
+      <div
+        class="bg-[url('/images/otc.png')] bg-no-repeat bg-cover bg-center w-full h-44 md:h-56 lg:h-80"
+      >
+        <!-- Gradient -->
+        <div
+          class="flex items-center justify-center bg-gradient-to-b from-transparent to-black/90 h-full w-full"
+        >
+          <div></div>
+        </div>
+        <!-- content -->
+        <div class="flex flex-col px-6 md:px-28 lg:px-64">
+          <!-- header -->
+          <div
+            class="flex flex-col md:flex-row gap-2 md:gap-5 -mt-10 md:-mt-20 lg:-mt-24 lg:gap-10"
+          >
+            <!-- right -->
+            <div class="bg-white p-1 md:p-2 rounded-md max-w-fit">
+              <div
+                class="bg-[url('/images/complogo.png')] bg-no-repeat bg-cover bg-center w-16 h-16 md:w-24 md:h-24 lg:w-36 lg:h-36 rounded-md"
+              ></div>
+            </div>
+
+            <!-- left -->
+            <div>
+              <h3
+                class="text-black md:text-white font-medium md:text-xl lg:text-3xl"
+              >
+                Abdulkareem Suleiman Memorial Hospital
+              </h3>
+              <div class="flex flex-col md:flex-row gap-1 mt-1 md:mt-2">
+                <p
+                  class="text-inactive/80 md:text-white/70 text-sm md:text-base"
+                >
+                  Hospital/Clinc
+                </p>
+                <div
+                  class="hidden md:block text-inactive/80 md:text-white/70 text-sm md:text-base"
+                >
+                  &#x2022;
+                </div>
+                <p
+                  class="text-inactive/80 md:text-white/70 text-sm md:text-base"
+                >
+                  Number 12, Asba and Dantata
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nav bar -->
+          <div
+            class="flex flex-col-reverse md:flex-row items-center border-b border-b-[#ECECEC] -mx-6 md:-mx-28 lg:-mx-64 px-6 md:px-28 lg:px-64 pt-5 pb-2 mt-3"
+          >
+            <!-- Nav items -->
+            <div
+              class="flex flex-row w-full justify-between md:justify-start md:gap-10"
+            >
+              <a href="#"><p class="text-inactive/80">Overview</p></a>
+              <a href="#"
+                ><p
+                  class="underline underline-offset-[14px] md:underline-offset-[20px] text-bluemedium"
+                >
+                  About
+                </p></a
+              >
+              <a href="#"><p class="text-inactive/80">Jobs</p></a>
+              <a href="#"><p class="text-inactive/80">Candidates</p></a>
+            </div>
+
+            <!-- Search bar -->
+            <div class="hidden md:block relative md:w-64 -mt-7">
+              <img
+                src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                alt=""
+                class="absolute w-6 h-6 top-5 left-4"
+              />
+              <input
+                type="text"
+                class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                placeholder="Search profile"
+              />
+            </div>
+          </div>
+
+          <!-- Search mobile -->
+          <div class="flex justify-end md:hidden relative mt-10 w-full">
+            <img
+              src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+              alt=""
+              class="absolute w-6 h-6 top-5 left-4"
+            />
+            <input
+              type="text"
+              class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+              placeholder="Search profile"
+            />
+          </div>
+
+          <!-- Blue button -->
+          <div class="px-5 py-5 bg-bluemedium rounded-md text-white mt-10">
+            <!-- Content inside box -->
+            <div class="flex flex-col md:flex-row md:justify-between">
+              <!-- Text and icon -->
+              <div class="flex flex-row gap-4 items-start">
+                <img
+                  src="/images/vuesax/linear/video-vertical.svg"
+                  alt="video icon"
+                  class="hidden md:block"
+                />
+                <div class="md:max-w-xl">
+                  <h3>Record video</h3>
+                  <p class="text-white/80 font-light">
+                    We need your company representative to record a 10 minute
+                    video, answering a few questions. This is to ensure that you
+                    are matched with the best possible option. Please note that
+                    your company profile will not be visible without it.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="primary-button h-16 md:h-20 bg-white text-black hover:bg-white/90 hover:text-black mt-6"
+              >
+                Record video
+              </button>
+            </div>
+          </div>
+
+          <!-- edit button -->
+          <div class="flex flex-row gap-1 group justify-end mt-14 items-center">
+            <i
+              class="fi fi-rr-pencil text-bluemedium group-hover:text-bluemedium/80"
+            ></i>
+            <p class="text-bluemedium group-hover:text-bluemedium/80">
+              <a href="#">Edit page</a>
+            </p>
+          </div>
+
+          <!-- white form -->
+          <div
+            class="border border-[#ECECEC] rounded-md p-5 md:p-8 mt-10 md:mt-8 mb-20"
+          >
+            <div>
+              <p class="text-inactive/80">COMPANY BIO</p>
+              <p class="mt-2">
+                Briefly describe what your organization does. This can always be
+                changed later Briefly describe what your organization does. This
+                can always be changed later Briefly describe what your
+                organization does. This can always be changed later
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">WEBSITE</p>
+              <p
+                class="mt-1 text-bluemedium hover:underline hover:underline-offset-4"
+              >
+                <a href="#"> www.asmhospital.com</a>
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">EMAIL</p>
+              <p class="mt-1 underline underline-offset-4 hover:text-inactive">
+                <a href="#">hello@asmhopital.com</a>
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">COMPANY SIZE</p>
+              <p class="mt-">10 - 50 employees</p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">COMPANY TYPE</p>
+              <p class="mt-1">Privately owned</p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">COMPANY LOCATION</p>
+              <p class="mt-1">Abuja, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

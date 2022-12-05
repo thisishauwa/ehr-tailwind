@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Corporate about</title>
   </head>
@@ -63,7 +67,7 @@
 
           <!-- Nav bar -->
           <div
-            class="flex flex-row items-center border-b border-b-[#ECECEC] -mx-6 md:-mx-28 lg:-mx-64 px-6 md:px-28 lg:px-64 pt-5 pb-2 mt-3"
+            class="flex flex-col-reverse md:flex-row items-center border-b border-b-[#ECECEC] -mx-6 md:-mx-28 lg:-mx-64 px-6 md:px-28 lg:px-64 pt-5 pb-2 mt-3"
           >
             <!-- Nav items -->
             <div
@@ -71,7 +75,9 @@
             >
               <a href="#"><p class="text-inactive/80">Overview</p></a>
               <a href="#"
-                ><p class="underline underline-offset-[20px] text-bluemedium">
+                ><p
+                  class="underline underline-offset-[14px] md:underline-offset-[20px] text-bluemedium"
+                >
                   About
                 </p></a
               >
@@ -91,6 +97,105 @@
                 class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
                 placeholder="Search profile"
               />
+            </div>
+          </div>
+
+          <!-- Search mobile -->
+          <div class="flex justify-end md:hidden relative mt-10 w-full">
+            <img
+              src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+              alt=""
+              class="absolute w-6 h-6 top-5 left-4"
+            />
+            <input
+              type="text"
+              class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+              placeholder="Search profile"
+            />
+          </div>
+
+          <!-- Blue button -->
+          <div class="px-5 py-5 bg-bluemedium rounded-md text-white mt-10">
+            <!-- Content inside box -->
+            <div class="flex flex-col md:flex-row md:justify-between">
+              <!-- Text and icon -->
+              <div class="flex flex-row gap-4 items-start">
+                <img
+                  src="/images/vuesax/linear/video-vertical.svg"
+                  alt="video icon"
+                  class="hidden md:block"
+                />
+                <div class="md:max-w-xl">
+                  <h3>Record video</h3>
+                  <p class="text-white/80 font-light">
+                    We need your company representative to record a 10 minute
+                    video, answering a few questions. This is to ensure that you
+                    are matched with the best possible option. Please note that
+                    your company profile will not be visible without it.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="primary-button h-16 md:h-20 bg-white text-black hover:bg-white/90 hover:text-black mt-6"
+              >
+                Record video
+              </button>
+            </div>
+          </div>
+
+          <!-- edit button -->
+          <div class="flex flex-row gap-1 group justify-end mt-14 items-center">
+            <i
+              class="fi fi-rr-pencil text-bluemedium group-hover:text-bluemedium/80"
+            ></i>
+            <p class="text-bluemedium group-hover:text-bluemedium/80">
+              <a href="#">Edit page</a>
+            </p>
+          </div>
+
+          <!-- white form -->
+          <div
+            class="border border-[#ECECEC] rounded-md p-5 md:p-8 mt-10 md:mt-8 mb-20"
+          >
+            <div>
+              <p class="text-inactive/80">COMPANY BIO</p>
+              <p class="mt-2">
+                Briefly describe what your organization does. This can always be
+                changed later Briefly describe what your organization does. This
+                can always be changed later Briefly describe what your
+                organization does. This can always be changed later
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">WEBSITE</p>
+              <p
+                class="mt-1 text-bluemedium hover:underline hover:underline-offset-4"
+              >
+                <a href="#"> www.asmhospital.com</a>
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">EMAIL</p>
+              <p class="mt-1 underline underline-offset-4 hover:text-inactive">
+                <a href="#">hello@asmhopital.com</a>
+              </p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">COMPANY SIZE</p>
+              <p class="mt-">10 - 50 employees</p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">COMPANY TYPE</p>
+              <p class="mt-1">Privately owned</p>
+            </div>
+
+            <div class="mt-8">
+              <p class="text-inactive/80">COMPANY LOCATION</p>
+              <p class="mt-1">Abuja, Nigeria</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Corporate about</title>
+  </head>
+  <body class="flex flex-col lg:flex-row">
+    <div class="mt-5 ml-6 md:ml-32 lg:mt-10 lg:ml-20">
+      <button class="flex flex-row gap-1 items-center">
+        <img src="/images/vuesax/linear/arrow-left.svg" alt="" />
+        <p>Back</p>
+      </button>
+    </div>
+
+    <section
+      class="max-w-[2000px] mx-auto px-6 md:px-32 lg:px-80 mt-10 lg:-ml-20"
+    >
+      <!-- Header -->
+      <div>
+        <h2 class="text-xl md:text-2xl lg:text-4xl">Add New Job</h2>
+        <p class="text-inactive/80 mt-2">
+          Briefly describe what your organization does. This can always be
+          changed later Briefly describe what your organization does. This can
+          always be changed later Briefly describe what
+        </p>
+      </div>
+
+      <!-- White box -->
+      <div class="border border-[#ECECEC] rounded-md px-5 pt-5 mt-14 mb-20">
+        <!-- Add header image -->
+        <div class="group">
+          <div
+            class="text-black group-hover:text-bluemedium flex flex-row gap-2"
+          >
+            <i
+              class="fi fi-rr-picture text-inactive/90 group-hover:text-bluemedium"
+            ></i>
+            <div class="text-sm text-gray-600">
+              <label
+                for="file-upload"
+                class="relative cursor-pointer rounded-md bg-white text-black focus-within:outline-none focus-within:ring-2 focus-within:ring-bluemedium focus-within:ring-offset-2"
+              >
+                <span class="text-inactive/80 group-hover:text-bluemedium"
+                  >Add header image</span
+                >
+                <input
+                  id="file-upload"
+                  name="file-upload"
+                  type="file"
+                  class="sr-only"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full h-[1px] bg-[#ECECEC] mt-5"></div>
+
+        <div class="mt-8">
+          <p>Job title</p>
+          <input
+            type="text"
+            placeholder="Nurse"
+            class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+          />
+        </div>
+
+        <div class="mt-5">
+          <p>Job description</p>
+          <textarea
+            id="about"
+            name="about"
+            rows="3"
+            class="mt-2 px-4 py-4 border-none bg-[#F3F3F3] rounded-md w-full shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            placeholder="Max. 50 characters"
+          ></textarea>
+        </div>
+
+        <div class="mt-5">
+          <p>Department</p>
+          <select
+            class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+          >
+            <option value="0">Select department</option>
+            <option value="1">1 - 10 employees</option>
+            <option value="2">11 - 20 employees</option>
+            <option value="3">21 - 50 employees</option>
+          </select>
+        </div>
+
+        <div class="mt-5">
+          <p>Job type</p>
+          <select
+            class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+          >
+            <option value="0">Select job type</option>
+            <option value="1">Full-time employment</option>
+            <option value="2">Part-time employment</option>
+            <option value="3">Hammer-time employment</option>
+          </select>
+        </div>
+
+        <div class="mt-8">
+          <p>Experience in years</p>
+          <input
+            type="number"
+            placeholder="1 year"
+            class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+          />
+        </div>
+
+        <div class="mt-5">
+          <p>Job location</p>
+          <select
+            class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
+          >
+            <option value="0">Select job location</option>
+            <option value="1">Full-time employment</option>
+            <option value="2">Part-time employment</option>
+            <option value="3">Hammer-time employment</option>
+          </select>
+        </div>
+
+        <div class="mt-5">
+          <p>Recruitment period</p>
+          <input
+            type="date"
+            placeholder="Select end date"
+            class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+          />
+        </div>
+
+        <div class="mt-5">
+          <p>Salary range</p>
+          <div class="relative w-full z-0 mt-2">
+            <p class="absolute w-6 h-6 top-4 left-4">NGN</p>
+            <input
+              type="text"
+              class="py-4 text-black pl-16 pr-4 bg-[#F3F3F3] w-full rounded-md md:mr-5 truncate"
+              placeholder="Enter desired pay"
+            />
+          </div>
+        </div>
+
+        <!-- bottom part -->
+
+        <p class="mt-10">REQUIRED SKILLSET</p>
+        <div class="flex flex-wrap gap-2 mt-3 items-center">
+          <p
+            class="px-5 py-3 bg-[#E0EBFF] text-bluestrong rounded-md max-w-max"
+          >
+            Fishing
+          </p>
+
+          <p
+            class="px-5 py-3 bg-[#E0EBFF] text-bluestrong rounded-md max-w-max"
+          >
+            Rowing
+          </p>
+
+          <div>
+            <a href="#" class="flex flex-row gap-1">
+              <img src="/images/vuesax/linear/add.svg" alt="" />
+              <p class="text-bluemedium">Add skill</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full h-[1px] bg-[#ECECEC] mt-10"></div>
+        <div class="flex gap-4 justify-end mt-10 pb-10">
+          <button class="secondary-button">Save to drafts</button>
+          <button class="primary-button">Publish to live</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
