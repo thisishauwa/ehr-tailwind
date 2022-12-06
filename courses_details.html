@@ -345,49 +345,108 @@
         </div>
 
         <!-- Course structure -->
-        <div class="mt-14">
-          <h2 class="text-lg lg:text-2xl">Course structure</h2>
-          <!-- details -->
-          <div class="flex flex-row gap-2 mt-1">
-            <p class="text-inactive/70">12h 32m total length</p>
-            <div class="text-inactive/70">&#x2022;</div>
-            <p class="text-inactive/70">10 parts</p>
+        <!-- Accordion -->
+        <div>
+          <h2 class="text-lg lg:text-2xl lg:mt-14">Course Structure</h2>
+          <div class="flex flex-row items-center gap-2 mt-2">
+            <p class="text-inactive/80 text-sm">30 chapters</p>
+            <div class="text-inactive/80">&#x2022;</div>
+            <p class="text-inactive/80 text-sm">4 hours 10 minutes</p>
           </div>
+        </div>
+        <div class="flex flex-col lg:flex-row mt-3">
+          <!-- Perks -->
 
-          <!-- more course details -->
-          <div class="flex flex-row gap-5 mt-10">
-            <p>1.</p>
-            <div>
-              <p>Why We Program</p>
-              <p class="text-[#5C5C5C] mt-4 md:w-3/4 lg:w-4/5">
-                These are the course-wide materials as well as the first part of
-                Chapter One where we explore what it means to write programs. We
-                finish Chapter One and have the quiz and first assignment in the
-                third week of the class. Throughout the course you may want to
-                come back and look at these materials. This section should not
-                take you an entire week.
-              </p>
-              <div class="flex flex-row gap-2 mt-4">
-                <img src="/images/clock.svg" alt="" />
-                <p class="text-inactive/90">50 minutes</p>
+          <div
+            class="border border-[#f1f1f1] rounded-md px-5 py-8 mt-10 bg-[#FCFCFC] w-full md:w-3/5 lg:mt-0"
+          >
+            <!-- Chapter one -->
+            <div class="pb-6 border-b">
+              <div class="flex flex-row justify-between">
+                <p class="text-sm">Chapter One: Why we program</p>
+                <button>
+                  <i class="fi fi-br-minus text-bluemedium"></i>
+                </button>
+              </div>
+
+              <!-- Parts and time -->
+              <div class="flex flex-row gap-2 text-sm">
+                <p class="text-inactive/80">5 parts</p>
+                <div class="text-inactive/80">&#x2022;</div>
+                <p class="text-inactive/80">50 minutes</p>
+              </div>
+
+              <!-- Chapters -->
+              <div class="flex flex-row gap-3 items-center mt-5">
+                <img src="/images/tick.png" alt="" class="w-4 h-4" />
+                <div>
+                  <p class="text-inactive/80 text-sm">
+                    What makes the world go round
+                  </p>
+                  <p class="text-inactive/80 text-xs">5 minutes 25 seconds</p>
+                </div>
+              </div>
+
+              <!-- chapter 2 -->
+              <div class="flex flex-row items-center gap-3 mt-4">
+                <img src="/images/blue circle.png" alt="" class="w-4 h-4" />
+                <div>
+                  <p class="text-bluemedium text-sm">
+                    What makes the world go round
+                  </p>
+                  <p class="text-bluemedium text-xs">5 minutes 25 seconds</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Second one -->
-          <div class="flex flex-row gap-5 mt-8">
-            <p>2.</p>
-            <div>
-              <p>Installing and Using Python</p>
-              <p class="text-[#5C5C5C] mt-4 md:w-3/4 lg:w-4/5">
-                In this module you will set things up so you can write Python
-                programs. Not all activities in this module are required for
-                this class so please read the "Using Python in this Class"
-                material for details.
-              </p>
-              <div class="flex flex-row gap-2 mt-4">
-                <img src="/images/clock.svg" alt="" />
-                <p class="text-inactive/90">25 minutes</p>
+            <!-- Chapter two -->
+            <div class="pb-6 border-b mt-6">
+              <div class="flex flex-row justify-between">
+                <p class="text-sm">Chapter Two: Why we program</p>
+                <button>
+                  <i class="fi fi-br-plus text-inactive/80"></i>
+                </button>
+              </div>
+
+              <!-- Parts and time -->
+              <div class="flex flex-row gap-2 text-sm">
+                <p class="text-inactive/80">5 parts</p>
+                <div class="text-inactive/80">&#x2022;</div>
+                <p class="text-inactive/80">50 minutes</p>
+              </div>
+            </div>
+
+            <!-- Chapter two -->
+            <div class="pb-6 border-b mt-6">
+              <div class="flex flex-row justify-between">
+                <p class="text-sm">Chapter Three: Why we program</p>
+                <button>
+                  <i class="fi fi-br-plus text-inactive/80"></i>
+                </button>
+              </div>
+
+              <!-- Parts and time -->
+              <div class="flex flex-row gap-2 text-sm">
+                <p class="text-inactive/80">5 parts</p>
+                <div class="text-inactive/80">&#x2022;</div>
+                <p class="text-inactive/80">50 minutes</p>
+              </div>
+            </div>
+
+            <!-- Chapter two -->
+            <div class="mt-6">
+              <div class="flex flex-row justify-between">
+                <p class="text-sm">Chapter Four: Why we program</p>
+                <button>
+                  <i class="fi fi-br-plus text-inactive/80"></i>
+                </button>
+              </div>
+
+              <!-- Parts and time -->
+              <div class="flex flex-row gap-2 text-sm">
+                <p class="text-inactive/80">5 parts</p>
+                <div class="text-inactive/80">&#x2022;</div>
+                <p class="text-inactive/80">50 minutes</p>
               </div>
             </div>
           </div>

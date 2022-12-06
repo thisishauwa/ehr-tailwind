@@ -13,423 +13,321 @@
     <title>Dashboard overview</title>
   </head>
   <body>
-    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+    <!-- Bar -->
+    <div class="bg-bluestrong px-6 py-6 lg:px-5">
+      <div class="flex flex-row items-center justify-between">
+        <div class="flex flex-row gap-3 md:gap-20">
+          <!-- Back button -->
+          <button class="flex flex-row items-center gap-1">
+            <img src="/images/arrow-left.svg" alt="" />
+            <p class="hidden md:block text-white">Back</p>
+          </button>
+
+          <!-- title -->
+          <h2 class="text-white text-sm md:text-lg">
+            How To Become a Certified Nursing Assistant
+          </h2>
+        </div>
+        <i
+          class="hidden md:block fi fi-br-menu-dots-vertical text-white mt-1"
+        ></i>
+      </div>
+    </div>
+    <div class="flex flex-row max-w-[2000px] mx-auto lg:px-0">
       <!-- Navigation bar -->
       <nav
-        class="hidden px-5 py-7 lg:block lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA] z-10"
+        class="hidden px-5 py-7 lg:block lg:sticky lg:top-0 lg:w-1/4 lg:h-screen lg:overflow-y-auto bg-[#FAFAFA] z-10"
       >
-        <!-- nav elements -->
-        <img
-          src="/images/logo.svg"
-          alt="ehr logo"
-          class="hidden lg:block mt-1 ml-6"
-        />
-        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
-          <!-- profile -->
-          <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
-          >
-            <!--Icon -->
-            <img
-              src="/images/dashboard-icons/profile-icon-white.svg"
-              alt="profile icon"
-              class="w-[25px] lg:block"
-            />
-            <p class="text-inactive font-normal text-xs md:text-base">
-              Profile
-            </p>
+        <div class="overflow-hidden">
+          <!-- Chapter one -->
+          <div class="pb-6 border-b">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter One: Why we program</p>
+              <button>
+                <i class="fi fi-br-minus text-bluemedium"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
+
+            <!-- Chapters -->
+            <div class="flex flex-row gap-3 items-center mt-5">
+              <img src="/images/tick.png" alt="" class="w-4 h-4" />
+              <div>
+                <p class="text-inactive/80 text-sm">
+                  What makes the world go round
+                </p>
+                <p class="text-inactive/80 text-xs">5 minutes 25 seconds</p>
+              </div>
+            </div>
+
+            <!-- chapter 2 -->
+            <div class="flex flex-row items-center gap-3 mt-4">
+              <img src="/images/blue circle.png" alt="" class="w-4 h-4" />
+              <div>
+                <p class="text-bluemedium text-sm">
+                  What makes the world go round
+                </p>
+                <p class="text-bluemedium text-xs">5 minutes 25 seconds</p>
+              </div>
+            </div>
           </div>
-          <!-- sms -->
-          <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
-          >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/sms.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
-            <p class="text-inactive font-normal text-xs md:text-base">
-              Messages
-            </p>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Two: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
           </div>
-          <!-- jobs -->
-          <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
-          >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/briefcase.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
-            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Three: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
           </div>
-          <!-- courses -->
-          <div
-            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-2 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
-          >
-            <img
-              src="/images/vuesax/linear/bookwhite.svg"
-              alt="profile icon"
-              class="hidden lg:block w-[25px]"
-            />
-            <img
-              src="images/vuesax/linear/bookblue.svg"
-              alt="profile icon"
-              class="w-[25px] lg:hidden"
-            />
-            <p
-              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
-            >
-              Courses
-            </p>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Four: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
           </div>
-          <!-- contacts -->
-          <div
-            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:space-x-2 lg:justify-start lg:py-5 lg:px-4 rounded-md"
-          >
-            <img
-              src="/images/dashboard-icons/vuesax/linear/people.svg"
-              alt="profile icon"
-              class="w-[25px]"
-            />
-            <p class="text-inactive font-normal text-xs md:text-base">
-              Contacts
-            </p>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Five: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
+          </div>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Six: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
+          </div>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Seven: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
+          </div>
+
+          <!-- Chapter two -->
+          <div class="pb-6 border-b mt-6">
+            <div class="flex flex-row justify-between">
+              <p class="text-sm">Chapter Eight: Why we program</p>
+              <button>
+                <i class="fi fi-br-plus text-inactive/80"></i>
+              </button>
+            </div>
+
+            <!-- Parts and time -->
+            <div class="flex flex-row gap-2 text-sm">
+              <p class="text-inactive/80">5 parts</p>
+              <div class="text-inactive/80">&#x2022;</div>
+              <p class="text-inactive/80">50 minutes</p>
+            </div>
           </div>
         </div>
       </nav>
 
-      <section class="w-full lg:w-4/5 lg:px-14 mb-32 md:mb-36 lg:mb-12">
+      <section class="w-full lg:w-3/4 mb-32 md:mb-36 lg:mb-12">
         <!-- Header and Image -->
         <div
           class="bg-[url('/images/videoimage.png')] bg-no-repeat bg-cover bg-center w-full h-[300px] md:h-[500px]"
         ></div>
 
-        <!-- Categories -->
-        <div
-          class="px-6 -mx-6 pt-10 pb-5 border-b border-[#f1f1f1] lg:-mx-14 lg:px-14"
-        >
+        <!-- Main body container -->
+        <div class="px-6 lg:px-14">
+          <!-- Categories -->
           <div
-            class="flex flex-row justify-between text-sm md:text-base lg:justify-start lg:gap-16"
+            class="flex flex-row justify-between items-center px-6 -mx-6 pt-5 pb-5 border-b border-[#f1f1f1] lg:-mx-14 lg:px-14"
           >
-            <a href="#">About</a>
-            <a href="#" class="text-inactive/70">Instructor</a>
-            <a href="#" class="text-inactive/70">Course structure</a>
-            <a href="#" class="text-inactive/70">Reviews</a>
-          </div>
-        </div>
-
-        <!-- About this course -->
-        <div class="flex flex-col lg:flex-row-reverse lg:gap-24 lg:mt-14">
-          <!-- Perks -->
-          <div
-            class="border border-[#f1f1f1] rounded-md px-5 py-8 mt-10 bg-[#FCFCFC] md:w-1/2 lg:w-2/5 lg:mt-0"
-          >
-            <!-- perk 1 -->
-            <div class="flex flex-row gap-4 pb-8 border-b border-inactive/10">
-              <img src="/images/medal.svg" alt="medal" />
-              <div class="flex flex-col">
-                <p>Certificate of completion</p>
-                <p class="text-sm text-inactive/50">
-                  Earn a widely recognized certificate
-                </p>
-              </div>
-            </div>
-
-            <!-- perk 2 -->
-            <div class="flex flex-row gap-4 py-8 border-b border-inactive/10">
-              <img src="/images/laptop.svg" alt="medal" />
-              <div class="flex flex-col">
-                <p>100% remote</p>
-                <p class="text-sm text-inactive/50">
-                  You learn at your own pace
-                </p>
-              </div>
-            </div>
-
-            <!-- perk 3 -->
-            <div class="flex flex-row gap-4 pt-8">
-              <img src="/images/document.svg" alt="medal" />
-              <div class="flex flex-col">
-                <p>Lifetime ownership</p>
-                <p class="text-sm text-inactive/50">
-                  Own this course and all materials for life
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- About text -->
-          <div class="mt-10 lg:mt-0 lg:w-3/5">
-            <h2 class="text-lg lg:text-xl">About this course</h2>
-            <p class="text-[#5C5C5C] mt-3 md:w-3/4 lg:w-full">
-              Good typography can add tremendous power to your design and your
-              message, whether it is a print- or screen-based project, a still
-              or motion graphic, a 3D or 2D graphic. This course explains good
-              typographic practices, so that you can develop an "eye" for type
-              and understand how to effectively use it. Author Ina Saltz
-              explains type classifications (serif vs. sans serif, display type
-              vs. text type), how type is measured, sized, and organized, and
-              how spacing and alignment affect your design. She also explains
-              how to use kerning, tracking, leading, and line length, and covers
-              the history and current trends in typography. The course teaches
-              the principles of legibility, readability, and compatibility, and
-              how they should be considered when you're selecting and designing
-              with type.
-            </p>
-          </div>
-        </div>
-
-        <!-- What you'll learn -->
-        <div class="mt-10">
-          <h3 class="text-md lg:text-xl">What you'll learn</h3>
-          <!-- Ticks -->
-          <div class="mt-5">
-            <div class="flex flex-row gap-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Install Python and write your first program</p>
-            </div>
-            <div class="flex flex-row gap-3 mt-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Describe the basics of the Python programming language</p>
-            </div>
-            <div class="flex flex-row gap-3 mt-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Utilize core programming tools such as functions and loops</p>
-            </div>
-            <div class="flex flex-row gap-3 mt-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Use variables to store, retrieve and calculate information</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills you'll acquire -->
-        <div class="mt-10">
-          <h3 class="text-md lg:text-xl">Skills you'll acquire</h3>
-          <!-- boxes -->
-          <div class="flex flex-wrap gap-3 mt-5">
             <div
-              class="px-3 py-3 border-[1.5px] border-bluestrong bg-[#F4F6FF] rounded-md max-w-fit"
+              class="flex flex-row justify-between text-sm md:text-base md:justify-start md:gap-16 w-full"
             >
-              Python programming
+              <a href="#" class="text-inactive/70">Overview</a>
+              <a href="#">Course structure</a>
+              <a href="#" class="text-inactive/70">Q&A's</a>
             </div>
+
+            <!-- Search bar -->
+            <div class="hidden md:block relative md:w-64">
+              <img
+                src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                alt=""
+                class="absolute w-6 h-6 top-5 left-4"
+              />
+              <input
+                type="text"
+                class="py-4 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                placeholder="Search profile"
+              />
+            </div>
+          </div>
+
+          <!-- Accordion -->
+          <div class="flex flex-col lg:flex-row lg:mt-14">
+            <!-- Perks -->
             <div
-              class="px-3 py-3 border-[1.5px] border-bluestrong bg-[#F4F6FF] rounded-md max-w-fit"
+              class="border border-[#f1f1f1] rounded-md px-5 py-8 mt-10 bg-[#FCFCFC] w-full lg:mt-0"
             >
-              Basics of fishing
-            </div>
-            <div
-              class="px-3 py-3 border-[1.5px] border-bluestrong bg-[#F4F6FF] rounded-md max-w-fit"
-            >
-              Fencing and swordplay
-            </div>
-          </div>
-        </div>
-
-        <!-- Instructor -->
-        <div class="mt-14">
-          <h2 class="text-lg lg:text-2xl">Instructor</h2>
-          <p class="text-bluemedium mt-3">Prof. Hauwa Suleiman</p>
-          <p class="text-inactive/70 text-sm mt-2">Design Engineer</p>
-
-          <!-- Profile image -->
-          <div class="flex flex-row gap-5 items-start mt-5">
-            <img src="/images/profileimage.svg" alt="" />
-
-            <!-- Ratings -->
-            <div>
-              <div class="flex flex-row gap-2 items-center">
-                <img src="images/paper.svg" alt="" />
-                <p>12 courses</p>
-              </div>
-              <div class="flex flex-row gap-2 items-center mt-3">
-                <img src="images/Hat.svg" alt="" />
-                <p>60 students</p>
-              </div>
-              <div class="flex flex-row gap-2 items-center mt-3">
-                <img src="images/linearstar.svg" alt="" />
-                <p>4.5 rating</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Course structure -->
-        <div class="mt-14">
-          <h2 class="text-lg lg:text-2xl">Course structure</h2>
-          <!-- details -->
-          <div class="flex flex-row gap-2 mt-1">
-            <p class="text-inactive/70">12h 32m total length</p>
-            <div class="text-inactive/70">&#x2022;</div>
-            <p class="text-inactive/70">10 parts</p>
-          </div>
-
-          <!-- more course details -->
-          <div class="flex flex-row gap-5 mt-10">
-            <p>1.</p>
-            <div>
-              <p>Why We Program</p>
-              <p class="text-[#5C5C5C] mt-4 md:w-3/4 lg:w-4/5">
-                These are the course-wide materials as well as the first part of
-                Chapter One where we explore what it means to write programs. We
-                finish Chapter One and have the quiz and first assignment in the
-                third week of the class. Throughout the course you may want to
-                come back and look at these materials. This section should not
-                take you an entire week.
-              </p>
-              <div class="flex flex-row gap-2 mt-4">
-                <img src="/images/clock.svg" alt="" />
-                <p class="text-inactive/90">50 minutes</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second one -->
-          <div class="flex flex-row gap-5 mt-8">
-            <p>2.</p>
-            <div>
-              <p>Installing and Using Python</p>
-              <p class="text-[#5C5C5C] mt-4 md:w-3/4 lg:w-4/5">
-                In this module you will set things up so you can write Python
-                programs. Not all activities in this module are required for
-                this class so please read the "Using Python in this Class"
-                material for details.
-              </p>
-              <div class="flex flex-row gap-2 mt-4">
-                <img src="/images/clock.svg" alt="" />
-                <p class="text-inactive/90">25 minutes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Reviews -->
-        <div class="mt-14">
-          <h2 class="text-lg lg:text-2xl">Reviews</h2>
-
-          <!-- Full reviews div -->
-          <div class="flex flex-col lg:flex-row lg:gap-10 mt-5">
-            <!-- Left side -->
-            <div class="lg:w-2/5">
-              <!-- Numbers -->
-              <div class="flex flex-row gap-5 items-center">
-                <p class="text-5xl md:text-6xl lg:text-8xl">4.87</p>
-                <div>
-                  <div class="flex flex-row gap-0.5">
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img
-                      src="/images/Star_gray.svg"
-                      alt=""
-                      class="md:h-[20px]"
-                    />
-                  </div>
-                  <p class="text-inactive/70 mt-2 lg:mt-3 lg:text-lg">
-                    10 reviews
-                  </p>
-                </div>
-              </div>
-
-              <!-- 4-stars -->
-              <div class="mt-8">
-                <div class="flex flex-row items-center">
-                  <p>5 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-11/12"></div>
-                  </div>
-                  <p class="text-inactive/70">90%</p>
+              <!-- Chapter one -->
+              <div class="pb-6 border-b">
+                <div class="flex flex-row justify-between">
+                  <p class="text-sm">Chapter One: Why we program</p>
+                  <button>
+                    <i class="fi fi-br-minus text-bluemedium"></i>
+                  </button>
                 </div>
 
-                <!-- second -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>4 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-3/4"></div>
-                  </div>
-                  <p class="text-inactive/70">75%</p>
+                <!-- Parts and time -->
+                <div class="flex flex-row gap-2 text-sm">
+                  <p class="text-inactive/80">5 parts</p>
+                  <div class="text-inactive/80">&#x2022;</div>
+                  <p class="text-inactive/80">50 minutes</p>
                 </div>
 
-                <!-- third -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>3 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-1/4"></div>
-                  </div>
-                  <p class="text-inactive/70">30%</p>
-                </div>
-
-                <!-- fourth -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>2 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-1/6"></div>
-                  </div>
-                  <p class="text-inactive/70">15%</p>
-                </div>
-
-                <!-- fifth -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>1 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-1/12"></div>
-                  </div>
-                  <p class="text-inactive/70">2%</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right side -->
-            <div class="lg:w-3/5">
-              <div class="mt-14 lg:mt-0">
-                <!-- top -->
-                <div class="flex flex-row gap-5 items-start">
-                  <img src="/images/hijabgirl.svg" alt="" />
+                <!-- Chapters -->
+                <div class="flex flex-row gap-3 items-center mt-5">
+                  <img src="/images/tick.png" alt="" class="w-4 h-4" />
                   <div>
-                    <p class="font-bold">Nana Hauwa</p>
-                    <div class="flex flex-row gap-1 mt-2">
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star_gray.svg" alt="" />
-                    </div>
+                    <p class="text-inactive/80 text-sm">
+                      What makes the world go round
+                    </p>
+                    <p class="text-inactive/80 text-xs">5 minutes 25 seconds</p>
                   </div>
                 </div>
 
-                <!-- bottom -->
-                <p class="mt-5 max-w-md">
-                  There’s a lot of things I have to do, all these distractions,
-                  my future is coming soon.
-                </p>
-                <p class="text-inactive/70 text-sm mt-3">2 days ago</p>
+                <!-- chapter 2 -->
+                <div class="flex flex-row items-center gap-3 mt-4">
+                  <img src="/images/blue circle.png" alt="" class="w-4 h-4" />
+                  <div>
+                    <p class="text-bluemedium text-sm">
+                      What makes the world go round
+                    </p>
+                    <p class="text-bluemedium text-xs">5 minutes 25 seconds</p>
+                  </div>
+                </div>
               </div>
 
-              <!-- second review -->
-              <div>
-                <!-- top -->
-                <div class="flex flex-row gap-5 items-start mt-8">
-                  <img src="/images/hijabgirl.svg" alt="" />
-                  <div>
-                    <p class="font-bold">Nana Hauwa</p>
-                    <div class="flex flex-row gap-1 mt-2">
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star_gray.svg" alt="" />
-                    </div>
-                  </div>
+              <!-- Chapter two -->
+              <div class="pb-6 border-b mt-6">
+                <div class="flex flex-row justify-between">
+                  <p class="text-sm">Chapter Two: Why we program</p>
+                  <button>
+                    <i class="fi fi-br-plus text-inactive/80"></i>
+                  </button>
                 </div>
 
-                <!-- bottom -->
-                <p class="mt-5 max-w-md">
-                  There’s a lot of things I have to do, all these distractions,
-                  my future is coming soon.
-                </p>
-                <p class="text-inactive/70 text-sm mt-3">2 days ago</p>
+                <!-- Parts and time -->
+                <div class="flex flex-row gap-2 text-sm">
+                  <p class="text-inactive/80">5 parts</p>
+                  <div class="text-inactive/80">&#x2022;</div>
+                  <p class="text-inactive/80">50 minutes</p>
+                </div>
+              </div>
+
+              <!-- Chapter two -->
+              <div class="pb-6 border-b mt-6">
+                <div class="flex flex-row justify-between">
+                  <p class="text-sm">Chapter Three: Why we program</p>
+                  <button>
+                    <i class="fi fi-br-plus text-inactive/80"></i>
+                  </button>
+                </div>
+
+                <!-- Parts and time -->
+                <div class="flex flex-row gap-2 text-sm">
+                  <p class="text-inactive/80">5 parts</p>
+                  <div class="text-inactive/80">&#x2022;</div>
+                  <p class="text-inactive/80">50 minutes</p>
+                </div>
+              </div>
+
+              <!-- Chapter two -->
+              <div class="mt-6">
+                <div class="flex flex-row justify-between">
+                  <p class="text-sm">Chapter Four: Why we program</p>
+                  <button>
+                    <i class="fi fi-br-plus text-inactive/80"></i>
+                  </button>
+                </div>
+
+                <!-- Parts and time -->
+                <div class="flex flex-row gap-2 text-sm">
+                  <p class="text-inactive/80">5 parts</p>
+                  <div class="text-inactive/80">&#x2022;</div>
+                  <p class="text-inactive/80">50 minutes</p>
+                </div>
               </div>
             </div>
           </div>
