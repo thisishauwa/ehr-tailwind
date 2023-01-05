@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -140,10 +144,12 @@
         <!-- Body -->
         <div class="mt-10 md:mt-16 mb-32 md:mb-24">
           <!-- top wrapper with search -->
-          <div class="flex flex-row items-center justify-between">
+          <div
+            class="flex flex-col w-full md:flex-row md:items-center md:justify-between"
+          >
             <!-- left side -->
             <div class="flex flex-row items-center gap-3">
-              <p class="w-1/6 md:w-auto">Sort by:</p>
+              <p class="full md:w-auto">Sort by:</p>
               <select
                 name="Sort by"
                 id="sort"
@@ -177,7 +183,6 @@
               </button>
             </div>
           </div>
-
           <!-- Content -->
           <div class="p-5 md:p-5 border border-[#ECECEC] rounded-md mt-10">
             <!-- jobs -->
