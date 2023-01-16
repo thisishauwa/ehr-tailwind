@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Homepage</title>
+  </head>
+  <body>
+    <!-- Nav container -->
+    <nav class="container-body sticky top-0 z-30 shadow-sm bg-white">
+      <!-- Flex container for all items -->
+      <div class="flex items-center justify-between">
+        <!-- image -->
+        <div><img src="/images/logo.svg" alt="ehr logo" /></div>
+
+        <!-- options container -->
+        <div
+          class="hidden lg:flex lg:flex-row justify-center items-center gap-4"
+        >
+          <!-- options -->
+          <div class="p-2 text-bluemedium font-medium hover:text-bluestrong">
+            <a href="#"> Home</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> About us</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Find work</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Find talent</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Courses</a>
+          </div>
+        </div>
+
+        <!-- login container -->
+        <div
+          class="hidden lg:flex lg:flex-row justify-center items-center gap-4"
+        >
+          <!-- login options -->
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Login</a>
+          </div>
+          <div class="secondary-button px-6 py-5 my-5">
+            <a href="#"> Sign up</a>
+          </div>
+        </div>
+
+        <!-- Cross -->
+        <div class="lg:hidden my-6 hover:scale-110 duration-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <rect y="11" width="24" height="2" rx="1" />
+            <rect y="4" width="24" height="2" rx="1" />
+            <rect y="18" width="24" height="2" rx="1" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body -->
+    <section class="container-body max-w-[1300px] mt-20">
+      <div
+        class="flex flex-col-reverse items-center md:flex md:flex-row md:justify-between"
+      >
+        <div
+          class="flex flex-col items-center justify-center mt-10 md:items-start"
+        >
+          <p>Error 404</p>
+          <h3 class="text-2xl font-bold mt-2 md:text-5xl lg:text-7xl">
+            Page not found...
+          </h3>
+          <p
+            class="text-inactive/80 mt-3 w-64 text-center md:text-left md:text-xl lg:text-xl lg:mt-6 lg:w-96"
+          >
+            Sorry, the page you're looking for has been moved or does not exist
+          </p>
+          <button class="primary-button mt-7">Go back home</button>
+        </div>
+        <img
+          src="/images/404 image.png"
+          alt=""
+          class="w-64 md:w-80 lg:w-[350px]"
+        />
+      </div>
+    </section>
+  </body>
+</html>
