@@ -7,6 +7,10 @@
     <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -202,8 +206,22 @@
       <section class="w-full lg:w-3/4 mb-32 md:mb-36 lg:mb-12">
         <!-- Header and Image -->
         <div
-          class="bg-[url('/images/videoimage.png')] bg-no-repeat bg-cover bg-center w-full h-[300px] md:h-[500px]"
-        ></div>
+          class="relative flex bg-[url('/images/videoimage.png')] bg-no-repeat bg-cover bg-center w-full h-[300px] md:h-[500px]"
+        >
+          <!-- left arrow -->
+          <button
+            class="absolute hover:bg-bluestrong/80 self-center flex z-10 w-10 h-10 bg-bluestrong items-center justify-center rounded-full mx-2"
+          >
+            <i class="fi fi-rr-arrow-left text-white mt-1"></i>
+          </button>
+
+          <!-- right arrow -->
+          <button
+            class="absolute hover:bg-bluestrong/80 right-0 self-center flex z-10 w-10 h-10 bg-bluestrong items-center justify-center rounded-full mx-2"
+          >
+            <i class="fi fi-rr-arrow-right text-white mt-1"></i>
+          </button>
+        </div>
 
         <!-- Main body container -->
         <div class="px-6 lg:px-14">
