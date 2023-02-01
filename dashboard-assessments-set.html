@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard assessment</title>
+  </head>
+  <body>
+    <!-- Blurred background -->
+    <div
+      class="w-screen h-screen fixed top-0 left-0 z-20 flex flex-col justify-center items-center backdrop-blur-md bg-black/10 px-6"
+    >
+      <!-- White form -->
+      <div
+        class="bg-white p-5 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px]"
+      >
+        <!-- Form components -->
+        <div>
+          <h2>Medical Services Pre-Assessment</h2>
+          <p class="mt-2">Nursing</p>
+          <div class="w-full h-[1px] bg-[#ECECEC] mt-5"></div>
+
+          <!-- separator -->
+          <span class="border-b-2 w-full border-gray-400"></span>
+          <div class="flex space-y-4 mt-3 flex-col">
+            <!-- One -->
+            <p class="flex gap-2 items-center text-sm">
+              <i class="fi fi-ss-list-check"></i>15 questions
+            </p>
+
+            <!-- Two -->
+            <p class="flex gap-2 text-sm">
+              <i class="fi fi-rr-clock-five"></i>20 minutes
+            </p>
+
+            <!-- Three -->
+            <p class="flex gap-2 text-sm">
+              <i class="fi fi-rr-user"></i>Score at least 70% to earn a badge
+            </p>
+          </div>
+          <div class="w-full h-[1px] bg-[#ECECEC] mt-2"></div>
+
+          <!-- Lists -->
+          <ul class="flex space-y-4 mt-3 flex-col">
+            <!-- list one -->
+            <div class="flex flex-row gap-2 items-center">
+              <div>&#x2022;</div>
+              <li class="text-sm">
+                Outline all the skills that the assessment tested them on
+              </li>
+            </div>
+            <!-- List two -->
+            <div class="flex flex-row gap-2 items-center">
+              <div>&#x2022;</div>
+              <li class="text-sm">Once the tests starts, you cannot pause.</li>
+            </div>
+
+            <!-- List three -->
+            <div class="flex flex-row gap-2 items-center">
+              <div>&#x2022;</div>
+              <li class="text-sm">
+                Don't fret, you cannot retake assessments you don't pass
+              </li>
+            </div>
+          </ul>
+          <div class="w-full h-[1px] bg-[#ECECEC] mt-5"></div>
+
+          <!-- button div -->
+          <div class="flex mt-5 space-x-2 items-center justify-end">
+            <button class="secondary-button py-2 text-sm">Cancel</button>
+            <button class="primary-button py-2 text-sm">Take test</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- profile -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-3 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <!-- Mobile icon -->
+            <i class="fi fi-rr-user text-lg text-bluemedium lg:hidden"></i>
+
+            <!-- web icon -->
+
+            <i class="fi fi-rr-user text-xl text-white hidden lg:block"></i>
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              Profile
+            </p>
+          </div>
+          <!-- sms -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i
+              class="fi fi-rr-comment-alt-middle text-lg lg:text-xl text-inactive"
+            ></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Messages
+            </p>
+          </div>
+          <!-- jobs -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-briefcase text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+          </div>
+          <!-- courses -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 md:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-books text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Courses
+            </p>
+          </div>
+          <!-- contacts -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-users-alt text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Contacts
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
+            <p
+              class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
+            >
+              Ready to earn a new badge?
+            </p>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="flex flex-col">
+          <!-- badge block a -->
+          <div class="flex flex-col">
+            <h1 class="text-2xl mt-12">Your badges</h1>
+
+            <!-- first badge -->
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 mt-8 gap-4 overflow-x-scroll"
+            >
+              <article class="flex gap-3 items-center">
+                <img
+                  src="images/Ribbon.png"
+                  alt="ehr logo"
+                  class="w-4 md:w-8 h-auto lg:block"
+                />
+                <div class="flex flex-col">
+                  <h2 class="font-medium">Medical Services</h2>
+                  <span>Pre-assessment</span>
+                </div>
+              </article>
+              <article class="flex gap-3 items-center">
+                <img
+                  src="/images/Ribbon.png"
+                  alt="ehr logo"
+                  class="w-4 md:w-8 h-auto lg:block"
+                />
+                <div class="flex flex-col">
+                  <h2 class="font-medium">Medical Services</h2>
+                  <span>Pre-assessment</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- header and arrows -->
+          <div class="flex items-center justify-between mt-12">
+            <h2>Recommended for you</h2>
+            <div class="flex items-center gap-3 md:gap-6">
+              <i
+                class="fi fi-rr-arrow-circle-left text-lg lg:text-xl text-inactive"
+              ></i>
+              <i
+                class="fi fi-rr-arrow-circle-right text-lg lg:text-xl text-bluestrong"
+              ></i>
+            </div>
+          </div>
+
+          <!-- cards -->
+          <section class="mt-8">
+            <div class="flex flex-row gap-5 overflow-scroll">
+              <!-- card 1 -->
+              <div
+                class="flex flex-col p-5 border border-[#ececec] rounded-md min-w-[300px] h-[160px] justify-between"
+              >
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3">
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">15 sections</p>
+                  </div>
+
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="flex flex-col px-5 border border-[#ececec] rounded-md max-h-[160px] min-w-[300px] justify-between pb-5"
+              >
+                <div
+                  class="bg-red-700 h-[5px] -mx-5 rounded-tr-md rounded-tl-md"
+                ></div>
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3 mt-[10px] justify-between">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">15 sections</p>
+                    </div>
+
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">20 minutes</p>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-red-500/20 rounded-md">
+                    <p class="text-sm text-red-600">Failed</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="flex flex-col p-5 border border-[#ececec] rounded-md min-w-[300px] h-[160px] justify-between"
+              >
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3">
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">15 sections</p>
+                  </div>
+
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="flex flex-col px-5 border border-[#ececec] rounded-md max-h-[160px] min-w-[300px] justify-between pb-5"
+              >
+                <div
+                  class="bg-red-700 h-[5px] -mx-5 rounded-tr-md rounded-tl-md"
+                ></div>
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3 mt-[10px] justify-between">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">15 sections</p>
+                    </div>
+
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">20 minutes</p>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-red-500/20 rounded-md">
+                    <p class="text-sm text-red-600">Failed</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Lower div -->
+          <section class="flex mt-12 flex-col pb-36 md:pb-20">
+            <!-- search and options -->
+            <div
+              class="flex flex-col md:flex-row md:justify-between md:items-center"
+            >
+              <!-- options -->
+              <div
+                class="flex flex-row justify-between md:justify-start md:gap-14"
+              >
+                <div>
+                  <p class="text-sm md:text-base underline underline-offset-8">
+                    <a href="#">All</a>
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+                  >
+                    <a href="#">Medicine</a>
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+                  >
+                    <a href="#">Nursing</a>
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-sm md:text-base text-inactive/60 hover:text-inactive/80"
+                  >
+                    <a href="#">Dentistry</a>
+                  </p>
+                </div>
+              </div>
+              <!-- search bar -->
+              <div
+                class="relative mt-10 md:mt-0 md:w-[200px] items-center lg:w-80"
+              >
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for assessments"
+                />
+              </div>
+            </div>
+
+            <!-- assessments -->
+            <div
+              class="mt-8 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <!-- card 1 -->
+              <div
+                class="flex flex-col p-5 border border-[#ececec] rounded-md h-[160px] justify-between"
+              >
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3">
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">15 sections</p>
+                  </div>
+
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 1 -->
+              <div
+                class="flex flex-col p-5 border border-[#ececec] rounded-md h-[160px] justify-between"
+              >
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3">
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">15 sections</p>
+                  </div>
+
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="flex flex-col px-5 border border-[#ececec] rounded-md h-160px] justify-between pb-5"
+              >
+                <div
+                  class="bg-red-700 h-[5px] -mx-5 rounded-tr-md rounded-tl-md"
+                ></div>
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3 mt-[15px] justify-between">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">15 sections</p>
+                    </div>
+
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">20 minutes</p>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-red-500/20 rounded-md">
+                    <p class="text-sm text-red-600">Failed</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="flex flex-col p-5 border border-[#ececec] rounded-md h-[160px] justify-between"
+              >
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3">
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">15 sections</p>
+                  </div>
+
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="flex flex-col p-5 border border-[#ececec] rounded-md h-[160px] justify-between"
+              >
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3">
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">15 sections</p>
+                  </div>
+
+                  <div class="flex flex-row gap-2 items-center">
+                    <i
+                      class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                    ></i>
+                    <p class="text-sm text-inactive">20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div
+                class="flex flex-col px-5 border border-[#ececec] rounded-md h-160px] justify-between pb-5"
+              >
+                <div
+                  class="bg-green-600 h-[5px] -mx-5 rounded-tr-md rounded-tl-md"
+                ></div>
+                <!-- time and questions-->
+                <div class="flex flex-row gap-3 mt-[15px] justify-between">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-ss-list-check text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">15 sections</p>
+                    </div>
+
+                    <div class="flex flex-row gap-2 items-center">
+                      <i
+                        class="fi fi-rr-clock-five text-sm text-inactive mt-1"
+                      ></i>
+                      <p class="text-sm text-inactive">20 minutes</p>
+                    </div>
+                  </div>
+                  <div class="p-2 bg-green-500/20 rounded-md">
+                    <p class="text-sm text-green-600">Completed</p>
+                  </div>
+                </div>
+
+                <div class="mt-5">
+                  <p class="text-sm font-bold">
+                    Medical Services Pre-Assessment Test
+                  </p>
+                  <div class="flex flex-row gap-1 mt-2">
+                    <p class="text-sm text-inactive">Medicine and Surgery</p>
+                    <div class="text-yellow-400">&#x2022;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="flex mt-5 md:mt-8 text-bluemedium">Show more</button>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
