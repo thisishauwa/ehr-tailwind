@@ -1181,6 +1181,14 @@ p {
   width: 4rem;
 }
 
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -1277,10 +1285,6 @@ p {
   width: 24rem;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
 .w-3\.5 {
   width: 0.875rem;
 }
@@ -1297,10 +1301,6 @@ p {
 
 .w-\[25px\] {
   width: 25px;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .min-w-\[350px\] {
@@ -1660,6 +1660,14 @@ p {
   border-width: 1.5px;
 }
 
+.border-l {
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1670,14 +1678,6 @@ p {
 
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-r {
-  border-right-width: 1px;
-}
-
-.border-l {
-  border-left-width: 1px;
 }
 
 .border-dashed {
@@ -1749,16 +1749,6 @@ p {
 .border-b-\[\#ECECEC\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(236 236 236 / var(--tw-border-opacity));
-}
-
-.border-l-\[\#ECECEC\] {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(236 236 236 / var(--tw-border-opacity));
-}
-
-.border-r-\[\#ECECEC\] {
-  --tw-border-opacity: 1;
-  border-right-color: rgb(236 236 236 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -1922,18 +1912,6 @@ p {
 .bg-\[\#FFE9E9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 233 233 / var(--tw-bg-opacity));
-}
-
-.bg-inactive\/20 {
-  background-color: rgb(92 98 105 / 0.2);
-}
-
-.bg-inactive\/10 {
-  background-color: rgb(92 98 105 / 0.1);
-}
-
-.bg-inactive\/5 {
-  background-color: rgb(92 98 105 / 0.05);
 }
 
 .bg-\[url\(\'\/images\/learnpic\.svg\'\)\] {
@@ -2108,6 +2086,11 @@ p {
   padding-right: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -2141,11 +2124,6 @@ p {
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-10 {
@@ -2383,6 +2361,10 @@ p {
   color: rgb(255 255 255 / 0.5);
 }
 
+.text-black\/70 {
+  color: rgb(0 0 0 / 0.7);
+}
+
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
 }
@@ -2479,10 +2461,6 @@ p {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-black\/70 {
-  color: rgb(0 0 0 / 0.7);
 }
 
 .text-white\/70 {
@@ -2915,6 +2893,10 @@ textarea {
     width: 66.666667%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-64 {
     width: 16rem;
   }
@@ -2937,10 +2919,6 @@ textarea {
 
   .md\:w-8 {
     width: 2rem;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:w-5\/6 {
