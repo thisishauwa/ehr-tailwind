@@ -81,15 +81,23 @@
             <h3 class="font-bold text-xl md:text-2xl lg:text-3xl">
               Hauwa Suleiman
             </h3>
-            <div class="flex flex-row gap-2 mt-1">
+            <div class="flex flex-row items-center gap-2 mt-1">
               <p class="text-inactive/90">Pharmacist</p>
               <div class="text-inactive/90">&#x2022;</div>
               <button class="text-bluemedium">124 contacts</button>
+              <div class="text-inactive/90">&#x2022;</div>
+
+              <!-- Stars -->
+              <div class="flex flex-row gap-1">
+                <img src="/images/Star.svg" alt="" />
+                <img src="/images/Star.svg" alt="" />
+                <img src="/images/Star_gray.svg" alt="" />
+              </div>
             </div>
           </div>
 
           <div class="hidden md:flex md:flex-row gap-2">
-            <button class="secondary-button">Trash</button>
+            <button class="secondary-button">Reject</button>
             <button class="primary-button">Shortlist</button>
           </div>
         </div>
@@ -320,6 +328,33 @@
         <div class="flex flex-col md:hidden gap-2 mt-12">
           <button class="secondary-button">Trash</button>
           <button class="primary-button">Shortlist</button>
+        </div>
+        <div
+          class="border border-[#ECECEC] bg-[#F5F4F7] rounded-tr-md rounded-tl-md px-5 py-5 mt-14 md:w-full"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <p>Comments</p>
+            <select
+              name="Sort by"
+              id="sort"
+              class="bg-[#F5F4F7] border-[#ECECEC] text-black/70 w-40 rounded-md md:mr-5 truncate"
+            >
+              <option value="0">Most recent</option>
+              <option value="0">New</option>
+              <option value="0">Trending</option>
+              <option value="0">Another</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        <div
+          class="border-l border-r border-b border-[#ECECEC] rounded-br-md rounded-bl-md px-5 py-5 md:w-full"
+        >
+          <button class="flex flex-row justify-center items-center gap-3">
+            <img src="/images/Plus.png" alt="" class="w-8" />
+            <p>Add a new comment</p>
+          </button>
         </div>
       </section>
     </div>
