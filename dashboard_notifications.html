@@ -95,8 +95,7 @@
         </div>
       </nav>
 
-      <section class="w-full lg:w-4/5 lg:px-14">
-        <!-- Header content -->
+      <section class="w-full lg:w-4/5 lg:px-0">
         <!-- Left header content -->
         <div class="flex flex-row justify-between items-center mt-5">
           <div class="flex flex-col">
@@ -246,6 +245,97 @@
           </section>
         </div>
       </section>
+
+      <!-- Notification section -->
+
+      <div
+        class="bg-transparent absolute fixed top-0 z-[1055] h-screen right-0 w-full lg:w-4/5 outline-none"
+      >
+        <div class="flex h-full">
+          <div class="bg-white h-full w-full lg:w-1/2 p-10">
+            <p class="font-semibold text-2xl">Notifications</p>
+
+            <!-- nav items -->
+            <div
+              class="flex mt-5 gap-x-2 items-center overflow overflow-x-auto"
+            >
+              <button class="bg-gray-100 py-3 px-5 rounded-full text-gray-700">
+                General
+              </button>
+              <button class="py-3 px-5 rounded-full text-gray-500">Jobs</button>
+              <button class="py-3 px-5 rounded-full text-gray-500">
+                Assessments
+              </button>
+              <button class="py-3 px-5 rounded-full text-gray-500">
+                Courses
+              </button>
+              <button class="py-3 px-5 rounded-full text-gray-500">
+                Messaging
+              </button>
+            </div>
+
+            <div class="flex mt-14 gap-x-2 justify-between">
+              <div class="flex gap-5">
+                <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+                <div class="text-gray-500">
+                  <p>
+                    <span class="font-medium"> Helen Henry </span> has sent you
+                    a
+                  </p>
+                  <p>connection request</p>
+                  <div class="mt-5 flex gap-3">
+                    <button
+                      class="primary-button py-2 px-5 bg-black rounded text-white"
+                    >
+                      Accept
+                    </button>
+                    <button
+                      class="secondary-button py-2 px-5 border border-black rounded text-black"
+                    >
+                      Deny
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-gray-500">10 mins ago</div>
+            </div>
+            <hr class="mt-8" />
+            <div class="flex mt-10 gap-x-2 justify-between">
+              <div class="flex gap-5">
+                <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+                <div class="text-gray-500">
+                  <p>Your profile has been shortlisted</p>
+                  <p>at EHA clinics</p>
+                </div>
+              </div>
+
+              <div class="text-gray-500">2 days ago</div>
+            </div>
+            <hr class="mt-8" />
+            <div class="flex mt-10 gap-x-2 justify-between">
+              <div class="flex gap-5">
+                <div class="w-14 h-14 bg-gray-200 rounded-full"></div>
+                <div class="text-gray-500">
+                  <p>We have a new course available</p>
+                  <p>for you!</p>
+                  <div class="mt-5 flex gap-5">
+                    <button
+                      class="secondary-button py-2 px-5 border border-black rounded text-black"
+                    >
+                      Check it out
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="text-gray-500">2 days ago</div>
+            </div>
+          </div>
+          <div
+            class="backdrop-blur-lg h-full w-1/2 backdrop-brightness-90"
+          ></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
