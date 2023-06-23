@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- profile -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-3 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <!-- Mobile icon -->
+            <i class="fi fi-rr-user text-lg text-bluemedium lg:hidden"></i>
+
+            <!-- web icon -->
+
+            <i class="fi fi-rr-user text-xl text-white hidden lg:block"></i>
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              Profile
+            </p>
+          </div>
+          <!-- sms -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i
+              class="fi fi-rr-comment-alt-middle text-lg lg:text-xl text-inactive"
+            ></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Messages
+            </p>
+          </div>
+          <!-- jobs -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-briefcase text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">Jobs</p>
+          </div>
+          <!-- courses -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 md:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-books text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Courses
+            </p>
+          </div>
+          <!-- contacts -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-users-alt text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Contacts
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">
+              Hello there, <span class="inline-block font-bold">Hauwa</span>
+            </h3>
+            <p
+              class="text-sm max-w-[200px] mt-1 text-inactive md:max-w-md lg:text-base"
+            >
+              Here's what's going on with your account today
+            </p>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt-12 lg:mt-16">
+          <!-- search and filter -->
+          <div
+            class="flex flex-row items-center justify-between bg-white rounded-md mt-14 md:mt-20"
+          >
+            <!-- filter -->
+            <div class="hidden lg:flex items-center gap-8">
+              <p class="text-bluemedium p-2 bg-indigo-100 w-fit rounded-sm">
+                All
+              </p>
+              <p class="text-inactive hover:text-bluemedium">Medicine</p>
+              <p class="text-inactive hover:text-bluemedium">Nursing</p>
+              <p class="text-inactive hover:text-bluemedium">Dentistry</p>
+            </div>
+
+            <!-- Cross -->
+            <div class="md:hidden hover:scale-110 duration-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Outline"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <rect y="11" width="24" height="2" rx="1" />
+                <rect y="4" width="24" height="2" rx="1" />
+                <rect y="18" width="24" height="2" rx="1" />
+              </svg>
+            </div>
+
+            <!-- Sort by -->
+            <div class="hidden md:flex lg:hidden flex-row items-center gap-3">
+              <p class="w-full md:w-auto text-inactive">Sort by:</p>
+              <select
+                name="Sort by"
+                id="sort"
+                class="bg-[#F5F4F7] border-[#ECECEC] text-black/70 w-5/6 md:w-40 rounded-md md:mr-5 truncate"
+              >
+                <option value="0">Recommended</option>
+                <option value="0">New</option>
+                <option value="0">Trending</option>
+                <option value="0">Another</option>
+              </select>
+            </div>
+            <!-- search bar -->
+            <div class="md:mt-0 flex flex-row">
+              <!-- search bar -->
+              <div class="relative w-full md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-3 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-3 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-tl-md rounded-bl-md md:mr-5 truncate"
+                  placeholder="Search webinars"
+                />
+              </div>
+
+              <!-- filter -->
+              <button class="bg-bluemedium p-3 rounded-tr-md rounded-br-md">
+                <i class="fi fi-rr-settings-sliders text-white"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- cards container-->
+          <div
+            class="mt-20 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-x-5 gap-y-5 md:gap-y-10"
+          >
+            <!-- cards -->
+            <div class="w-full rounded border border-[#ececec]">
+              <div
+                class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+              ></div>
+              <div class="px-3 pt-3">
+                <p class="font-medium">
+                  Westard Rules For the Real World: The Most Practical
+                  Application of a Powerful QC
+                </p>
+              </div>
+
+              <!-- stars -->
+              <div class="flex flex-row items-center gap-2 px-3 pt-3">
+                <div class="flex flex-row">
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star_gray.svg" alt="star" />
+                </div>
+
+                <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+              </div>
+
+              <!-- line -->
+              <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+              <!-- time -->
+              <div class="flex justify-between px-3 pb-3">
+                <p class="text-inactive/80">2hrs 4min</p>
+                <p class="text-inactive/80">5 modules</p>
+              </div>
+            </div>
+            <div class="w-full rounded border border-[#ececec]">
+              <div
+                class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+              ></div>
+              <div class="px-3 pt-3">
+                <p class="font-medium">
+                  Westard Rules For the Real World: The Most Practical
+                  Application of a Powerful QC
+                </p>
+              </div>
+
+              <!-- stars -->
+              <div class="flex flex-row items-center gap-2 px-3 pt-3">
+                <div class="flex flex-row">
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star_gray.svg" alt="star" />
+                </div>
+
+                <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+              </div>
+
+              <!-- line -->
+              <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+              <!-- time -->
+              <div class="flex justify-between px-3 pb-3">
+                <p class="text-inactive/80">2hrs 4min</p>
+                <p class="text-inactive/80">5 modules</p>
+              </div>
+            </div>
+            <div class="w-full rounded border border-[#ececec]">
+              <div
+                class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+              ></div>
+              <div class="px-3 pt-3">
+                <p class="font-medium">
+                  Westard Rules For the Real World: The Most Practical
+                  Application of a Powerful QC
+                </p>
+              </div>
+
+              <!-- stars -->
+              <div class="flex flex-row items-center gap-2 px-3 pt-3">
+                <div class="flex flex-row">
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star_gray.svg" alt="star" />
+                </div>
+
+                <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+              </div>
+
+              <!-- line -->
+              <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+              <!-- time -->
+              <div class="flex justify-between px-3 pb-3">
+                <p class="text-inactive/80">2hrs 4min</p>
+                <p class="text-inactive/80">5 modules</p>
+              </div>
+            </div>
+            <div class="w-full rounded border border-[#ececec]">
+              <div
+                class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+              ></div>
+              <div class="px-3 pt-3">
+                <p class="font-medium">
+                  Westard Rules For the Real World: The Most Practical
+                  Application of a Powerful QC
+                </p>
+              </div>
+
+              <!-- stars -->
+              <div class="flex flex-row items-center gap-2 px-3 pt-3">
+                <div class="flex flex-row">
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star_gray.svg" alt="star" />
+                </div>
+
+                <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+              </div>
+
+              <!-- line -->
+              <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+              <!-- time -->
+              <div class="flex justify-between px-3 pb-3">
+                <p class="text-inactive/80">2hrs 4min</p>
+                <p class="text-inactive/80">5 modules</p>
+              </div>
+            </div>
+            <div class="w-full rounded border border-[#ececec]">
+              <div
+                class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+              ></div>
+              <div class="px-3 pt-3">
+                <p class="font-medium">
+                  Westard Rules For the Real World: The Most Practical
+                  Application of a Powerful QC
+                </p>
+              </div>
+
+              <!-- stars -->
+              <div class="flex flex-row items-center gap-2 px-3 pt-3">
+                <div class="flex flex-row">
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star_gray.svg" alt="star" />
+                </div>
+
+                <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+              </div>
+
+              <!-- line -->
+              <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+              <!-- time -->
+              <div class="flex justify-between px-3 pb-3">
+                <p class="text-inactive/80">2hrs 4min</p>
+                <p class="text-inactive/80">5 modules</p>
+              </div>
+            </div>
+            <div class="w-full rounded border border-[#ececec]">
+              <div
+                class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+              ></div>
+              <div class="px-3 pt-3">
+                <p class="font-medium">
+                  Westard Rules For the Real World: The Most Practical
+                  Application of a Powerful QC
+                </p>
+              </div>
+
+              <!-- stars -->
+              <div class="flex flex-row items-center gap-2 px-3 pt-3">
+                <div class="flex flex-row">
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star.svg" alt="star" />
+                  <img src="/images/Star_gray.svg" alt="star" />
+                </div>
+
+                <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+              </div>
+
+              <!-- line -->
+              <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+              <!-- time -->
+              <div class="flex justify-between px-3 pb-3">
+                <p class="text-inactive/80">2hrs 4min</p>
+                <p class="text-inactive/80">5 modules</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="max-w-[2000px] mx-auto px-6 lg:px-20 sticky top-0 z-30 shadow-sm bg-white"
+    >
+      <!-- Flex container for all items -->
+      <div class="flex items-center justify-between">
+        <!-- image -->
+        <div><img src="/images/logo.svg" alt="ehr logo" /></div>
+
+        <!-- options container -->
+        <div
+          class="hidden lg:flex lg:flex-row justify-center items-center gap-4"
+        >
+          <!-- options -->
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Home</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> About us</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Find work</a>
+          </div>
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Find talent</a>
+          </div>
+          <div class="p-2 text-bluemedium font-medium">
+            <a href="#"> Courses</a>
+          </div>
+        </div>
+
+        <!-- login container -->
+        <div
+          class="hidden lg:flex lg:flex-row justify-center items-center gap-4"
+        >
+          <!-- login options -->
+          <div class="p-2 text-inactive hover:text-bluestrong">
+            <a href="#"> Login</a>
+          </div>
+          <div class="secondary-button px-6 py-5 my-5">
+            <a href="#"> Sign up</a>
+          </div>
+        </div>
+
+        <!-- Cross -->
+        <div class="lg:hidden my-6 hover:scale-110 duration-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Outline"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <rect y="11" width="24" height="2" rx="1" />
+            <rect y="4" width="24" height="2" rx="1" />
+            <rect y="18" width="24" height="2" rx="1" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <!-- header text -->
+        <div class="flex flex-col gap-5 items-center justify-center mt-16">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl text-center w-3/4 lg:w-[400px] leading-relaxed"
+          >
+            Reach new heights by joining our webinars!
+          </h1>
+          <p class="md:w-[415px] text-center text-[#444444]">
+            Skill up and have an impact! Your business career starts here. Time
+            to start a course
+          </p>
+        </div>
+
+        <!-- search and filter -->
+        <div
+          class="flex flex-row items-center justify-between p-3 md:p-5 bg-white drop-shadow-md rounded-md mt-14 md:mt-20"
+        >
+          <!-- filter -->
+          <div class="hidden lg:flex items-center gap-8">
+            <p class="text-bluemedium p-2 bg-indigo-100 w-fit rounded-sm">
+              All
+            </p>
+            <p class="text-inactive hover:text-bluemedium">Medicine</p>
+            <p class="text-inactive hover:text-bluemedium">Nursing</p>
+            <p class="text-inactive hover:text-bluemedium">Dentistry</p>
+          </div>
+
+          <!-- Cross -->
+          <div class="lg:hidden hover:scale-110 duration-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <rect y="11" width="24" height="2" rx="1" />
+              <rect y="4" width="24" height="2" rx="1" />
+              <rect y="18" width="24" height="2" rx="1" />
+            </svg>
+          </div>
+
+          <!-- search bar -->
+          <div class="md:mt-0 flex flex-row">
+            <!-- search bar -->
+            <div class="relative w-full md:w-[200px] lg:w-80">
+              <img
+                src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                alt=""
+                class="absolute w-6 h-6 top-3 left-4"
+              />
+              <input
+                type="text"
+                class="py-3 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-tl-md rounded-bl-md md:mr-5 truncate"
+                placeholder="Search webinars"
+              />
+            </div>
+
+            <!-- filter -->
+            <button class="bg-bluemedium p-3 rounded-tr-md rounded-br-md">
+              <i class="fi fi-rr-settings-sliders text-white"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- cards container-->
+        <div
+          class="mt-20 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-x-5 gap-y-5 md:gap-y-10"
+        >
+          <!-- cards -->
+          <div class="w-full rounded border border-[#ececec]">
+            <div
+              class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+            ></div>
+            <div class="px-3 pt-3">
+              <p class="font-medium">
+                Westard Rules For the Real World: The Most Practical Application
+                of a Powerful QC
+              </p>
+            </div>
+
+            <!-- stars -->
+            <div class="flex flex-row items-center gap-2 px-3 pt-3">
+              <div class="flex flex-row">
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star_gray.svg" alt="star" />
+              </div>
+
+              <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+            </div>
+
+            <!-- line -->
+            <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+            <!-- time -->
+            <div class="flex justify-between px-3 pb-3">
+              <p class="text-inactive/80">2hrs 4min</p>
+              <p class="text-inactive/80">5 modules</p>
+            </div>
+          </div>
+          <div class="w-full rounded border border-[#ececec]">
+            <div
+              class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+            ></div>
+            <div class="px-3 pt-3">
+              <p class="font-medium">
+                Westard Rules For the Real World: The Most Practical Application
+                of a Powerful QC
+              </p>
+            </div>
+
+            <!-- stars -->
+            <div class="flex flex-row items-center gap-2 px-3 pt-3">
+              <div class="flex flex-row">
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star_gray.svg" alt="star" />
+              </div>
+
+              <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+            </div>
+
+            <!-- line -->
+            <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+            <!-- time -->
+            <div class="flex justify-between px-3 pb-3">
+              <p class="text-inactive/80">2hrs 4min</p>
+              <p class="text-inactive/80">5 modules</p>
+            </div>
+          </div>
+          <div class="w-full rounded border border-[#ececec]">
+            <div
+              class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+            ></div>
+            <div class="px-3 pt-3">
+              <p class="font-medium">
+                Westard Rules For the Real World: The Most Practical Application
+                of a Powerful QC
+              </p>
+            </div>
+
+            <!-- stars -->
+            <div class="flex flex-row items-center gap-2 px-3 pt-3">
+              <div class="flex flex-row">
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star_gray.svg" alt="star" />
+              </div>
+
+              <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+            </div>
+
+            <!-- line -->
+            <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+            <!-- time -->
+            <div class="flex justify-between px-3 pb-3">
+              <p class="text-inactive/80">2hrs 4min</p>
+              <p class="text-inactive/80">5 modules</p>
+            </div>
+          </div>
+          <div class="w-full rounded border border-[#ececec]">
+            <div
+              class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+            ></div>
+            <div class="px-3 pt-3">
+              <p class="font-medium">
+                Westard Rules For the Real World: The Most Practical Application
+                of a Powerful QC
+              </p>
+            </div>
+
+            <!-- stars -->
+            <div class="flex flex-row items-center gap-2 px-3 pt-3">
+              <div class="flex flex-row">
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star_gray.svg" alt="star" />
+              </div>
+
+              <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+            </div>
+
+            <!-- line -->
+            <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+            <!-- time -->
+            <div class="flex justify-between px-3 pb-3">
+              <p class="text-inactive/80">2hrs 4min</p>
+              <p class="text-inactive/80">5 modules</p>
+            </div>
+          </div>
+          <div class="w-full rounded border border-[#ececec]">
+            <div
+              class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+            ></div>
+            <div class="px-3 pt-3">
+              <p class="font-medium">
+                Westard Rules For the Real World: The Most Practical Application
+                of a Powerful QC
+              </p>
+            </div>
+
+            <!-- stars -->
+            <div class="flex flex-row items-center gap-2 px-3 pt-3">
+              <div class="flex flex-row">
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star_gray.svg" alt="star" />
+              </div>
+
+              <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+            </div>
+
+            <!-- line -->
+            <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+            <!-- time -->
+            <div class="flex justify-between px-3 pb-3">
+              <p class="text-inactive/80">2hrs 4min</p>
+              <p class="text-inactive/80">5 modules</p>
+            </div>
+          </div>
+          <div class="w-full rounded border border-[#ececec]">
+            <div
+              class="bg-[url('/images/manflying.png')] bg-cover h-[150px] bg-center"
+            ></div>
+            <div class="px-3 pt-3">
+              <p class="font-medium">
+                Westard Rules For the Real World: The Most Practical Application
+                of a Powerful QC
+              </p>
+            </div>
+
+            <!-- stars -->
+            <div class="flex flex-row items-center gap-2 px-3 pt-3">
+              <div class="flex flex-row">
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star.svg" alt="star" />
+                <img src="/images/Star_gray.svg" alt="star" />
+              </div>
+
+              <p class="hidden md:block text-sm text-inactive/70">4.5</p>
+            </div>
+
+            <!-- line -->
+            <div class="h-[1px] my-4 bg-[#ececec]"></div>
+
+            <!-- time -->
+            <div class="flex justify-between px-3 pb-3">
+              <p class="text-inactive/80">2hrs 4min</p>
+              <p class="text-inactive/80">5 modules</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="container-body bg-black mt-24">
+      <!-- Entire footer div -->
+      <div
+        class="flex flex-col py-11 space-y-5 justify-center items-center md:items-start md:justify-between md:max-w-full"
+      >
+        <div class="flex flex-col md:min-w-full md:flex-row md:justify-between">
+          <!-- Footer div for Logo and tagline -->
+          <div
+            class="flex flex-col justify-center items-center text-white md:items-start md:justify-start"
+          >
+            <h3 class="text-2xl font-bold md:mt-4">Recruitment Platform</h3>
+            <p class="text-gray-300">
+              This is where the company tagline would go
+            </p>
+          </div>
+
+          <!-- Div for right footer items -->
+          <div
+            class="flex flex-col md:flex-row md:space-x-8 lg:space-x-32 md:justify-start"
+          >
+            <!-- Item 1 -->
+            <div
+              class="flex flex-col mt-7 justify-center items-center md:justify-start md:items-start"
+            >
+              <h3 class="text-white">Quick links</h3>
+              <p class="small text-inactive mt-5 hover:text-white">
+                <a href="#">Courses</a>
+              </p>
+              <p class="small text-inactive mt-3 hover:text-white">
+                <a href="#">Find work</a>
+              </p>
+              <p class="small text-inactive mt-3 hover:text-white">
+                <a href="#">Find talent</a>
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="flex flex-col mt-7 justify-center items-center md:justify-start md:items-start"
+            >
+              <h3 class="text-white">Company</h3>
+              <p class="small text-inactive mt-5 hover:text-white">
+                <a href="#">About us</a>
+              </p>
+              <p class="small text-inactive mt-3 hover:text-white">
+                <a href="#">Blog</a>
+              </p>
+              <p class="small text-inactive mt-3 hover:text-white">
+                <a href="#">Terms and conditions</a>
+              </p>
+              <p class="small text-inactive mt-3 hover:text-white">
+                <a href="#">Privacy policy</a>
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="flex flex-col mt-7 justify-center items-center md:justify-start md:items-start"
+            >
+              <h3 class="text-white">Help</h3>
+              <p class="small text-inactive mt-5 hover:text-white">
+                <a href="#">Contact us</a>
+              </p>
+              <p class="small text-inactive mt-3 hover:text-white">
+                <a href="#">FAQs</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="small text-inactive mt-7">Powered by EHA Clinics</p>
+      </div>
+    </footer>
+  </body>
+</html>
