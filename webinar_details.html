@@ -9,485 +9,134 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Dashboard overview</title>
   </head>
   <body>
-    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
-      <section class="w-full lg:px-20 mb-32 md:mb-36 lg:mb-12">
-        <!-- Nav -->
-        <div class="flex items-center justify-between">
-          <!-- image -->
-          <div><img src="/images/logo.svg" alt="ehr logo" /></div>
-
-          <!-- options container -->
+    <section class="sectionplan">
+      <div class="">
+        <div class="flex flex-col lg:flex-row">
+          <!-- left -->
           <div
-            class="hidden lg:flex lg:flex-row justify-center items-center gap-4"
+            class="flex flex-col justify-between w-full lg:w-1/2 lg:h-screen lg:sticky lg:top-0 lg:left-0 pt-10 lg:py-10 lg:px-20 lg:bg-gray-50"
           >
-            <!-- options -->
-            <div class="p-2 text-inactive hover:text-bluestrong">
-              <a href="#"> Home</a>
-            </div>
-            <div class="p-2 text-inactive hover:text-bluestrong">
-              <a href="#"> About us</a>
-            </div>
-            <div class="p-2 text-inactive hover:text-bluestrong">
-              <a href="#"> Find work</a>
-            </div>
-            <div class="p-2 text-inactive hover:text-bluestrong">
-              <a href="#"> Find talent</a>
-            </div>
-            <div class="p-2 text-bluemedium font-medium">
-              <a href="#"> Courses</a>
-            </div>
-          </div>
-
-          <!-- login container -->
-          <div
-            class="hidden lg:flex lg:flex-row justify-center items-center gap-4"
-          >
-            <!-- login options -->
-            <div class="p-2 text-inactive hover:text-bluestrong">
-              <a href="#"> Login</a>
-            </div>
-            <div class="secondary-button px-6 py-5 my-5">
-              <a href="#"> Sign up</a>
-            </div>
-          </div>
-
-          <!-- Cross -->
-          <div class="lg:hidden my-6 hover:scale-110 duration-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              id="Outline"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-            >
-              <rect y="11" width="24" height="2" rx="1" />
-              <rect y="4" width="24" height="2" rx="1" />
-              <rect y="18" width="24" height="2" rx="1" />
-            </svg>
-          </div>
-        </div>
-        <!-- Header and Image -->
-        <div
-          class="flex flex-col pt-10 bg-bluestrong -mx-6 md:flex md:flex-row md:py-10 lg:-mx-20 text-white"
-        >
-          <!-- Left side -->
-          <div class="w-full md:w-3/5 px-6 lg:px-20">
-            <button class="flex flex-row items-center gap-1">
-              <img src="/images/arrow-left.svg" alt="" />
-              <p class="text-white">Back</p>
-            </button>
-
-            <h2 class="text-lg text-white lg:text-xl mt-10">
-              How to Become a Certified Nursing Assistant (CNA)
-            </h2>
-
-            <!-- Stars -->
-            <div class="flex flex-row items-center gap-5 mt-5">
-              <div class="flex flex-row gap-0.5">
-                <img src="/images/Star.svg" alt="star" />
-                <img src="/images/Star.svg" alt="star" />
-                <img src="/images/Star.svg" alt="star" />
-                <img src="/images/Star.svg" alt="star" />
-                <img src="/images/Star_gray.svg" alt="star" />
+            <!-- back button -->
+            <div>
+              <div class="flex items-center gap-1">
+                <i class="fi fi-rr-angle-small-left mt-1 text-bluemedium"></i>
+                <button class="text-bluemedium">Back to webinars</button>
               </div>
-              <div class="h-[20px] w-[1px] bg-white"></div>
-              <p class="text-sm text-white/50 md:text-base">341 viewed</p>
-            </div>
-            <div class="flex gap-3">
-              <button
-                class="px-5 py-4 md:px-6 md:py-5 mt-10 border border-white rounded-md hover:bg-bluestrong text-white"
-              >
-                Add a review
-              </button>
-              <button
-                class="px-5 py-4 md:px-6 md:py-5 mt-10 bg-white border border-white text-bluestrong rounded-md hover:bg-bluestrong hover:text-white"
-              >
-                Make payment
-              </button>
-            </div>
-          </div>
-
-          <!-- Right side -->
-          <div class="mt-10 -mr-6 w-full md:w-2/5 md:-mr-6 md:-my-10">
-            <div
-              class="bg-[url('/images/learnpic.svg')] bg-no-repeat bg-cover bg-center w-full h-[300px] md:h-full"
-            >
-              <div
-                class="flex items-center justify-center bg-gradient-to-b from-transparent to-black/70 h-full w-full"
-              >
-                <button>
-                  <img src="/images/play.svg" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories -->
-        <div
-          class="px-6 -mx-6 pt-10 pb-5 border-b border-[#f1f1f1] lg:-mx-20 lg:px-20"
-        >
-          <div
-            class="flex flex-row justify-between text-sm md:text-base md:justify-start md:gap-16"
-          >
-            <a href="#">About</a>
-
-            <a href="#" class="text-inactive/70">Course structure</a>
-            <a href="#" class="text-inactive/70">Reviews</a>
-          </div>
-        </div>
-
-        <!-- About this course -->
-        <div class="flex flex-col lg:flex-row-reverse lg:gap-24 lg:mt-14">
-          <!-- Perks -->
-          <div
-            class="border border-[#f1f1f1] rounded-md px-5 py-8 mt-10 bg-[#FCFCFC] md:w-1/2 lg:w-2/5 lg:mt-0"
-          >
-            <!-- perk 1 -->
-            <div class="flex flex-row gap-4 pb-8 border-b border-inactive/10">
-              <img src="/images/medal.svg" alt="medal" />
-              <div class="flex flex-col">
-                <p>Certificate of completion</p>
-                <p class="text-sm text-inactive/50">
-                  Earn a widely recognized certificate
-                </p>
-              </div>
-            </div>
-
-            <!-- perk 2 -->
-            <div class="flex flex-row gap-4 py-8 border-b border-inactive/10">
-              <img src="/images/laptop.svg" alt="medal" />
-              <div class="flex flex-col">
-                <p>100% remote</p>
-                <p class="text-sm text-inactive/50">
-                  You learn at your own pace
-                </p>
-              </div>
-            </div>
-
-            <!-- perk 3 -->
-            <div class="flex flex-row gap-4 pt-8">
-              <img src="/images/document.svg" alt="medal" />
-              <div class="flex flex-col">
-                <p>Lifetime ownership</p>
-                <p class="text-sm text-inactive/50">
-                  Own this course and all materials for life
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- About text -->
-          <div class="mt-10 lg:mt-0 lg:w-3/5">
-            <h2 class="text-lg lg:text-xl">About this webinar</h2>
-            <p class="text-[#5C5C5C] mt-3 md:w-3/4 lg:w-full">
-              Good typography can add tremendous power to your design and your
-              message, whether it is a print- or screen-based project, a still
-              or motion graphic, a 3D or 2D graphic. This course explains good
-              typographic practices, so that you can develop an "eye" for type
-              and understand how to effectively use it. Author Ina Saltz
-              explains type classifications (serif vs. sans serif, display type
-              vs. text type), how type is measured, sized, and organized, and
-              how spacing and alignment affect your design. She also explains
-              how to use kerning, tracking, leading, and line length, and covers
-              the history and current trends in typography. The course teaches
-              the principles of legibility, readability, and compatibility, and
-              how they should be considered when you're selecting and designing
-              with type.
-            </p>
-          </div>
-        </div>
-
-        <!-- What you'll learn -->
-        <div class="mt-10">
-          <h3 class="text-md lg:text-xl">What you'll learn</h3>
-          <!-- Ticks -->
-          <div class="mt-5">
-            <div class="flex flex-row gap-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Install Python and write your first program</p>
-            </div>
-            <div class="flex flex-row gap-3 mt-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Describe the basics of the Python programming language</p>
-            </div>
-            <div class="flex flex-row gap-3 mt-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Utilize core programming tools such as functions and loops</p>
-            </div>
-            <div class="flex flex-row gap-3 mt-3">
-              <img src="/images/bluetick.svg" alt="" />
-              <p>Use variables to store, retrieve and calculate information</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills you'll acquire -->
-        <div class="mt-10">
-          <h3 class="text-md lg:text-xl">Skills you'll acquire</h3>
-          <!-- boxes -->
-          <div class="flex flex-wrap gap-3 mt-5">
-            <div
-              class="px-3 py-3 border-[1.5px] border-bluestrong bg-[#F4F6FF] rounded-md max-w-fit"
-            >
-              Python programming
-            </div>
-            <div
-              class="px-3 py-3 border-[1.5px] border-bluestrong bg-[#F4F6FF] rounded-md max-w-fit"
-            >
-              Basics of fishing
-            </div>
-            <div
-              class="px-3 py-3 border-[1.5px] border-bluestrong bg-[#F4F6FF] rounded-md max-w-fit"
-            >
-              Fencing and swordplay
-            </div>
-          </div>
-        </div>
-
-        <!-- Course structure Accordion -->
-        <!-- Accordion -->
-        <div class="mt-14">
-          <h2 class="text-lg lg:text-2xl">Course Structure</h2>
-          <div class="flex flex-row items-center gap-2 mt-2">
-            <p class="text-inactive/80 text-sm">30 chapters</p>
-            <div class="text-inactive/80">&#x2022;</div>
-            <p class="text-inactive/80 text-sm">4 hours 10 minutes</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col lg:flex-row mt-3">
-          <!-- Perks -->
-          <div
-            class="border border-[#f1f1f1] rounded-md px-5 py-8 mt-2 bg-[#FCFCFC] w-full md:w-3/5 lg:mt-0"
-          >
-            <!-- Chapter one -->
-            <div class="pb-6 border-b">
-              <div class="flex flex-row justify-between">
-                <p class="text-sm">Chapter One: Why we program</p>
-                <button>
-                  <i class="fi fi-br-minus text-bluemedium"></i>
-                </button>
+              <!-- topic -->
+              <div class="mt-16">
+                <p class="text-xs lg:text-sm font-bold">TOPIC</p>
+                <h1
+                  class="text-lg md:text-3xl lg:text-4xl mt-2 text-bluemedium md:w-2/3 lg:w-full"
+                >
+                  Laboratory Biorisk Management: Standards and Practice
+                </h1>
               </div>
 
-              <!-- Parts and time -->
-              <div class="flex flex-row gap-2 text-sm">
-                <p class="text-inactive/80">5 parts</p>
-                <div class="text-inactive/80">&#x2022;</div>
-                <p class="text-inactive/80">50 minutes</p>
-              </div>
-
-              <!-- Chapters -->
-              <div class="flex flex-row gap-3 items-center mt-5">
-                <img src="/images/tick.png" alt="" class="w-4 h-4" />
-                <div>
-                  <p class="text-inactive/80 text-sm">
-                    What makes the world go round
-                  </p>
-                  <p class="text-inactive/80 text-xs">5 minutes 25 seconds</p>
-                </div>
-              </div>
-
-              <!-- chapter 2 -->
-              <div class="flex flex-row items-center gap-3 mt-4">
-                <img src="/images/blue circle.png" alt="" class="w-4 h-4" />
-                <div>
-                  <p class="text-bluemedium text-sm">
-                    What makes the world go round
-                  </p>
-                  <p class="text-bluemedium text-xs">5 minutes 25 seconds</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Chapter two -->
-            <div class="pb-6 border-b mt-6">
-              <div class="flex flex-row justify-between">
-                <p class="text-sm">Chapter Two: Why we program</p>
-                <button>
-                  <i class="fi fi-br-plus text-inactive/80"></i>
-                </button>
-              </div>
-
-              <!-- Parts and time -->
-              <div class="flex flex-row gap-2 text-sm">
-                <p class="text-inactive/80">5 parts</p>
-                <div class="text-inactive/80">&#x2022;</div>
-                <p class="text-inactive/80">50 minutes</p>
-              </div>
-            </div>
-
-            <!-- Chapter two -->
-            <div class="pb-6 border-b mt-6">
-              <div class="flex flex-row justify-between">
-                <p class="text-sm">Chapter Three: Why we program</p>
-                <button>
-                  <i class="fi fi-br-plus text-inactive/80"></i>
-                </button>
-              </div>
-
-              <!-- Parts and time -->
-              <div class="flex flex-row gap-2 text-sm">
-                <p class="text-inactive/80">5 parts</p>
-                <div class="text-inactive/80">&#x2022;</div>
-                <p class="text-inactive/80">50 minutes</p>
-              </div>
-            </div>
-
-            <!-- Chapter two -->
-            <div class="mt-6">
-              <div class="flex flex-row justify-between">
-                <p class="text-sm">Chapter Four: Why we program</p>
-                <button>
-                  <i class="fi fi-br-plus text-inactive/80"></i>
-                </button>
-              </div>
-
-              <!-- Parts and time -->
-              <div class="flex flex-row gap-2 text-sm">
-                <p class="text-inactive/80">5 parts</p>
-                <div class="text-inactive/80">&#x2022;</div>
-                <p class="text-inactive/80">50 minutes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Reviews -->
-        <div class="mt-14">
-          <h2 class="text-lg lg:text-2xl">Reviews</h2>
-
-          <!-- Full reviews div -->
-          <div class="flex flex-col lg:flex-row lg:gap-10 mt-5">
-            <!-- Left side -->
-            <div class="lg:w-2/5">
-              <!-- Numbers -->
-              <div class="flex flex-row gap-5 items-center">
-                <p class="text-5xl md:text-6xl lg:text-8xl">4.87</p>
-                <div>
-                  <div class="flex flex-row gap-0.5">
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img src="/images/Star.svg" alt="" class="md:h-[20px]" />
-                    <img
-                      src="/images/Star_gray.svg"
-                      alt=""
-                      class="md:h-[20px]"
-                    />
-                  </div>
-                  <p class="text-inactive/70 mt-2 lg:mt-3 lg:text-lg">
-                    10 reviews
-                  </p>
-                </div>
-              </div>
-
-              <!-- 4-stars -->
+              <!-- price -->
               <div class="mt-8">
-                <div class="flex flex-row items-center">
-                  <p>5 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-11/12"></div>
-                  </div>
-                  <p class="text-inactive/70">90%</p>
+                <p class="text-xs lg:text-sm font-bold">PRICE</p>
+                <p class="text-lg md:text-2xl font-medium">NGN 1,500.00</p>
+              </div>
+
+              <!-- start and end -->
+              <div class="mt-8 flex gap-16">
+                <div>
+                  <p class="text-xs lg:text-sm font-bold">START DATE</p>
+                  <p class="text-lg font-medium">JUNE 27, 2023</p>
+                  <p class="text-inactive/80">4:00PM</p>
                 </div>
 
-                <!-- second -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>4 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-3/4"></div>
-                  </div>
-                  <p class="text-inactive/70">75%</p>
-                </div>
-
-                <!-- third -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>3 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-1/4"></div>
-                  </div>
-                  <p class="text-inactive/70">30%</p>
-                </div>
-
-                <!-- fourth -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>2 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-1/6"></div>
-                  </div>
-                  <p class="text-inactive/70">15%</p>
-                </div>
-
-                <!-- fifth -->
-                <div class="flex flex-row items-center mt-3">
-                  <p>1 stars</p>
-                  <div class="bg-[#CCDBFB] rounded-md h-2 w-56 mr-3 ml-6">
-                    <div class="bg-bluemedium rounded-md h-2 w-1/12"></div>
-                  </div>
-                  <p class="text-inactive/70">2%</p>
+                <div>
+                  <p class="text-xs lg:text-sm font-bold">END DATE</p>
+                  <p class="text-lg font-medium">JUNE 28, 2023</p>
+                  <p class="text-inactive/80">5:00PM</p>
                 </div>
               </div>
             </div>
+            <div>
+              <!-- organizer -->
+              <div class="mt-8">
+                <p class="text-xs lg:text-sm font-bold">ORGANIZER</p>
+                <p class="text-lg md:text-xl font-medium">
+                  EHA Clinics Limited
+                </p>
 
-            <!-- Right side -->
-            <div class="lg:w-3/5">
-              <div class="mt-14 lg:mt-0">
-                <!-- top -->
-                <div class="flex flex-row gap-5 items-start">
-                  <img src="/images/hijabgirl.svg" alt="" />
-                  <div>
-                    <p class="font-bold">Nana Hauwa</p>
-                    <div class="flex flex-row gap-1 mt-2">
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star_gray.svg" alt="" />
-                    </div>
+                <div class="mt-3">
+                  <div class="flex items-center gap-2">
+                    <i
+                      class="fi fi-sr-circle-phone-flip mt-1 text-inactive"
+                    ></i>
+                    <p class="text-inactive">0800-342-254-6427</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fi fi-sr-circle-envelope mt-1 text-inactive"></i>
+                    <p class="text-inactive">reach@eha.ng</p>
                   </div>
                 </div>
-
-                <!-- bottom -->
-                <p class="mt-5 max-w-md">
-                  There’s a lot of things I have to do, all these distractions,
-                  my future is coming soon.
-                </p>
-                <p class="text-inactive/70 text-sm mt-3">2 days ago</p>
-              </div>
-
-              <!-- second review -->
-              <div>
-                <!-- top -->
-                <div class="flex flex-row gap-5 items-start mt-8">
-                  <img src="/images/hijabgirl.svg" alt="" />
-                  <div>
-                    <p class="font-bold">Nana Hauwa</p>
-                    <div class="flex flex-row gap-1 mt-2">
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star.svg" alt="" />
-                      <img src="/images/Star_gray.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- bottom -->
-                <p class="mt-5 max-w-md">
-                  There’s a lot of things I have to do, all these distractions,
-                  my future is coming soon.
-                </p>
-                <p class="text-inactive/70 text-sm mt-3">2 days ago</p>
               </div>
             </div>
           </div>
+
+          <!-- right -->
+          <div
+            class="flex flex-col justify-center w-full lg:w-1/2 lg:py-10 lg:px-20 mt-20 lg:mt-0"
+          >
+            <h2 class="text-xl md:text-2xl">Join the event</h2>
+
+            <!-- forms -->
+            <div class="flex flex-col gap-3 lg:gap-5 lg:mt-10 mt-5">
+              <div>
+                <p>Full name</p>
+                <input
+                  type="text"
+                  placeholder="Jane doe"
+                  class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                />
+              </div>
+              <div>
+                <p>Email address</p>
+                <input
+                  type="email"
+                  placeholder="Janedoe@gmail.com"
+                  class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                />
+              </div>
+              <div>
+                <p>Phone number (optional)</p>
+                <input
+                  type="text"
+                  placeholder="0800 000 0000"
+                  class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                />
+              </div>
+              <!-- price -->
+              <div>
+                <p>Quantity</p>
+                <input
+                  type="number"
+                  placeholder="Input number of tickets"
+                  class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                />
+              </div>
+            </div>
+            <button class="primary-button mt-10">
+              Register for this event
+            </button>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
