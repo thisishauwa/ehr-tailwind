@@ -84,4 +84,7 @@ textarea {
   .container {
     @apply mx-auto max-w-[1440px];
   }
+  .containerthin {
+    @apply mx-auto max-w-[800px];
+  }
 }
