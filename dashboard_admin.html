@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- settings -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-3 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <!-- Mobile icon -->
+            <i class="fi fi-rr-settings text-lg text-bluemedium lg:hidden"></i>
+
+            <!-- web icon -->
+
+            <i class="fi fi-rr-settings text-xl text-white hidden lg:block"></i>
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              Dashboard
+            </p>
+          </div>
+
+          <!-- users -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-user text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              All users
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">Dashboard</h3>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- content container-->
+        <div class="mt-10 lg:w-5/6">
+          <p class="text-xl font-bold mt-10">Overview</p>
+
+          <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 h-fit">
+            <!-- signed up users -->
+            <div
+              class="p-3 border border-[#ECECEC] rounded-md text-white mt-4 lg:p-5"
+            >
+              <div class="">
+                <div class="px-3 py-2 bg-bluemedium/10 w-fit rounded-full">
+                  <i class="fi fi-rr-user text-bluemedium"></i>
+                </div>
+                <p class="text-sm mt-4">Signed-up users</p>
+              </div>
+              <p class="text-4xl font-bold mt-2">1,653</p>
+            </div>
+            <!-- jobs -->
+            <div
+              class="p-3 border border-[#ECECEC] rounded-md text-white mt-4 lg:p-5"
+            >
+              <div class="">
+                <div class="px-3 py-2 bg-bluemedium/10 w-fit rounded-full">
+                  <i class="fi fi-rr-briefcase text-bluemedium"></i>
+                </div>
+                <p class="text-sm mt-4">Job applications</p>
+              </div>
+              <p class="text-4xl font-bold mt-2">12</p>
+            </div>
+            <!-- course -->
+            <div
+              class="px-3 py-3 border border-[#ECECEC] rounded-md text-white mt-4 lg:p-5"
+            >
+              <div class="">
+                <div class="px-3 py-2 bg-bluemedium/10 w-fit rounded-full">
+                  <i class="fi fi-rr-book-open-reader text-bluemedium"></i>
+                </div>
+                <p class="text-sm mt-4">Course applications</p>
+              </div>
+              <p class="text-4xl font-bold mt-2">300</p>
+            </div>
+            <!-- revenue -->
+            <div
+              class="px-3 py-3 border border-[#ECECEC] rounded-md text-white mt-4 lg:p-5"
+            >
+              <div class="">
+                <div class="px-3 py-2 bg-bluemedium/10 w-fit rounded-full">
+                  <i class="fi fi-rr-money text-bluemedium"></i>
+                </div>
+                <p class="text-sm mt-4">Revenue generated</p>
+              </div>
+              <p class="text-4xl font-bold mt-2">N123k+</p>
+            </div>
+          </div>
+
+          <p class="text-xl font-bold mt-10">Overview</p>
+          <!-- White content box -->
+          <div
+            class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-4 mb-32 lg:mb-20 lg:px-10 lg:py-10"
+          >
+            <!-- States -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12"
+            >
+              <!-- Left form -->
+              <div class="max-w-sm lg:w-1/4">
+                <h1>States</h1>
+              </div>
+              <!-- Right form -->
+              <div class="lg:w-3/4">
+                <!-- Light blue box -->
+                <div
+                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md mt-6 lg:mt-0"
+                >
+                  <div>
+                    <p class="text-bluemedium">
+                      Kaduna, Lagos, Ogun... +32 more
+                    </p>
+                  </div>
+                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                    >Edit</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12 mt-12"
+            >
+              <!-- Left form -->
+              <div class="max-w-sm lg:w-1/4">
+                <h1>Skills</h1>
+              </div>
+              <!-- Right form -->
+              <div class="lg:w-3/4">
+                <!-- Light blue box -->
+                <!-- skills -->
+                <div
+                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md"
+                >
+                  <div>
+                    <p class="text-bluemedium">
+                      Writing, reading, fishing... +32 more
+                    </p>
+                  </div>
+                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                    >Edit</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Specialties -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12 mt-12"
+            >
+              <!-- Left form -->
+              <div class="max-w-sm lg:w-1/4">
+                <h1>Specialty</h1>
+              </div>
+              <!-- Right form -->
+              <div class="lg:w-3/4">
+                <!-- Light blue box -->
+                <!-- skills -->
+                <div
+                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md"
+                >
+                  <div>
+                    <p class="text-bluemedium">
+                      Nursing, Medicine, Surgery... +12 more
+                    </p>
+                  </div>
+                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                    >Edit</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Employment type -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 mt-12"
+            >
+              <!-- Left form -->
+              <div class="max-w-sm lg:w-1/4">
+                <h1>Employment type</h1>
+              </div>
+              <!-- Right form -->
+              <div class="lg:w-3/4">
+                <!-- Light blue box -->
+                <!-- skills -->
+                <div
+                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md"
+                >
+                  <div>
+                    <p class="text-bluemedium">
+                      Full-time, Part-time, Freelance
+                    </p>
+                  </div>
+                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
+                    >Edit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

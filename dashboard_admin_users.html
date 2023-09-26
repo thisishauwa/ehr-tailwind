@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <div class="flex flex-row max-w-[2000px] mx-auto px-6 lg:px-0">
+      <!-- Navigation bar -->
+      <nav
+        class="fixed bottom-0 w-full px-5 py-7 left-0 md:fixed md:bottom-0 lg:sticky lg:left-0 lg:top-0 lg:w-1/5 lg:h-screen bg-[#FAFAFA]"
+      >
+        <!-- nav elements -->
+        <img
+          src="/images/logo.svg"
+          alt="ehr logo"
+          class="hidden lg:block mt-1"
+        />
+        <div class="flex flex-row justify-between lg:flex-col lg:mt-20">
+          <!-- settings -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:gap-3 lg:justify-start lg:py-5 lg:px-4 rounded-md"
+          >
+            <i class="fi fi-rr-settings text-lg lg:text-xl text-inactive"></i>
+            <p class="text-inactive font-normal text-xs md:text-base">
+              Dashboard
+            </p>
+          </div>
+
+          <!-- Users -->
+          <div
+            class="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-3 lg:bg-bluestrong lg:py-5 md:px-4 rounded-md"
+          >
+            <!-- Mobile icon -->
+            <i class="fi fi-rr-user text-lg text-bluemedium lg:hidden"></i>
+
+            <!-- web icon -->
+
+            <i class="fi fi-rr-user text-xl text-white hidden lg:block"></i>
+            <p
+              class="text-bluemedium lg:text-white font-medium text-xs md:text-base"
+            >
+              All users
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <section class="w-full lg:w-4/5 lg:px-14">
+        <!-- Header content -->
+        <!-- Left header content -->
+        <div class="flex flex-row justify-between items-center mt-5">
+          <div class="flex flex-col">
+            <h3 class="text-2xl lg:text-4xl">All Users</h3>
+          </div>
+          <!-- Right header content -->
+          <div class="flex flex-row justify-center items-center gap-8">
+            <div class="hidden md:block">
+              <div class="relative md:w-[200px] lg:w-80">
+                <img
+                  src="images/dashboard-icons/vuesax/linear/search-normal.svg"
+                  alt=""
+                  class="absolute w-6 h-6 top-5 left-4"
+                />
+                <input
+                  type="text"
+                  class="py-5 pl-14 pr-4 bg-[#F5F4F7] w-full rounded-md md:mr-5 truncate"
+                  placeholder="Search for people, skills, or jobs"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <button
+                class="flex items-center justify-center h-12 w-12 bg-inactive/30 rounded-full text-inactive"
+              >
+                HS
+              </button>
+              <img
+                src="/images/dashboard-icons/vuesax/linear/arrow-down.svg"
+                alt=""
+                class="w-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="mt-12 lg:mt-16">
+          <!-- filter, search, view toggle -->
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-12"
+          >
+            <!-- left items -->
+            <div class="flex flex-row-reverse lg:flex-row items-center gap-5">
+              <!-- filter -->
+              <div class="flex items-center gap-2 text-inactive/50">
+                <i class="hidden md:flex fi fi-sr-filter text-inactive/50"></i>
+                <p>Filter by</p>
+                <i class="fi fi-rr-angle-small-down mt-2 text-black"></i>
+              </div>
+
+              <!-- line -->
+              <div class="w-[1px] h-[60px] bg-[#ECECEC]"></div>
+              <!-- search -->
+              <div>
+                <input
+                  type="search"
+                  class="bg-[#fafafa] pl-4 py-3 rounded-md w-full lg:w-[300px] mt-2 outline-bluemedium border border-[#ececec]"
+                  placeholder="Customer email, name or order no."
+                />
+              </div>
+            </div>
+
+            <!-- button and date filter -->
+
+            <button class="primary-button mt-4 lg:mt-0">Add a user</button>
+          </div>
+
+          <!-- table -->
+          <div class="mt-8 mb-12 lg:mb-0">
+            <div class="relative overflow-x-auto rounded-md border">
+              <table class="w-full text-sm text-left">
+                <thead class="text-xs bg-[#F6F6F6]">
+                  <tr>
+                    <th scope="col" class="px-6 py-3 font-normal">Username</th>
+                    <th scope="col" class="px-6 py-3 font-normal">Name</th>
+                    <th scope="col" class="px-6 py-3 font-normal">Role</th>
+                    <th scope="col" class="px-6 py-3 font-normal">
+                      Last login
+                    </th>
+
+                    <th scope="col" class="px-6 py-3 font-normal">Status</th>
+                    <th scope="col" class="px-6 py-3"></th>
+                  </tr>
+                </thead>
+
+                <!-- table body -->
+                <tbody class="rounded-md">
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">Corporate</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">User</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">Corporate</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">Corporate</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">User</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">User</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">User</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-t text-black">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                    >
+                      get2suley@gmail.com
+                    </th>
+                    <td class="px-6 py-4">Hauwa Suleiman</td>
+                    <td class="px-6 py-4">User</td>
+                    <td class="px-6 py-4">
+                      <div class="flex flex-col gap-1">
+                        <p>Mar 2</p>
+                        <p class="text-xs text-inactive">4:05pm</p>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <p
+                        class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                      >
+                        Inactive
+                      </p>
+                    </td>
+                    <td class="px-6 py-4">
+                      <button>
+                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- pagination -->
+            <div class="flex justify-center md:justify-end w-full mt-8">
+              <div class="flex gap-4">
+                <button
+                  class="flex gap-1 items-center text-inactive hover:text-bluestrong"
+                >
+                  <i class="fi fi-rr-angle-small-left mt-1"></i>
+                  <p>Previous</p>
+                </button>
+
+                <!-- numbers -->
+                <div class="flex">
+                  <div
+                    class="flex w-8 h-8 rounded-full bg-bluestrong items-center justify-center"
+                  >
+                    <p class="text-white">1</p>
+                  </div>
+                  <div
+                    class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                  >
+                    <p class="text-inactive">2</p>
+                  </div>
+                  <div
+                    class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                  >
+                    <p class="text-inactive">3</p>
+                  </div>
+                  <div
+                    class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                  >
+                    <p class="text-inactive">4</p>
+                  </div>
+                  <div
+                    class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                  >
+                    <p class="text-inactive">...</p>
+                  </div>
+                  <div
+                    class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                  >
+                    <p class="text-inactive">10</p>
+                  </div>
+                </div>
+                <button
+                  class="flex gap-1 items-center text-inactive hover:text-bluestrong"
+                >
+                  <p>Next</p>
+                  <i class="fi fi-rr-angle-small-right mt-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
