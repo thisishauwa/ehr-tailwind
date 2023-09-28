@@ -1494,12 +1494,12 @@ p {
   max-width: 100%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .max-w-\[290px\] {
   max-width: 290px;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .max-w-lg {
@@ -2168,15 +2168,6 @@ p {
   background-color: rgb(34 197 94 / 0.2);
 }
 
-.bg-bluemedium\/10 {
-  background-color: rgb(40 75 204 / 0.1);
-}
-
-.bg-\[\#F8FAFF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#ececec\]\/70 {
   background-color: rgb(236 236 236 / 0.7);
 }
@@ -2194,6 +2185,11 @@ p {
 .bg-\[\#004DE1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 77 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F8FAFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 255 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-100 {
@@ -2219,6 +2215,10 @@ p {
 .bg-\[\#F5F8FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 248 255 / var(--tw-bg-opacity));
+}
+
+.bg-bluemedium\/10 {
+  background-color: rgb(40 75 204 / 0.1);
 }
 
 .bg-inactive {
@@ -2259,6 +2259,22 @@ p {
 .bg-orange-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+
+.bg-bluemedium\/20 {
+  background-color: rgb(40 75 204 / 0.2);
+}
+
+.bg-bluemedium\/50 {
+  background-color: rgb(40 75 204 / 0.5);
+}
+
+.bg-bluemedium\/0 {
+  background-color: rgb(40 75 204 / 0);
+}
+
+.bg-bluemedium\/5 {
+  background-color: rgb(40 75 204 / 0.05);
 }
 
 .bg-\[url\(\'\/images\/learnpic\.svg\'\)\] {
@@ -3059,13 +3075,13 @@ textarea {
   color: rgb(92 98 105 / 0.8);
 }
 
+.hover\:text-bluemedium\/70:hover {
+  color: rgb(40 75 204 / 0.7);
+}
+
 .hover\:text-bluemedium:hover {
   --tw-text-opacity: 1;
   color: rgb(40 75 204 / var(--tw-text-opacity));
-}
-
-.hover\:text-bluemedium\/70:hover {
-  color: rgb(40 75 204 / 0.7);
 }
 
 .hover\:underline:hover {
@@ -3853,12 +3869,12 @@ textarea {
     margin-top: 0.75rem;
   }
 
-  .lg\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
   .lg\:-mt-10 {
     margin-top: -2.5rem;
+  }
+
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .lg\:mt-12 {
@@ -3969,10 +3985,6 @@ textarea {
     width: 75%;
   }
 
-  .lg\:w-5\/6 {
-    width: 83.333333%;
-  }
-
   .lg\:w-2\/3 {
     width: 66.666667%;
   }
@@ -3991,6 +4003,10 @@ textarea {
 
   .lg\:w-14 {
     width: 3.5rem;
+  }
+
+  .lg\:w-5\/6 {
+    width: 83.333333%;
   }
 
   .lg\:min-w-\[110px\] {
@@ -4029,12 +4045,12 @@ textarea {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -4228,6 +4244,11 @@ textarea {
   .lg\:px-56 {
     padding-left: 14rem;
     padding-right: 14rem;
+  }
+
+  .lg\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .lg\:pr-20 {
