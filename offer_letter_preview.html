@@ -4,35 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Corporate about</title>
+    <style>
+      /* Custom styles */
+      body {
+        font-family: "Google Sans", sans-serif;
+        background-color: #f7fafc;
+      }
+
+      .section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo img {
+        max-width: 100px;
+        height: auto;
+      }
+
+      .header h2 {
+        font-size: 2rem;
+        color: #333;
+      }
+
+      .content {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+      }
+
+      .content h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .content p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.5;
+      }
+
+      .content ul {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+      }
+
+      .content li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer {
+        text-align: right;
+        margin-top: 2rem;
+        color: #777;
+      }
+
+      .footer p {
+        font-size: 1rem;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+      }
+
+      .button-container button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .button-container .secondary-button {
+        background-color: transparent;
+        border: 1px solid #000; /* Black border */
+        color: #000; /* Black text color */
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .button-container .primary-button {
+        background-color: #000000;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <section class="section">
-      <div class="containerthin">
-        <button class="flex flex-row gap-1 items-center mt-3">
-          <img src="/images/vuesax/linear/arrow-left.svg" alt="" />
-          <p>Back</p>
-        </button>
-        <!-- Header -->
-        <div class="mt-10">
-          <h2 class="text-xl md:text-2xl lg:text-4xl">Nana Hauwa Suleiman</h2>
-          <div
-            class="flex flex-row items-center mt-2 gap-2 text-inactive/80"
-          ></div>
+      <div class="header">
+        <h2>Congratulations, Hauwa 🎉</h2>
+        <div class="logo">
+          <img src="/images/logo.svg" alt="Company Logo" />
         </div>
-
-        <!-- comments -->
-
+      </div>
+      <div class="content">
+        <!-- content -->
         <div class="mt-10">
           <header class="text-start mb-6">
             <h1 class="text-2xl font-semibold">Offer of Employment</h1>
@@ -146,14 +236,11 @@
             </p>
           </footer>
         </div>
+      </div>
 
-        <!-- buttons -->
-        <!-- Divider -->
-        <div class="w-full h-[1px] bg-[#ECECEC] mt-10"></div>
-        <div class="flex gap-4 justify-end mt-10 pb-10">
-          <button class="secondary-button">Save to drafts</button>
-          <button class="primary-button">Send</button>
-        </div>
+      <div class="button-container fkex gap-2">
+        <button class="secondary-button">Save to drafts</button>
+        <button class="primary-button">Send</button>
       </div>
     </section>
   </body>
