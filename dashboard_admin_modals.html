@@ -19,172 +19,178 @@
   </head>
   <body>
     <!-- Blurred background -->
-    <div
-      class="w-screen h-screen fixed top-0 left-0 z-20 flex flex-col justify-center items-center backdrop-blur-md bg-black/10 px-6"
-    >
-      <!-- States -->
-      <div
-        class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px]"
-      >
-        <h3 class="text-xl md:text-2xl font-bold">Edit states</h3>
-        <p class="text-inactive text-sm mt-2">
-          Here, you can add and delete states
-        </p>
-        <!-- Form components -->
-        <div class="mt-5 md:mt-7">
-          <!-- user email -->
-          <div>
-            <input
-              type="text"
-              placeholder="Enter state"
-              class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
-            />
-          </div>
+    <section class="section">
+      <div class="container">
+        <div
+          class="w-screen h-screen fixed top-0 left-0 z-20 flex flex-col justify-center items-center backdrop-blur-md bg-black/10 px-6"
+        >
+          <div class="flex flex-wrap gap-5">
+            <!-- States -->
+            <div
+              class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px]"
+            >
+              <h3 class="text-xl md:text-2xl font-bold">Edit states</h3>
+              <p class="text-inactive text-sm mt-2">
+                Here, you can add and delete states
+              </p>
+              <!-- Form components -->
+              <div class="mt-5 md:mt-7">
+                <!-- user email -->
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Enter state"
+                    class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                  />
+                </div>
 
-          <!-- chips -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Sokoto</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Kaduna</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Lagos</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Ibadan</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-          </div>
+                <!-- chips -->
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Sokoto</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Kaduna</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Lagos</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Ibadan</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                </div>
 
-          <div class="flex flex-row gap-4 mt-10">
-            <button class="secondary-button w-1/3">Cancel</button>
-            <button class="primary-button w-2/3">Save</button>
+                <div class="flex flex-row gap-4 mt-10">
+                  <button class="secondary-button w-1/3">Cancel</button>
+                  <button class="primary-button w-2/3">Save</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills -->
+            <div
+              class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px]"
+            >
+              <h3 class="text-xl md:text-2xl font-bold">Edit skills</h3>
+              <p class="text-inactive text-sm mt-2">
+                Here, you can add skill options for users to select
+              </p>
+              <!-- Form components -->
+              <div class="mt-5 md:mt-7">
+                <!-- user email -->
+                <div>
+                  <input
+                    `="P[-5]"
+                    type="text"
+                    placeholder="Enter skills"
+                    class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                  />
+                </div>
+
+                <!-- chips -->
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Writing</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Fishing</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Singing</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Drama</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                </div>
+
+                <div class="flex flex-row gap-4 mt-10">
+                  <button class="secondary-button w-1/3">Cancel</button>
+                  <button class="primary-button w-2/3">Save</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Specialty -->
+            <div
+              class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px]"
+            >
+              <h3 class="text-xl md:text-2xl font-bold">Edit specialties</h3>
+              <p class="text-inactive text-sm mt-2">
+                Here, you can add skill options for users to select
+              </p>
+              <!-- Form components -->
+              <div class="mt-5 md:mt-7">
+                <!-- user email -->
+                <div>
+                  <input
+                    `="P[-5]"
+                    type="text"
+                    placeholder="Enter skills"
+                    class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+                  />
+                </div>
+
+                <!-- chips -->
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Writing</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Fishing</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Singing</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                  <div
+                    class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
+                  >
+                    <p>Drama</p>
+                    <img src="/images/Cancel.svg" alt="" />
+                  </div>
+                </div>
+
+                <div class="flex flex-row gap-4 mt-10">
+                  <button class="secondary-button w-1/3">Cancel</button>
+                  <button class="primary-button w-2/3">Save</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Skills -->
-      <div
-        class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px] mt-5"
-      >
-        <h3 class="text-xl md:text-2xl font-bold">Edit skills</h3>
-        <p class="text-inactive text-sm mt-2">
-          Here, you can add skill options for users to select
-        </p>
-        <!-- Form components -->
-        <div class="mt-5 md:mt-7">
-          <!-- user email -->
-          <div>
-            <input
-              `="P[-5]"
-              type="text"
-              placeholder="Enter skills"
-              class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
-            />
-          </div>
-
-          <!-- chips -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Writing</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Fishing</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Singing</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Drama</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-          </div>
-
-          <div class="flex flex-row gap-4 mt-10">
-            <button class="secondary-button w-1/3">Cancel</button>
-            <button class="primary-button w-2/3">Save</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Specialty -->
-      <div
-        class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px] mt-5"
-      >
-        <h3 class="text-xl md:text-2xl font-bold">Edit specialties</h3>
-        <p class="text-inactive text-sm mt-2">
-          Here, you can add skill options for users to select
-        </p>
-        <!-- Form components -->
-        <div class="mt-5 md:mt-7">
-          <!-- user email -->
-          <div>
-            <input
-              `="P[-5]"
-              type="text"
-              placeholder="Enter skills"
-              class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
-            />
-          </div>
-
-          <!-- chips -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Writing</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Fishing</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Singing</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-            <div
-              class="flex flex-row gap-2 align-middle items-center bg-[#E0EBFF] max-w-fit px-2 py-1 rounded-full text-xs"
-            >
-              <p>Drama</p>
-              <img src="/images/Cancel.svg" alt="" />
-            </div>
-          </div>
-
-          <div class="flex flex-row gap-4 mt-10">
-            <button class="secondary-button w-1/3">Cancel</button>
-            <button class="primary-button w-2/3">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
