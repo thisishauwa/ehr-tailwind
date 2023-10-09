@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Dashboard overview</title>
   </head>
@@ -98,7 +103,7 @@
         </div>
 
         <!-- content container-->
-        <div class="mt-10 lg:w-5/6">
+        <div class="mt-10">
           <p class="text-xl font-bold mt-10">Overview</p>
 
           <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 h-fit">
@@ -152,115 +157,234 @@
             </div>
           </div>
 
-          <p class="text-xl font-bold mt-10">Overview</p>
-          <!-- White content box -->
-          <div
-            class="px-5 py-5 border border-[#ECECEC] rounded-md text-white mt-4 mb-32 lg:mb-20 lg:px-10 lg:py-10"
-          >
-            <!-- States -->
-            <div
-              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12"
-            >
-              <!-- Left form -->
-              <div class="max-w-sm lg:w-1/4">
-                <h1>States</h1>
-              </div>
-              <!-- Right form -->
-              <div class="lg:w-3/4">
-                <!-- Light blue box -->
-                <div
-                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md mt-6 lg:mt-0"
-                >
-                  <div>
-                    <p class="text-bluemedium">
-                      Kaduna, Lagos, Ogun... +32 more
-                    </p>
-                  </div>
-                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
-                    >Edit</a
+          <!-- chart -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4">
+            <!-- chart 1 -->
+            <div class="mt-10">
+              <!-- header -->
+              <div class="flex items-center justify-between">
+                <p class="text-xl font-bold">Revenue projections</p>
+                <div>
+                  <select
+                    id="yearFilter"
+                    class="block w-20 lg:w-24 mt-1 py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
                   >
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <!-- Add more year options as needed -->
+                  </select>
+                </div>
+              </div>
+              <div
+                class="p-3 border border-[#ECECEC] rounded-md text-white lg:p-5 mt-4"
+              >
+                <!-- lines -->
+                <div class="divide-y divide-dashed">
+                  <div class=""></div>
+                  <div class="mt-8"></div>
+                  <div class="mt-8"></div>
+                  <div class="mt-8"></div>
+                </div>
+                <!-- months -->
+                <div
+                  class="flex flex-row justify-between text-black/10 text-sm mt-8"
+                >
+                  <p>Jan</p>
+                  <p>Feb</p>
+                  <p>Mar</p>
+                  <p>Apr</p>
+                  <p>May</p>
+                  <p>Jun</p>
                 </div>
               </div>
             </div>
-
-            <!-- Skills -->
-            <div
-              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12 mt-12"
-            >
-              <!-- Left form -->
-              <div class="max-w-sm lg:w-1/4">
-                <h1>Skills</h1>
-              </div>
-              <!-- Right form -->
-              <div class="lg:w-3/4">
-                <!-- Light blue box -->
-                <!-- skills -->
-                <div
-                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md"
-                >
-                  <div>
-                    <p class="text-bluemedium">
-                      Writing, reading, fishing... +32 more
-                    </p>
-                  </div>
-                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
-                    >Edit</a
+            <!-- chart 1 -->
+            <div class="mt-10">
+              <!-- header -->
+              <div class="flex items-center justify-between">
+                <p class="text-xl font-bold">User sign-ups</p>
+                <div>
+                  <select
+                    id="yearFilter"
+                    class="block w-20 lg:w-24 mt-1 py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
                   >
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <!-- Add more year options as needed -->
+                  </select>
+                </div>
+              </div>
+              <div
+                class="p-3 border border-[#ECECEC] rounded-md text-white lg:p-5 mt-4"
+              >
+                <!-- lines -->
+                <div class="divide-y divide-dashed">
+                  <div class=""></div>
+                  <div class="mt-8"></div>
+                  <div class="mt-8"></div>
+                  <div class="mt-8"></div>
+                </div>
+                <!-- months -->
+                <div
+                  class="flex flex-row justify-between text-black/10 text-sm mt-8"
+                >
+                  <p>Jan</p>
+                  <p>Feb</p>
+                  <p>Mar</p>
+                  <p>Apr</p>
+                  <p>May</p>
+                  <p>Jun</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Specialties -->
-            <div
-              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 border-[#ECECEC] border-b pb-12 mt-12"
-            >
-              <!-- Left form -->
-              <div class="max-w-sm lg:w-1/4">
-                <h1>Specialty</h1>
-              </div>
-              <!-- Right form -->
-              <div class="lg:w-3/4">
-                <!-- Light blue box -->
-                <!-- skills -->
-                <div
-                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md"
-                >
-                  <div>
-                    <p class="text-bluemedium">
-                      Nursing, Medicine, Surgery... +12 more
-                    </p>
-                  </div>
-                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
-                    >Edit</a
-                  >
-                </div>
-              </div>
+          <!-- table -->
+          <div class="mt-10">
+            <!-- header -->
+            <div class="flex items-center justify-between">
+              <p class="text-xl font-bold">Users</p>
+              <button class="text-bluemedium">View all users</button>
             </div>
+            <div class="mt-8 mb-12 lg:mb-16">
+              <div class="relative overflow-x-auto rounded-md border">
+                <table class="w-full text-sm text-left">
+                  <thead class="text-xs bg-[#F6F6F6]">
+                    <tr>
+                      <th scope="col" class="px-6 py-3 font-normal">
+                        Username
+                      </th>
+                      <th scope="col" class="px-6 py-3 font-normal">Name</th>
+                      <th scope="col" class="px-6 py-3 font-normal">Role</th>
+                      <th scope="col" class="px-6 py-3 font-normal">
+                        Last login
+                      </th>
 
-            <!-- Employment type -->
-            <div
-              class="flex flex-col lg:flex-row lg:items-start lg:gap-32 mt-12"
-            >
-              <!-- Left form -->
-              <div class="max-w-sm lg:w-1/4">
-                <h1>Employment type</h1>
-              </div>
-              <!-- Right form -->
-              <div class="lg:w-3/4">
-                <!-- Light blue box -->
-                <!-- skills -->
-                <div
-                  class="flex flex-row justify-between bg-[#F8FAFF] px-5 py-5 rounded-md"
-                >
-                  <div>
-                    <p class="text-bluemedium">
-                      Full-time, Part-time, Freelance
-                    </p>
-                  </div>
-                  <a href="#" class="text-inactive/70 hover:text-bluemedium"
-                    >Edit</a
-                  >
-                </div>
+                      <th scope="col" class="px-6 py-3 font-normal">Status</th>
+                      <th scope="col" class="px-6 py-3"></th>
+                    </tr>
+                  </thead>
+
+                  <!-- table body -->
+                  <tbody class="rounded-md">
+                    <tr class="bg-white border-t text-black">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                      >
+                        get2suley@gmail.com
+                      </th>
+                      <td class="px-6 py-4">Hauwa Suleiman</td>
+                      <td class="px-6 py-4">Corporate</td>
+                      <td class="px-6 py-4">
+                        <div class="flex flex-col gap-1">
+                          <p>Mar 2</p>
+                          <p class="text-xs text-inactive">4:05pm</p>
+                        </div>
+                      </td>
+
+                      <td class="px-6 py-4">
+                        <p
+                          class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                        >
+                          Inactive
+                        </p>
+                      </td>
+                      <td class="px-6 py-4">
+                        <button>
+                          <i class="fi fi-rr-menu-dots-vertical"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-t text-black">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                      >
+                        get2suley@gmail.com
+                      </th>
+                      <td class="px-6 py-4">Hauwa Suleiman</td>
+                      <td class="px-6 py-4">User</td>
+                      <td class="px-6 py-4">
+                        <div class="flex flex-col gap-1">
+                          <p>Mar 2</p>
+                          <p class="text-xs text-inactive">4:05pm</p>
+                        </div>
+                      </td>
+
+                      <td class="px-6 py-4">
+                        <p
+                          class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                        >
+                          Inactive
+                        </p>
+                      </td>
+                      <td class="px-6 py-4">
+                        <button>
+                          <i class="fi fi-rr-menu-dots-vertical"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-t text-black">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                      >
+                        get2suley@gmail.com
+                      </th>
+                      <td class="px-6 py-4">Hauwa Suleiman</td>
+                      <td class="px-6 py-4">Corporate</td>
+                      <td class="px-6 py-4">
+                        <div class="flex flex-col gap-1">
+                          <p>Mar 2</p>
+                          <p class="text-xs text-inactive">4:05pm</p>
+                        </div>
+                      </td>
+
+                      <td class="px-6 py-4">
+                        <p
+                          class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                        >
+                          Inactive
+                        </p>
+                      </td>
+                      <td class="px-6 py-4">
+                        <button>
+                          <i class="fi fi-rr-menu-dots-vertical"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-t text-black">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                      >
+                        get2suley@gmail.com
+                      </th>
+                      <td class="px-6 py-4">Hauwa Suleiman</td>
+                      <td class="px-6 py-4">Corporate</td>
+                      <td class="px-6 py-4">
+                        <div class="flex flex-col gap-1">
+                          <p>Mar 2</p>
+                          <p class="text-xs text-inactive">4:05pm</p>
+                        </div>
+                      </td>
+
+                      <td class="px-6 py-4">
+                        <p
+                          class="text-[#766702] bg-[#FFFCE3] w-fit py-1 px-2 rounded-full"
+                        >
+                          Inactive
+                        </p>
+                      </td>
+                      <td class="px-6 py-4">
+                        <button>
+                          <i class="fi fi-rr-menu-dots-vertical"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
