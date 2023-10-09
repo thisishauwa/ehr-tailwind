@@ -25,71 +25,36 @@
       <div
         class="bg-white px-5 py-8 md:p-10 rounded-md w-full md:max-w-[500px] lg:max-w-[500px]"
       >
-        <h3 class="text-xl md:text-2xl font-bold">Add automation</h3>
+        <h3 class="text-xl md:text-2xl font-bold">All automations</h3>
         <p class="text-inactive text-sm mt-2">
-          Here, you can add an automated flow for assessing users
+          Here, you can view all created automations within this job
         </p>
         <!-- Form components -->
         <div class="mt-5 md:mt-7">
-          <!-- name -->
-          <div class="mt-4">
-            <p>Name automation</p>
-            <input
-              type="text"
-              placeholder="Enter automation name"
-              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
-            />
-          </div>
-          <!-- user role -->
-          <div class="mt-4">
-            <p>Automation start</p>
-            <select
-              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
-            >
-              <option value="0">After application</option>
-              <option value="1">After shortlist</option>
-              <option value="1">After interview</option>
-              <option value="1">After test</option>
-              <option value="1">After offer</option>
-            </select>
-          </div>
-
           <!-- test-->
           <div class="mt-4">
-            <p>Select test</p>
-            <select
-              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
-            >
-              <option value="0">Medical test</option>
-              <option value="1">This test</option>
-            </select>
-          </div>
+            <!-- one -->
+            <div class="flex items-start justify-between">
+              <div>
+                <p>Beginner automation</p>
+                <p class="text-inactive/80 text-sm">24th Aug, 2023</p>
+              </div>
+              <button class="text-red-500">Remove</button>
+            </div>
 
-          <!-- user role -->
-          <div class="mt-4">
-            <p>If user passes</p>
-            <select
-              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
-            >
-              <option value="0">Move to next stage & notify admin</option>
-              <option value="1">Notify admin only</option>
-            </select>
-          </div>
-
-          <!-- user role -->
-          <div class="mt-4">
-            <p>If user fails</p>
-            <select
-              class="flex flex-row justify-between border-none text-black bg-[#F3F3F3] px-4 py-4 rounded-md w-full mt-3"
-            >
-              <option value="0">Notify user & delete application</option>
-              <option value="1">Notify user only</option>
-            </select>
+            <!-- two -->
+            <div class="flex items-start justify-between mt-5">
+              <div>
+                <p>Second stage automation</p>
+                <p class="text-inactive/80 text-sm">24th Aug, 2023</p>
+              </div>
+              <button class="text-red-500">Remove</button>
+            </div>
           </div>
 
           <div class="flex flex-row gap-4 mt-10">
             <button class="secondary-button w-1/3">Cancel</button>
-            <button class="primary-button w-2/3">Save automation</button>
+            <button class="primary-button w-2/3">Create new automation</button>
           </div>
         </div>
       </div>
