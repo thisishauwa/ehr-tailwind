@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard overview</title>
+  </head>
+  <body>
+    <!-- Navbar web -->
+    <nav
+      class="hidden lg:flex max-w-[2000px] mx-auto px-6 lg:px-20 sticky top-0 z-30 shadow-sm bg-white"
+    >
+      <!-- Flex container for all items -->
+      <div class="flex items-center justify-between py-4 w-full">
+        <!-- back button -->
+        <div>
+          <button class="flex items-center">
+            <img src="/images/vuesax/linear/arrow-left.svg" alt="" />Back
+          </button>
+        </div>
+
+        <!-- image -->
+        <div><img src="/images/logo.svg" alt="ehr logo" /></div>
+
+        <!-- time -->
+        <div class="bg-[#E9F1FF] rounded-full">
+          <p class="px-6 py-4 text-bluemedium">
+            Total time: <span class="font-bold">10:00:00</span>
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav mobile -->
+    <nav
+      class="block lg:hidden px-6 py-8 lg:px-20 sticky top-0 z-30 shadow-sm bg-white"
+    >
+      <div class="flex flex-row justify-between items-center">
+        <button class="flex flex-row items-center">
+          <img src="/images/vuesax/linear/arrow-left.svg" alt="" />
+          <p>Back</p>
+        </button>
+
+        <div class="lg:hidden">
+          <img src="/images/iPhone 13/Hamburger.svg" alt="" />
+        </div>
+      </div>
+    </nav>
+
+    <section class="section mt-12">
+      <div class="container">
+        <!-- entire container -->
+        <div class="w-full flex flex-row gap-7">
+          <!-- left -->
+          <div
+            class="hidden lg:flex w-1/3 bg-[#F3F3F3] rounded-md p-12 flex-col justify-between"
+          >
+            <!-- top part -->
+            <div>
+              <h1 class="text-3xl">Hi, Hauwa</h1>
+              <p class="text-[#575757] text-sm mt-3">
+                Here are a few tips for recording your videos:
+              </p>
+
+              <!-- Instructions -->
+              <ul class="text-sm text-[#575757] list-disc mt-5">
+                <li>
+                  Be visible; make sure your environment is well lit and that
+                  your face shows clearly!
+                </li>
+                <li class="mt-4">
+                  Be concise; tell us the most important details using few words
+                </li>
+                <li class="mt-4">Be yourself; because you’re awesome</li>
+              </ul>
+            </div>
+            <!-- Questions -->
+            <ol
+              class="text-lg text-[#575757]/70 list-decimal mt-16 flex flex-col gap-5"
+            >
+              <li>Tell us about yourself</li>
+              <li class="mt-5 text-black font-medium">
+                What’s your biggest accomplishment?
+              </li>
+              <li class="mt-6">What motivates you to work?</li>
+              <li class="mt-6">Describe your ideal role</li>
+              <li class="mt-6">How do you define success?</li>
+            </ol>
+          </div>
+
+          <!-- right -->
+          <div class="w-full lg:w-2/3">
+            <!-- top videos -->
+            <div class="hidden md:grid grid-cols-4 gap-4">
+              <!-- Card 1 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover rounded-md bg-right-top h-36"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-br-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover rounded-md bg-right-top h-36"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-br-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover rounded-md bg-right-top h-36"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-br-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover rounded-md bg-right-top h-36"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-br-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+            </div>
+
+            <!-- timer -->
+            <div class="flex w-full items-end justify-end">
+              <div class="flex bg-[#E9F1FF] rounded-full w-fit">
+                <p class="px-6 py-4 text-bluemedium">
+                  Total time: <span class="font-bold">10:00:00</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- vidoe cards -->
+            <div
+              class="flex md:hidden flex-row gap-4 md:gap-5 overflow-scroll mt-5"
+            >
+              <!-- Card 1 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover h-24 min-w-[150px] lg:min-w-[110px] rounded-md bg-right-top"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-bl-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover h-24 min-w-[150px] lg:min-w-[110px] rounded-md bg-right-top"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-bl-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover h-24 min-w-[150px] lg:min-w-[110px] rounded-md bg-right-top"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-bl-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+              <!-- Card 1 -->
+              <div
+                class="relative bg-[url('/images/image1.svg')] bg-cover h-24 min-w-[150px] lg:min-w-[110px] rounded-md bg-right-top"
+              >
+                <div
+                  class="p-2 rounded-tl-3xl rounded-bl-md bg-bluemedium/80 absolute bottom-0 right-0 text-white"
+                >
+                  15h 8m
+                </div>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div
+              class="bg-[url('/images/videocall.svg')] bg-no-repeat bg-cover bg-center w-full h-[550px] md:h-[700px] lg:h-[600px] rounded-md mt-5"
+            ></div>
+
+            <!-- play button -->
+            <div class="flex flex-row w-full gap-2 mt-8">
+              <!-- red button -->
+              <div class="p-3 bg-slate-100 w-fit rounded-md">
+                <img src="/images/Record.svg" alt="" />
+              </div>
+
+              <!-- play location -->
+              <div
+                class="bg-[#282828] py-3 px-8 rounded-md flex w-full items-center justify-center"
+              >
+                <div class="bg-white/50 h-[4px] w-full rounded-full">
+                  <div class="bg-white h-[4px] w-1/3 rounded-full"></div>
+                </div>
+              </div>
+
+              <!--  restart-->
+              <div class="p-3 bg-slate-100 w-fit rounded-md">
+                <img src="/images/re-do.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
