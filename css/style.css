@@ -1238,6 +1238,10 @@ p {
   height: 9rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-\[550px\] {
   height: 550px;
 }
@@ -1248,10 +1252,6 @@ p {
 
 .h-40 {
   height: 10rem;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .max-h-\[90\%\] {
@@ -1470,10 +1470,6 @@ p {
   min-width: 150px;
 }
 
-.min-w-\[156px\] {
-  min-width: 156px;
-}
-
 .max-w-\[1300px\] {
   max-width: 1300px;
 }
@@ -1530,8 +1526,20 @@ p {
   max-width: 280px;
 }
 
+.max-w-\[720px\] {
+  max-width: 720px;
+}
+
+.max-w-\[750px\] {
+  max-width: 750px;
+}
+
 .max-w-screen-lg {
   max-width: 1280px;
+}
+
+.max-w-\[850px\] {
+  max-width: 850px;
 }
 
 .flex-none {
@@ -2282,6 +2290,20 @@ p {
   background-color: rgb(233 241 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#282828\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
 .bg-\[\#E5EDFC\] {
   --tw-bg-opacity: 1;
   background-color: rgb(229 237 252 / var(--tw-bg-opacity));
@@ -2315,30 +2337,6 @@ p {
 .bg-orange-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#282828\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
-}
-
-.bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5);
 }
 
 .bg-\[url\(\'\/images\/learnpic\.svg\'\)\] {
@@ -2571,6 +2569,11 @@ p {
   padding-right: 0.625rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2678,6 +2681,10 @@ p {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .text-left {
@@ -2957,6 +2964,11 @@ p {
 
 .text-white\/70 {
   color: rgb(255 255 255 / 0.7);
+}
+
+.text-\[\#667085\] {
+  --tw-text-opacity: 1;
+  color: rgb(102 112 133 / var(--tw-text-opacity));
 }
 
 .text-\[\#575757\] {
@@ -3777,6 +3789,11 @@ textarea {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:pb-8 {
