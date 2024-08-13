@@ -822,12 +822,12 @@ p {
   left: 1.25rem;
 }
 
-.right-9 {
-  right: 2.25rem;
-}
-
 .bottom-20 {
   bottom: 5rem;
+}
+
+.right-9 {
+  right: 2.25rem;
 }
 
 .z-30 {
@@ -1454,10 +1454,6 @@ p {
   width: 40px;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
 .min-w-\[350px\] {
   min-width: 350px;
 }
@@ -1580,6 +1576,10 @@ p {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
@@ -2026,13 +2026,9 @@ p {
   border-color: rgb(239 239 239 / var(--tw-border-opacity));
 }
 
-.border-bluemedium\/10 {
-  border-color: rgb(40 75 204 / 0.1);
-}
-
-.border-red-400 {
+.border-gray-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-b-\[\#ECECEC\] {
@@ -2173,6 +2169,11 @@ p {
 .bg-blue-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
 .bg-blue-400 {
@@ -2349,11 +2350,6 @@ p {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
@@ -2487,10 +2483,6 @@ p {
 
 .p-12 {
   padding: 3rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-6 {
@@ -2914,6 +2906,11 @@ p {
   color: rgb(92 98 105 / 0.7);
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -2922,11 +2919,6 @@ p {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-\[\#5C5C5C\] {
@@ -3152,14 +3144,14 @@ textarea {
   border-width: 1px;
 }
 
-.hover\:border-white:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .hover\:border-bluemedium:hover {
   --tw-border-opacity: 1;
   border-color: rgb(40 75 204 / var(--tw-border-opacity));
+}
+
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .hover\:bg-bluemedium\/70:hover {
@@ -3185,6 +3177,11 @@ textarea {
 
 .hover\:bg-bluestrong\/80:hover {
   background-color: rgb(23 34 99 / 0.8);
+}
+
+.hover\:bg-blue-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -3413,6 +3410,10 @@ textarea {
     margin-top: 3.5rem;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3591,24 +3592,16 @@ textarea {
     max-width: 100%;
   }
 
-  .md\:max-w-\[250px\] {
-    max-width: 250px;
-  }
-
   .md\:max-w-\[450px\] {
     max-width: 450px;
   }
 
+  .md\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
   .md\:max-w-\[550px\] {
     max-width: 550px;
-  }
-
-  .md\:max-w-\[600px\] {
-    max-width: 600px;
-  }
-
-  .md\:max-w-\[700px\] {
-    max-width: 700px;
   }
 
   .md\:max-w-\[650px\] {
@@ -3846,6 +3839,11 @@ textarea {
     padding-right: 1.25rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -3854,11 +3852,6 @@ textarea {
   .md\:px-48 {
     padding-left: 12rem;
     padding-right: 12rem;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .md\:px-24 {
@@ -3886,6 +3879,10 @@ textarea {
     padding-bottom: 5rem;
   }
 
+  .md\:pt-4 {
+    padding-top: 1rem;
+  }
+
   .md\:pr-10 {
     padding-right: 2.5rem;
   }
@@ -3900,10 +3897,6 @@ textarea {
 
   .md\:pt-24 {
     padding-top: 6rem;
-  }
-
-  .md\:pt-4 {
-    padding-top: 1rem;
   }
 
   .md\:text-left {
@@ -3949,14 +3942,14 @@ textarea {
     line-height: 1.25rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-white {
