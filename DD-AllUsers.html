@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <title>Starter kit</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <section class="section">
+      <div class="container my-4">
+        <!-- Entire nav -->
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <div>
+            <img
+              src="/images/GClogo.png"
+              alt="Get care logo"
+              class="h-10 w-auto"
+            />
+          </div>
+
+          <!-- middle -->
+          <div class="hidden lg:flex items-start gap-4">
+            <div class="flex flex-col items-center">
+              <button class="text-inactive/80 hover:text-bluemedium py-2 px-3">
+                Dashboard
+              </button>
+            </div>
+
+            <button class="text-inactive/80 hover:text-bluemedium py-2 px-3">
+              Plan/Billing
+            </button>
+            <button
+              class="text-bluestrong py-2 px-3 bg-bluestrong/10 rounded-md"
+            >
+              Manage
+            </button>
+
+            <button class="text-inactive/80 hover:text-bluemedium py-2 px-3">
+              Report
+            </button>
+          </div>
+          <!-- end -->
+          <div class="hidden lg:flex flex-row gap-6">
+            <button class="secondary-button-blue py-3 px-4">
+              Manage beneficiaries
+            </button>
+            <div class="bg-inactive h-14 w-14 rounded-full"></div>
+          </div>
+
+          <!-- hamburger -->
+          <div class="flex lg:hidden">
+            <i class="fi fi-rr-menu-burger text-bluestrong"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- divider -->
+    <section>
+      <div class="w-full h-[1px] bg-[#EAECF0]"></div>
+    </section>
+
+    <!-- header text -->
+    <section class="section">
+      <div class="container">
+        <!-- header wrapper -->
+        <div
+          class="flex flex-col md:flex-row my-8 gap-4 md:items-center md:justify-between md:w-full"
+        >
+          <h3 class="text-2xl lg:text-[32px] font-medium">Manage</h3>
+
+          <input
+            type="search"
+            placeholder="Search dependants, beneficiaries e.t.c"
+            class="bg-[#F5F5F6] pl-4 py-3 rounded-md w-full lg:w-[300px] outline-bluemedium"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- filter section  -->
+    <section class="section">
+      <div class="container">
+        <!-- divider -->
+        <div class="w-full">
+          <div class="w-full h-[1px] bg-[#EAECF0] my-7"></div>
+        </div>
+
+        <!-- date picker and button -->
+        <div class="flex flex-col md:flex-row gap-3 justify-between">
+          <!-- datepicker and filter -->
+          <div class="flex gap-3 w-full">
+            <button
+              class="px-4 py-2.5 border border-[#D0D5DD] rounded-md flex gap-2 min-w-fit justify-center"
+            >
+              <i class="fi fi-rr-calendar mt-0.5"></i>
+              Jan 6, 2022 - Jan 13, 2022
+            </button>
+            <button
+              class="px-4 py-2.5 border border-[#D0D5DD] rounded-md flex gap-2 w-1/3 md:max-w-fit justify-center"
+            >
+              <i class="fi fi-rr-filter mt-0.5"></i>
+              Filter
+            </button>
+          </div>
+
+          <!-- butotn -->
+          <button class="primary-button-blue px-4 py-2.5 md:min-w-fit">
+            + Add beneficiary
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- table section  -->
+    <section class="section">
+      <div class="container">
+        <!-- table -->
+        <div
+          class="flex gap-2 items-center py-5 px-6 border border-[#EAECF0] rounded-tr-md rounded-tl-md border-b-0 mt-9"
+        >
+          <div></div>
+          <p class="text-sm text-[#667085]">Beneficiaries</p>
+          <i class="fi fi-rr-angle-small-right mt-1 text-[#D0D5DD]"></i>
+          <p class="text-sm text-[#667085]">Hauwa Suleiman Idris</p>
+          <i class="fi fi-rr-angle-small-right mt-1 text-[#D0D5DD]"></i>
+          <p class="text-sm text-bluemedium">View beneficiaries</p>
+        </div>
+        <div class="mb-12 lg:mb-0">
+          <div
+            class="relative overflow-x-auto rounded-md rounded-tr-none rounded-tl-none border"
+          >
+            <table class="w-full text-sm text-left">
+              <thead class="text-xs bg-[#F6F6F6]">
+                <tr>
+                  <th scope="col" class="px-6 py-3 font-normal">Name</th>
+
+                  <th scope="col" class="px-6 py-3 font-normal">
+                    Email address
+                  </th>
+
+                  <th
+                    scope="col"
+                    class="px-6 py-3 font-normal whitespace-nowrap"
+                  >
+                    Status
+                  </th>
+
+                  <th scope="col" class="px-6 py-3 font-normal">Gender</th>
+                  <th scope="col" class="px-6 py-3"></th>
+                </tr>
+              </thead>
+
+              <!-- table body -->
+              <tbody class="rounded-md">
+                <tr class="bg-white border-t text-black">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                  >
+                    <div class="flex flex-col items-start gap-0.5">
+                      <p class="whitespace-nowrap">Hauwa Suleiman Idris</p>
+                      <p class="mt-1 whitespace-nowrap text-[#667085]">
+                        P123143
+                      </p>
+                    </div>
+                  </th>
+
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    get2suley@gmail.com
+                  </td>
+
+                  <td class="px-6 py-4">
+                    <p
+                      class="text-green-800 bg-green-50 w-fit py-1 px-2 rounded-full"
+                    >
+                      Active
+                    </p>
+                  </td>
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    Female
+                  </td>
+                  <td class="px-6 py-4">
+                    <button>
+                      <i class="fi fi-rr-menu-dots-vertical"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 2 -->
+                <tr class="bg-white border-t text-black">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                  >
+                    <div class="flex flex-col items-start gap-0.5">
+                      <p class="whitespace-nowrap">Hauwa Suleiman Idris</p>
+                      <p class="mt-1 whitespace-nowrap text-[#667085]">
+                        P123143
+                      </p>
+                    </div>
+                  </th>
+
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    get2suley@gmail.com
+                  </td>
+
+                  <td class="px-6 py-4">
+                    <p
+                      class="text-green-800 bg-green-50 w-fit py-1 px-2 rounded-full"
+                    >
+                      Active
+                    </p>
+                  </td>
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    Female
+                  </td>
+                  <td class="px-6 py-4">
+                    <button>
+                      <i class="fi fi-rr-menu-dots-vertical"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 3 -->
+                <tr class="bg-white border-t text-black">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                  >
+                    <div class="flex flex-col items-start gap-0.5">
+                      <p class="whitespace-nowrap">Hauwa Suleiman Idris</p>
+                      <p class="mt-1 whitespace-nowrap text-[#667085]">
+                        P123143
+                      </p>
+                    </div>
+                  </th>
+
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    get2suley@gmail.com
+                  </td>
+
+                  <td class="px-6 py-4">
+                    <p
+                      class="text-green-800 bg-green-50 w-fit py-1 px-2 rounded-full"
+                    >
+                      Active
+                    </p>
+                  </td>
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    Female
+                  </td>
+                  <td class="px-6 py-4">
+                    <button>
+                      <i class="fi fi-rr-menu-dots-vertical"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 4 -->
+                <tr class="bg-white border-t text-black">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-black whitespace-nowrap"
+                  >
+                    <div class="flex flex-col items-start gap-0.5">
+                      <p class="whitespace-nowrap">Hauwa Suleiman Idris</p>
+                      <p class="mt-1 whitespace-nowrap text-[#667085]">
+                        P123143
+                      </p>
+                    </div>
+                  </th>
+
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    get2suley@gmail.com
+                  </td>
+
+                  <td class="px-6 py-4">
+                    <p
+                      class="text-green-800 bg-green-50 w-fit py-1 px-2 rounded-full"
+                    >
+                      Active
+                    </p>
+                  </td>
+                  <td class="px-6 py-4 text-[#667085] whitespace-nowrap">
+                    Female
+                  </td>
+                  <td class="px-6 py-4">
+                    <button>
+                      <i class="fi fi-rr-menu-dots-vertical"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- pagination -->
+          <div class="flex justify-center md:justify-end w-full mt-8">
+            <div class="flex gap-4">
+              <button
+                class="flex gap-1 items-center text-inactive hover:text-bluestrong"
+              >
+                <i class="fi fi-rr-angle-small-left mt-1"></i>
+                <p>Previous</p>
+              </button>
+
+              <!-- numbers -->
+              <div class="flex">
+                <div
+                  class="flex w-8 h-8 rounded-full bg-bluestrong items-center justify-center text-white"
+                >
+                  <p>1</p>
+                </div>
+                <div
+                  class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                >
+                  <p class="text-inactive">2</p>
+                </div>
+                <div
+                  class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                >
+                  <p class="text-inactive">3</p>
+                </div>
+                <div
+                  class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                >
+                  <p class="text-inactive">4</p>
+                </div>
+                <div
+                  class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                >
+                  <p class="text-inactive">...</p>
+                </div>
+                <div
+                  class="flex w-8 h-8 rounded-full hover:bg-bluestrong/10 items-center justify-center"
+                >
+                  <p class="text-inactive">10</p>
+                </div>
+              </div>
+              <button
+                class="flex gap-1 items-center text-inactive hover:text-bluestrong"
+              >
+                <p>Next</p>
+                <i class="fi fi-rr-angle-small-right mt-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
