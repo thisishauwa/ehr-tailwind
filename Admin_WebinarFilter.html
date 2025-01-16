@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Webinar filter</title>
+  </head>
+  <body>
+    <!-- entire section -->
+    <section class="section lg:bg-gray-300 h-screen py-10">
+      <div class="container flex items-center justify-center">
+        <div class="w-full lg:w-[620px] lg:p-10 bg-white rounded-xl">
+          <!-- header and icon -->
+          <div class="flex flex-row justify-between">
+            <p class="font-bold text-xl">Filter Webinars</p>
+            <i class="hidden lg:flex fi fi-rr-circle-xmark text-xl"></i>
+          </div>
+
+          <!-- divider -->
+          <div class="h-[1px] w-full bg-gray-200 my-7"></div>
+
+          <!-- title and date -->
+          <p class="font-medium text-lg">Basic filters</p>
+
+          <!-- input fields -->
+          <div class="flex flex-col gap-5 mt-8">
+            <div>
+              <p>Webinar name</p>
+              <input
+                type="text"
+                placeholder="Filter by webinar name"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+
+            <div>
+              <p>Registration status</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Open</option>
+                <option value="">Closed</option>
+              </select>
+            </div>
+
+            <!-- section II -->
+            <div class="flex justify-between items-center mt-5">
+              <p class="font-medium text-lg">Advanced filters</p>
+              <i class="fi fi-br-angle-down"></i>
+            </div>
+
+            <!-- webinar type -->
+            <div>
+              <p>Webinar type</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Technical</option>
+                <option value="">Busisnes</option>
+              </select>
+            </div>
+
+            <div>
+              <p>Host</p>
+              <input
+                type="text"
+                placeholder="Filter by host name"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+            <!-- section III -->
+            <div class="flex justify-between items-center mt-5">
+              <p class="font-medium text-lg">Status filters</p>
+              <i class="fi fi-br-angle-down"></i>
+            </div>
+
+            <!-- radios -->
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div class="flex justify-between w-full">
+                <p class="text-gray-900 dark:text-gray-300">
+                  Show upcoming only
+                </p>
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </div>
+            </label>
+
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div class="flex justify-between w-full">
+                <p class="text-gray-900 dark:text-gray-300">
+                  Registration required
+                </p>
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </div>
+            </label>
+
+            <!-- buttons -->
+            <div class="flex flex-row gap-4 mt-5">
+              <button class="secondary-button w-1/3">Reset filter</button>
+              <button class="primary-button w-2/3">Apply filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

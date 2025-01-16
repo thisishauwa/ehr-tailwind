@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>User filter</title>
+  </head>
+  <body>
+    <!-- entire section -->
+    <section class="section lg:bg-gray-300 h-screen py-10">
+      <div class="container flex items-center justify-center">
+        <div class="w-full lg:w-[620px] lg:p-10 bg-white rounded-xl">
+          <!-- header and icon -->
+          <div class="flex flex-row justify-between">
+            <p class="font-bold text-xl">Filter Users</p>
+            <i class="hidden lg:flex fi fi-rr-circle-xmark text-xl"></i>
+          </div>
+
+          <!-- divider -->
+          <div class="h-[1px] w-full bg-gray-200 my-7"></div>
+
+          <!-- title and date -->
+          <p class="font-medium text-lg">Basic filters</p>
+
+          <!-- input fields -->
+          <div class="flex flex-col gap-5 mt-8">
+            <div>
+              <p>Name</p>
+              <input
+                type="text"
+                placeholder="Filter by name"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+
+            <div>
+              <p>Email</p>
+              <input
+                type="email"
+                placeholder="Filter by email"
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full"
+              />
+            </div>
+
+            <div>
+              <p>User type</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Individual</option>
+                <option value="">Corporate</option>
+                <option value="">Recruiter</option>
+                <option value="">Admin</option>
+              </select>
+            </div>
+
+            <div>
+              <p>Registration stage</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Not started</option>
+                <option value="">Personal details</option>
+                <option value="">Professional details</option>
+                <option value="">Completed</option>
+              </select>
+            </div>
+
+            <!-- section II -->
+            <div class="flex justify-between items-center mt-5">
+              <p class="font-medium text-lg">Advanced filters</p>
+              <i class="fi fi-br-angle-down"></i>
+            </div>
+
+            <!-- slider -->
+            <div>
+              <div class="flex justify-between items-center">
+                <label
+                  for="default-range"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Experience (Years)</label
+                >
+                <p class="text-gray-400">16 years</p>
+              </div>
+              <input
+                id="default-range"
+                type="range"
+                value="50"
+                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+              />
+            </div>
+
+            <div>
+              <p>Education</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Bachelor's degree</option>
+                <option value="">Master's degree</option>
+                <option value="">PhD</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+
+            <!-- section III -->
+            <div class="flex justify-between items-center mt-5">
+              <p class="font-medium text-lg">Status filters</p>
+              <i class="fi fi-br-angle-down"></i>
+            </div>
+
+            <!-- radios -->
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div class="flex justify-between w-full">
+                <p class="text-gray-900 dark:text-gray-300">
+                  Active users only
+                </p>
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </div>
+            </label>
+
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div class="flex justify-between w-full">
+                <p class="text-gray-900 dark:text-gray-300">
+                  Verified users only
+                </p>
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </div>
+            </label>
+
+            <!-- section IV -->
+            <div class="flex justify-between items-center mt-5">
+              <p class="font-medium text-lg">Sorting options</p>
+              <i class="fi fi-br-angle-down"></i>
+            </div>
+
+            <!-- sort by -->
+            <div>
+              <p>Sort by</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Name</option>
+                <option value="">Email</option>
+                <option value="">Last login</option>
+                <option value="">Registration date</option>
+              </select>
+            </div>
+
+            <!-- order -->
+            <div>
+              <p>Order</p>
+              <select
+                class="mt-2 px-4 py-4 bg-[#F3F3F3] rounded-md w-full border-none"
+              >
+                <option value="">Ascending</option>
+                <option value="">Descending</option>
+              </select>
+            </div>
+
+            <!-- buttons -->
+            <div class="flex flex-row gap-4 mt-5">
+              <button class="secondary-button w-1/3">Reset filter</button>
+              <button class="primary-button w-2/3">Apply filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
